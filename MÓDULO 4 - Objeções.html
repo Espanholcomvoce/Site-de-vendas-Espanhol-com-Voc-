@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloco 4 - Objeções</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:       #0a1628;
+  --navy-light: #1a2942;
+  --gold:       #f59e0b;
+  --gold-light: #fbbf24;
+  --cyan:       #06b6d4;
+  --emerald:    #10b981;
+  --sky:        #38bdf8;
+  --purple:     #8b5cf6;
+  --rose:       #f43f5e;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--navy);
+  color: #fff;
+}
+
+/* ─── SECTION ─────────────────────────────── */
+.objecoes {
+  position: relative;
+  overflow: hidden;
+  padding: 96px 0;
+  background: linear-gradient(165deg, #0a1628 0%, #1a2942 50%, #0f1d34 100%);
+}
+
+/* blobs de glow ambiente */
+.objecoes::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(56,189,248,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.objecoes::after {
+  content: '';
+  position: absolute;
+  bottom: -250px; left: -200px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(245,158,11,0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.c {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── HEADER ──────────────────────────────── */
+.sec-label {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(56,189,248,0.3);
+  color: #38bdf8;
+  margin-bottom: 20px;
+  background: rgba(56,189,248,0.06);
+}
+
+.sec-h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 56px;
+}
+.sec-h2 span {
+  color: #60a5fa;
+}
+
+/* ─── GRID DE CARDS ───────────────────────── */
+.obj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+@media(max-width: 600px) { .obj-grid { grid-template-columns: 1fr; } }
+
+/* cores por card */
+.obj-card { --card-color: #60a5fa; }
+.obj-card:nth-child(1) { --card-color: #60a5fa; }
+.obj-card:nth-child(2) { --card-color: #38bdf8; }
+.obj-card:nth-child(3) { --card-color: #10b981; }
+.obj-card:nth-child(4) { --card-color: #8b5cf6; }
+.obj-card:nth-child(5) { --card-color: #fbbf24; }
+.obj-card:nth-child(6) { --card-color: #f43f5e; }
+
+.obj-card {
+  position: relative;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  overflow: hidden;
+}
+
+/* linha colorida no topo */
+.obj-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 20%; right: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--card-color), transparent);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+/* glow blob interno */
+.obj-card::after {
+  content: '';
+  position: absolute;
+  top: -60px; left: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, var(--card-color) 0%, transparent 70%);
+  opacity: 0;
+  filter: blur(40px);
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.obj-card:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+.obj-card:hover::before { opacity: 1; }
+.obj-card:hover::after  { opacity: 0.08; }
+
+/* ícone */
+.obj-icon {
+  width: 40px; height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.25s, border-color 0.25s;
+}
+.obj-card:hover .obj-icon {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--card-color);
+}
+
+.obj-content {}
+
+.obj-q {
+  font-size: .9rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.4;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.obj-a {
+  font-size: .82rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ─── CAIXA DESTAQUE FINAL ────────────────── */
+.resp-box {
+  position: relative;
+  background: rgba(245,158,11,0.06);
+  border: 1.5px solid rgba(245,158,11,0.25);
+  border-radius: 20px;
+  padding: 24px 32px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.resp-box::before {
+  content: '';
+  position: absolute;
+  top: -100px; left: 50%;
+  transform: translateX(-50%);
+  width: 400px; height: 300px;
+  background: radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.resp-box h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
+.resp-box p {
+  font-size: .9rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.75;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.resp-box p strong {
+  color: rgba(255,255,255,0.92);
+}
+</style>
+</head>
+<body>
+
+<section class="objecoes">
+  <div class="c">
+
+    <div style="text-align:center">
+      <span class="sec-label">Eu sei o que você pode estar pensando</span>
+      <h2 class="sec-h2">Essas dúvidas são normais.<br><span>Deixa eu responder cada uma delas.</span></h2>
+    </div>
+
+    <div class="obj-grid">
+
+      <div class="obj-card">
+        <div class="obj-icon">🤔</div>
+        <div class="obj-content">
+          <p class="obj-q">"Será que isso daria certo para mim?"</p>
+          <p class="obj-a">O método foi criado especificamente para brasileiros, para iniciantes ou quem já tentou antes e travou. Mais de 5.000 alunos já destravaram seguindo exatamente esse caminho.</p>
+        </div>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-icon">⏰</div>
+        <div class="obj-content">
+          <p class="obj-q">"Será que eu vou ter tempo?"</p>
+          <p class="obj-a">Com 15 a 20 minutos por dia você já avança. As aulas foram feitas para quem tem a rotina cheia, curtas, objetivas e acessíveis quando e onde você quiser.</p>
+        </div>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-icon">📚</div>
+        <div class="obj-content">
+          <p class="obj-q">"Vou precisar ficar horas estudando?"</p>
+          <p class="obj-a">Não. O programa foi construído para eliminar o estudo por acúmulo. Você aprende o que realmente precisa, na ordem certa. Sem desperdício de tempo.</p>
+        </div>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-icon">🧠</div>
+        <div class="obj-content">
+          <p class="obj-q">"Será que preciso decorar gramática?"</p>
+          <p class="obj-a">Zero decoreba. O espanhol real entra pelo contexto, pela repetição natural e pela prática. Assim como você aprendeu português quando criança.</p>
+        </div>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-icon">🔄</div>
+        <div class="obj-content">
+          <p class="obj-q">"Vou precisar ficar traduzindo tudo?"</p>
+          <p class="obj-a">O método te ensina a pensar diretamente em espanhol. Aos poucos a tradução mental desaparece e o idioma começa a sair naturalmente.</p>
+        </div>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-icon">😰</div>
+        <div class="obj-content">
+          <p class="obj-q">"Vou conseguir falar com nativos sem travar?"</p>
+          <p class="obj-a">Sim. O app exclusivo do programa simula conversas reais para você praticar sem pressão. Com o tempo, falar com nativos vira algo natural.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="resp-box">
+      <h3>Todas essas dúvidas têm uma raiz em comum.</h3>
+      <p>Você foi condicionado a acreditar que aprender idioma é difícil, demorado e exige talento. <strong>Não é verdade.</strong> O que você precisa é de um método que respeite como o seu cérebro realmente funciona. É exatamente isso que o Programa Imersão Nativa entrega.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

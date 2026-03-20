@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depoimentos Finais</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy:       #0a1628;
+  --navy-light: #1a2942;
+  --gold:       #f59e0b;
+  --gold-light: #fbbf24;
+  --cyan:       #06b6d4;
+  --emerald:    #10b981;
+  --sky:        #38bdf8;
+  --purple:     #8b5cf6;
+  --rose:       #f43f5e;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--navy);
+}
+
+/* ── SECTION ── */
+.block {
+  position: relative;
+  overflow: hidden;
+  padding: 96px 24px;
+  background: linear-gradient(165deg, #0a1628 0%, #1a2942 50%, #0f1d34 100%);
+}
+
+/* Ambient glow blobs */
+.block::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(56,189,248,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.block::after {
+  content: '';
+  position: absolute;
+  bottom: -250px; left: -150px;
+  width: 650px; height: 650px;
+  background: radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.block-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── HEADER ── */
+.section-head {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(96,165,250,0.35);
+  color: #60a5fa;
+  background: rgba(96,165,250,0.06);
+  margin-bottom: 20px;
+}
+
+.section-tag::before {
+  content: '';
+  display: block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #60a5fa;
+  box-shadow: 0 0 8px #60a5fa;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.section-title span {
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── VIDEO GRID ── */
+.vgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .vgrid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vgrid { grid-template-columns: repeat(2, 1fr); }
+  .vcard:last-child { grid-column: 1 / -1; max-width: 480px; margin: 0 auto; width: 100%; }
+}
+
+/* ── VIDEO CARD ── */
+.vcard {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(20px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vcard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96,165,250,0.3);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(96,165,250,0.1);
+}
+
+/* Top accent line */
+.vcard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 10%; right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(96,165,250,0.6), transparent);
+  z-index: 2;
+  border-radius: 0 0 4px 4px;
+  transition: opacity 0.3s;
+  opacity: 0.5;
+}
+
+.vcard:hover::before {
+  opacity: 1;
+  background: linear-gradient(90deg, transparent, var(--sky), transparent);
+}
+
+/* Card inner padding + label */
+.vcard-label {
+  padding: 14px 16px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vcard-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--emerald);
+  box-shadow: 0 0 8px var(--emerald);
+  flex-shrink: 0;
+}
+
+.vcard-name {
+  font-size: .75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* Video wrapper */
+.vwrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.vwrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* ── BOTTOM CRED ── */
+.bottom-note {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.bottom-note p {
+  font-size: .8rem;
+  color: rgba(255,255,255,0.3);
+  font-weight: 400;
+  letter-spacing: .03em;
+}
+
+.bottom-note strong {
+  color: rgba(255,255,255,0.55);
+  font-weight: 600;
+}
+
+/* ── FADE-IN ANIMATION ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.vcard {
+  animation: fadeUp 0.5s ease both;
+}
+.vcard:nth-child(1) { animation-delay: 0.1s; }
+.vcard:nth-child(2) { animation-delay: 0.2s; }
+.vcard:nth-child(3) { animation-delay: 0.3s; }
+</style>
+</head>
+<body>
+
+<div class="block">
+  <div class="block-inner">
+
+    <div class="section-head">
+      <span class="section-tag">Mais histórias</span>
+      <h2 class="section-title">Eles também fizeram <span>a escolha certa</span></h2>
+    </div>
+
+    <div class="vgrid">
+
+      <div class="vcard">
+        <div class="vcard-label">
+          <span class="vcard-dot"></span>
+          <span class="vcard-name">Depoimento</span>
+        </div>
+        <div class="vwrap">
+          <iframe src="https://player.vimeo.com/video/1001700637?autoplay=0&controls=1&playsinline=1"
+            allowfullscreen allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+
+      <div class="vcard">
+        <div class="vcard-label">
+          <span class="vcard-dot"></span>
+          <span class="vcard-name">Depoimento</span>
+        </div>
+        <div class="vwrap">
+          <iframe src="https://player.vimeo.com/video/1001700775?autoplay=0&controls=1&playsinline=1"
+            allowfullscreen allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+
+      <div class="vcard">
+        <div class="vcard-label">
+          <span class="vcard-dot"></span>
+          <span class="vcard-name">Depoimento</span>
+        </div>
+        <div class="vwrap">
+          <iframe src="https://player.vimeo.com/video/1001700671?autoplay=0&controls=1&playsinline=1"
+            allowfullscreen allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom-note">
+      <p>Resultados <strong>reais</strong> de alunos reais — sem scripts, sem atores.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

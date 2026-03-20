@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imersão Nativa – Preço</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(160deg, #eef4ff 0%, #f0f7f4 50%, #eaf3ff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .wrapper {
+      text-align: center;
+      width: 100%;
+      max-width: 580px;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp 0.7s ease forwards;
+      animation-delay: 0.1s;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #3a5fc8;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 7px 20px;
+      border-radius: 100px;
+      margin-bottom: 18px;
+    }
+
+    .main-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      color: #1a2a4a;
+      margin-bottom: 32px;
+      line-height: 1.15;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 40px;
+      box-shadow: 0 8px 48px rgba(30, 60, 120, 0.10);
+    }
+
+    .item-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 0;
+      border-bottom: 1px solid #f0f3f8;
+      opacity: 0;
+      transform: translateX(-12px);
+      animation: slideIn 0.5s ease forwards;
+    }
+
+    .item-row:last-of-type { border-bottom: none; }
+
+    .item-row.highlighted {
+      background: #fffbec;
+      margin: 4px -16px 0;
+      padding: 13px 16px;
+      border-radius: 10px;
+      border-bottom: none;
+    }
+
+    @keyframes slideIn {
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .item-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex: 1;
+      text-align: left;
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .item-text {
+      font-size: 15px;
+      color: #2d3a50;
+      line-height: 1.5;
+    }
+
+    .item-text.bold { font-weight: 700; }
+
+    hr.divider {
+      border: none;
+      border-top: 1.5px solid #edf0f7;
+      margin: 28px 0 20px;
+    }
+
+    .original-price {
+      font-size: 15px;
+      color: #9aa3b2;
+      text-decoration: line-through;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .installments-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .label-12x {
+      font-size: 16px;
+      color: #2d3a50;
+    }
+
+    .currency {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a2a4a;
+      align-self: flex-start;
+      margin-top: 6px;
+    }
+
+    .price-big {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 60px;
+      font-weight: 800;
+      color: #1a2a4a;
+      line-height: 1;
+    }
+
+    .price-cents {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a2a4a;
+      align-self: flex-start;
+      margin-top: 6px;
+    }
+
+    .vista {
+      font-size: 15px;
+      font-weight: 700;
+      color: #3a5fc8;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #f5a623 0%, #f0810f 100%);
+      color: #1a2a4a;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 50px;
+      padding: 18px 32px;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 20px rgba(240, 129, 15, 0.4);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(240, 129, 15, 0.55);
+    }
+
+    .cta-btn:active { transform: translateY(0); }
+
+    .secure {
+      font-size: 12px;
+      color: #9aa3b2;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 28px 20px; }
+      .price-big { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="badge">✦ Oferta Especial com R$ 500 de Desconto</div>
+  <h2 class="main-title">Tudo que você recebe hoje</h2>
+
+  <div class="card">
+
+    <!-- Items -->
+    <div class="item-row" style="animation-delay:0.15s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Treinamento completo Imersão Nativa®</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.22s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Aulas curtas, práticas e 100% aplicáveis</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.29s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Materiais bilíngues em PDF</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.36s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Áudios nativos em MP3</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.43s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Suporte individual e humanizado</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.50s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Exercícios interativos com autocorreção</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.57s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Acesso 100% online, disponível 24h</span>
+      </div>
+    </div>
+
+    <div class="item-row" style="animation-delay:0.64s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text">Acesso Vitalício ao Programa e atualizações futuras</span>
+      </div>
+    </div>
+
+    <div class="item-row highlighted" style="animation-delay:0.71s">
+      <div class="item-left">
+        <svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9L7 13L15 5" stroke="#4CAF82" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="item-text bold">🎁 Bônus App exclusivo do programa</span>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <p class="original-price">De R$ 997 por</p>
+
+    <div class="installments-row">
+      <span class="label-12x">12x de</span>
+      <span class="currency">R$</span>
+      <span class="price-big">49</span>
+      <span class="price-cents">,70</span>
+    </div>
+
+    <p class="vista">ou R$ 497 à vista</p>
+
+    <button class="cta-btn">Garantir Minha Vaga Agora →</button>
+
+    <p class="secure">🔒 Pagamento seguro · Acesso imediato após confirmação</p>
+  </div>
+</div>
+
+</body>
+</html>

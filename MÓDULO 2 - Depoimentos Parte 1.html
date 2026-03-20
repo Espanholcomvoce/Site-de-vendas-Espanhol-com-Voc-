@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloco 2 - Depoimentos</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff}
+.bloco{background:#fff;padding:72px 24px}
+.c{max-width:960px;margin:0 auto}
+.sec-tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:14px;background:rgba(13,31,74,.08);color:#0d1f4a}
+.sec-h2{font-size:clamp(1.4rem,3.5vw,2.2rem);font-weight:900;line-height:1.15;letter-spacing:-.03em;color:#0d1f4a;margin-bottom:8px}
+.sec-sub{color:#64748b;font-size:.9rem;line-height:1.6;max-width:480px}
+.vg{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+@media(max-width:640px){.vg{grid-template-columns:1fr}}
+.vcard{border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(13,31,74,.12);transition:transform .2s,box-shadow .2s}
+.vcard:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(13,31,74,.22)}
+.vwrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#040c1a}
+.vwrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+</style>
+</head>
+<body>
+<section class="bloco">
+<div class="c">
+  <div style="text-align:center">
+    <span style="display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 18px;border-radius:50px;border:1.5px solid #d1d5db;color:#64748b;margin-bottom:18px">Veja o que acontece quando voce segue o metodo</span>
+    <h2 class="sec-h2">Resultados reais de alunos reais</h2>
+  </div>
+  <div class="vg">
+    <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1081145325?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div></div>
+    <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1001700889?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div></div>
+    <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1100308166?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div></div>
+    <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1001700746?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div></div>
+  </div>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Perguntas Frequentes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0a1628;
+      --navy-light: #1a2942;
+      --gold:       #f59e0b;
+      --gold-light: #fbbf24;
+      --cyan:       #06b6d4;
+      --emerald:    #10b981;
+      --sky:        #38bdf8;
+      --purple:     #8b5cf6;
+      --rose:       #f43f5e;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .faq-section {
+      position: relative;
+      background: #ffffff;
+      padding: 88px 24px 96px;
+      overflow: hidden;
+    }
+
+    .faq-section::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(56,189,248,0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+
+    .faq-section::after {
+      content: '';
+      position: absolute;
+      bottom: -150px; left: -150px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(16,185,129,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+
+    .faq-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Eyebrow ── */
+    .faq-eyebrow {
+      display: inline-block;
+      color: var(--sky);
+      background: rgba(56, 189, 248, 0.10);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 7px 20px;
+      border-radius: 999px;
+      margin-bottom: 22px;
+    }
+
+    /* ── Title ── */
+    .faq-title {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .faq-title em {
+      font-style: normal;
+      background: linear-gradient(90deg, #60a5fa, #38bdf8, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .faq-title-line {
+      width: 56px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 2px;
+      margin: 0 auto 52px;
+    }
+
+    /* ── FAQ List ── */
+    .faq-list {
+      list-style: none;
+      text-align: left;
+    }
+
+    .faq-item {
+      background: rgba(10, 22, 40, 0.02);
+      border: 1px solid rgba(10, 22, 40, 0.10);
+      border-left: 3px solid var(--sky);
+      border-radius: 16px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    .faq-item.open {
+      border-left-color: var(--emerald);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 24px;
+      text-align: left;
+      color: var(--navy);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover { color: var(--sky); }
+    .faq-item.open .faq-question { color: var(--navy); }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(10, 22, 40, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 400;
+      color: #94a3b8;
+      transition: all 0.25s ease;
+      line-height: 1;
+    }
+
+    .faq-item.open .faq-icon {
+      background: linear-gradient(135deg, var(--sky), var(--emerald));
+      border-color: transparent;
+      color: #ffffff;
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 22px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #4a5568;
+      line-height: 1.75;
+    }
+
+    .faq-answer-inner strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .faq-item.open .faq-answer { max-height: 320px; }
+
+    /* ── CTA ── */
+    .faq-cta {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .faq-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: var(--navy);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 20px 44px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(245, 158, 11, 0.38);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .faq-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(245, 158, 11, 0.50);
+    }
+
+    .faq-btn:active { transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<section class="faq-section">
+  <div class="faq-inner">
+
+    <span class="faq-eyebrow">Ainda tem dúvidas?</span>
+    <h2 class="faq-title">Perguntas <em>frequentes</em></h2>
+    <div class="faq-title-line"></div>
+
+    <ul class="faq-list">
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          O curso é para quem está começando do zero?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Sim! O curso foi desenvolvido especialmente para quem nunca estudou espanhol ou tem conhecimento muito básico. Você vai aprender do zero, no seu ritmo, com uma metodologia simples e eficiente.
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Preciso ter muito tempo disponível para estudar?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Não! Com apenas 15 a 20 minutos por dia você já consegue avançar bastante. O programa foi pensado para quem tem uma rotina ocupada e precisa de praticidade.
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Em quanto tempo vou conseguir falar espanhol?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Os resultados variam de pessoa para pessoa, mas muitos alunos já se sentem mais confiantes para ter conversas básicas em poucas semanas. Com dedicação, em poucos meses você estará se comunicando com fluidez.
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Como funciona o App exclusivo?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Ao adquirir o programa, você recebe acesso ao nosso aplicativo exclusivo por <strong>1 ano</strong>. Nele você encontra exercícios interativos, áudios nativos, flashcards e acompanhamento do seu progresso — tudo no celular, onde e quando quiser.
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Tenho garantia caso não me adapte?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Sim! Você tem 7 dias de garantia incondicional. Se por qualquer motivo não gostar do programa, basta solicitar o reembolso e devolvemos <strong>100% do seu investimento</strong>, sem perguntas.
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Por quanto tempo tenho acesso?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            O acesso ao <strong>programa (curso)</strong> é <strong>vitalício</strong> — você estuda para sempre, sem pressa. Já o acesso ao <strong>aplicativo exclusivo</strong> é por <strong>1 ano</strong> a partir da data da sua compra.
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="faq-cta">
+      <a href="#" class="faq-btn">
+        Quero falar espanhol com confiança →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
