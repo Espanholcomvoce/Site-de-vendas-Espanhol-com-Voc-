@@ -1,0 +1,240 @@
+{
+  "objetivos": {
+    "tipo": "fixos_sempre",
+    "descricao": "Objetivos permanentes do negocio — nao mudam de mes para mes",
+
+    "metas_negocio": {
+      "crescimento_seguidores": {
+        "meta": "+5-10% por mes",
+        "atual": "100k seguidores",
+        "projecao_3_meses": ["107k", "115k", "123k"]
+      },
+      "receita_organica": {
+        "meta_liquida": "R$10.000 por mes",
+        "vendas_necessarias": 30,
+        "ticket_medio": 397,
+        "plataforma": "Hotmart"
+      },
+      "leads": {
+        "meta_mensal": "500+ leads pelas iscas",
+        "meta_diaria": "15+ leads por dia"
+      },
+      "volume_conteudo": {
+        "posts_por_dia": 3,
+        "posts_por_mes": 90,
+        "formato_diario": "1 Reel (09:00) + 2 Carrosseis (12:00 e 19:00)",
+        "stories_por_dia": "5-8"
+      }
+    },
+
+    "funil_4_camadas": {
+      "atracao": {
+        "proporcao": 0.35,
+        "funcao": "Trazer publico novo diariamente",
+        "meta_alcance": "15-30k por Reel, 5-10k por Carrossel",
+        "keywords": []
+      },
+      "conexao": {
+        "proporcao": 0.30,
+        "funcao": "Fazer seguidor se identificar e virar lead",
+        "meta_engajamento": "3%+ taxa de engajamento",
+        "keywords": ["TRAVA", "MANUAL"]
+      },
+      "desejo": {
+        "proporcao": 0.20,
+        "funcao": "Fazer lead querer o programa",
+        "meta_leads": "100+ comentarios com keyword por semana",
+        "keywords": ["METODO", "AULA"]
+      },
+      "decisao": {
+        "proporcao": 0.15,
+        "funcao": "Converter lead em comprador",
+        "meta_vendas": "15-20 vendas organicas por mes",
+        "keywords": ["QUERO", "AULA"]
+      }
+    },
+
+    "funil_conversao": [
+      {
+        "etapa": 1,
+        "descricao": "Post com CTA → comentario com palavra-chave ManyChat",
+        "meta": "100+ comentarios com keyword por semana",
+        "palavras_chave_ativas": ["TRAVA", "MANUAL", "METODO", "AULA", "QUERO"],
+        "distribuicao_keywords": "TRAVA 30% / MANUAL 25% / METODO 20% / AULA 15% / QUERO 10%"
+      },
+      {
+        "etapa": 2,
+        "descricao": "ManyChat captura → entrega isca por nivel de consciencia → captura email",
+        "meta": "65% dos que comentam deixam email",
+        "logica": "TRAVA → Quiz de nivel (HTML) ou Site 20 Erros | MANUAL → PDF Manual do Metodo | METODO → Mini-curso 3 aulas | AULA → VSL direto | QUERO → Pagina de vendas"
+      },
+      {
+        "etapa": 3,
+        "descricao": "Mailchimp → sequencia de emails segmentada por isca",
+        "meta": "40% de taxa de abertura",
+        "sequencias": {
+          "quiz": "Resultado + PDF complementar → 8 emails",
+          "manual": "Entrega PDF → 5 emails (dias 0, 2, 4, 6, 8)",
+          "mini_curso": "3 aulas por email (dias 1, 3, 5) + convite VSL (dia 7)",
+          "vsl": "Follow-up pos-VSL → 3 emails"
+        }
+      },
+      {
+        "etapa": 4,
+        "descricao": "Email → convite para VSL ou pagina de vendas",
+        "meta": "20% dos leads assistem a VSL"
+      },
+      {
+        "etapa": 5,
+        "descricao": "VSL/Pagina → compra",
+        "meta": "3-5% dos que assistem compram"
+      }
+    ],
+
+    "manychat_keywords": {
+      "TRAVA": {
+        "descricao": "Ativa quiz de nivel (HTML) ou Site Notion 20 Erros",
+        "nivel_consciencia": "problema_consciente",
+        "isca": "Quiz de Nivel (quiz.espanholcomvoce.com.br) ou Site 20 Erros",
+        "proporcao_uso": "30% dos CTAs"
+      },
+      "MANUAL": {
+        "descricao": "Ativa entrega do Manual do Metodo (PDF 22 paginas)",
+        "nivel_consciencia": "consciente_solucao",
+        "isca": "Manual do Metodo",
+        "proporcao_uso": "25% dos CTAs"
+      },
+      "METODO": {
+        "descricao": "Ativa mini-curso 3 aulas ou Manual do Metodo",
+        "nivel_consciencia": "consciente_solucao",
+        "isca": "Mini-curso 3 aulas (email) ou Manual do Metodo (PDF)",
+        "proporcao_uso": "20% dos CTAs"
+      },
+      "AULA": {
+        "descricao": "Ativa entrega do link da aula demonstrativa (VSL)",
+        "nivel_consciencia": "consciente_produto",
+        "isca": "Link VSL aula demonstrativa",
+        "proporcao_uso": "15% dos CTAs"
+      },
+      "QUERO": {
+        "descricao": "Ativa link direto para pagina de vendas",
+        "nivel_consciencia": "pronto_para_comprar",
+        "isca": "Link direto pagina de vendas (GratePages)",
+        "proporcao_uso": "10% dos CTAs"
+      }
+    },
+
+    "regras_ouro_conteudo": [
+      "Nunca 2 posts de DECISAO no mesmo dia",
+      "Nunca 2 CTAs diretos (QUERO) seguidos — maximo 1x por semana (sexta noite)",
+      "Todo post de ATRACAO deve ter CTA de engajamento (salva, comenta, compartilha)",
+      "Todo post de DECISAO deve ter palavra-chave ManyChat",
+      "Formula viral comprovada: COMO FALAR [expressao brasileira] EM ESPANHOL",
+      "SEMPRE usar 'nos nativos falamos' — NUNCA 'os nativos falam'",
+      "NUNCA dizer 'fluente em 30 dias', 'facil' ou 'voce precisa decorar'",
+      "Distribuicao 4 camadas: Atracao 35% / Conexao 30% / Desejo 20% / Decisao 15%",
+      "Prova social aparece 3x/semana (qua, sex, dom)",
+      "Dor/Espelho aparece 4x/semana — tipo que mais ativa leads",
+      "Todo avatar coberto ao menos 1x/semana nas provas sociais",
+      "Volume: 3 posts/dia = 90 posts/mes (1 Reel + 2 Carrosseis) + 5-8 Stories/dia"
+    ],
+
+    "produto": {
+      "nome": "Programa Imersao Nativa",
+      "preco_cheio": 597,
+      "preco_com_cupom": 397,
+      "parcelamento": "12x R$39,70",
+      "garantia": "7 dias incondicional",
+      "acesso": "vitalicio",
+      "pagina_vendas": "espanholcomvoce.com.br",
+      "hospedagem": "GratePages",
+      "vsl": "VTurb",
+      "pilares": [
+        "Nucleo do Conhecimento — 180+ aulas de 5 min, legendas PT/ES, vocabulario e padroes prontos",
+        "Imersao Ativa — contato diario com espanhol real, videos, audios, textos nativos",
+        "Acompanhamento Inteligente — suporte humano por WhatsApp em ate 24h"
+      ],
+      "mecanismo_unico": [
+        "O cerebro fala com padroes prontos, nao palavras soltas — sem treinar padroes, trava",
+        "A ordem foi invertida — ensinaram gramatica primeiro, mas o cerebro aprende ouvindo e repetindo",
+        "Sem imersao calibrada nao ha fluencia — dificil demais bloqueia, facil demais nao evolui"
+      ],
+      "objecoes_conhecidas": [
+        { "objecao": "Nao tenho tempo", "resposta": "Aulas de 5 minutos — menos que um TikTok" },
+        { "objecao": "Ja tentei antes", "resposta": "O problema era o metodo, nao voce — historia da Ale prova" },
+        { "objecao": "Nao sei o que vou receber", "resposta": "Posts D2 (Metodo por Dentro) resolvem isso" },
+        { "objecao": "Esta caro", "resposta": "12x R$39,70 — menos que um cafe por dia, acesso vitalicio" },
+        { "objecao": "Nao tenho urgencia", "resposta": "Posts C1 (Dor/Espelho) e D1 (Desejo/Futuro) ativam urgencia" }
+      ]
+    },
+
+    "iscas_disponiveis": [
+      {
+        "nome": "Quiz de Nivel",
+        "nivel_consciencia": "problema_consciente",
+        "palavra_chave": "TRAVA",
+        "tem_captura_email": true,
+        "descricao": "Quiz HTML interativo — 10 perguntas, 3 atos, mostra gap compreensao vs producao",
+        "url": "quiz.espanholcomvoce.com.br",
+        "entrega": "ManyChat envia link → quiz captura email → entrega Manual do Metodo",
+        "sequencia_email": "Resultado + Manual + 5 emails"
+      },
+      {
+        "nome": "Manual do Metodo",
+        "nivel_consciencia": "consciente_solucao",
+        "palavra_chave": "MANUAL",
+        "tem_captura_email": true,
+        "descricao": "PDF 22 paginas — os 3 erros que travam o cerebro + mecanismo do metodo + exercicios",
+        "sequencia_email": "5 emails (dias 0, 2, 4, 6, 8)",
+        "transicao_para": "AULA (VSL)"
+      },
+      {
+        "nome": "Mini-curso 3 Aulas",
+        "nivel_consciencia": "consciente_solucao",
+        "palavra_chave": "METODO",
+        "tem_captura_email": true,
+        "descricao": "3 video-aulas de 5 min entregues por email (dias 1, 3, 5) + convite VSL (dia 7)",
+        "sequencia_email": "4 emails (aula 1, aula 2, aula 3, convite VSL)"
+      },
+      {
+        "nome": "VSL Aula Demonstrativa",
+        "nivel_consciencia": "consciente_produto",
+        "palavra_chave": "AULA",
+        "tem_captura_email": false,
+        "descricao": "Video longo demonstrativo do metodo hospedado no VTurb",
+        "entrega": "ManyChat envia link direto",
+        "sequencia_email": "3 emails follow-up pos-VSL"
+      },
+      {
+        "nome": "Pagina de Vendas",
+        "nivel_consciencia": "pronto_para_comprar",
+        "palavra_chave": "QUERO",
+        "tem_captura_email": false,
+        "descricao": "Pagina de vendas hospedada no GratePages com checkout Hotmart",
+        "entrega": "ManyChat envia link direto"
+      },
+      {
+        "nome": "Site Notion 20 Erros",
+        "nivel_consciencia": "problema_consciente",
+        "palavra_chave": "TRAVA",
+        "tem_captura_email": true,
+        "descricao": "Site Notion com os 20 erros mais comuns — isca secundaria para TRAVA",
+        "entrega": "ManyChat direto"
+      },
+      {
+        "nome": "PDF Falsos Cognatos",
+        "nivel_consciencia": "problema_consciente",
+        "palavra_chave": "FALSOS",
+        "tem_captura_email": true,
+        "descricao": "PDF com 150+ falsos cognatos — isca complementar"
+      },
+      {
+        "nome": "PDF Espanhol para Viagens",
+        "nivel_consciencia": "inconsciente_curioso",
+        "palavra_chave": "VIAGEM",
+        "tem_captura_email": true,
+        "descricao": "Guia pratico de frases para viagens — isca de entrada"
+      }
+    ]
+  }
+}

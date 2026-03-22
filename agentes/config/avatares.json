@@ -1,0 +1,112 @@
+{
+  "avatares": [
+    {
+      "id": "viajante",
+      "nome": "Viajante",
+      "descricao": "Brasileiro que viaja ou quer viajar para paises hispanicos",
+      "dores": [
+        "Medo de nao conseguir se comunicar na viagem",
+        "Vergonha de falar espanhol errado",
+        "Nao saber pedir comida, pedir informacoes ou negociar precos",
+        "Confundir palavras do portugues com espanhol"
+      ],
+      "desejos": [
+        "Viajar com confianca e autonomia",
+        "Fazer amizades com nativos",
+        "Aproveitar melhor a experiencia cultural",
+        "Conseguir se virar sozinho em qualquer situacao"
+      ],
+      "temas_relevantes": [
+        "Espanhol para aeroporto e imigracao",
+        "Pedir comida em restaurantes",
+        "Reservar hotel e transporte",
+        "Pechinchar e fazer compras",
+        "Pedir informacoes na rua",
+        "Emergencias medicas no exterior",
+        "Giriass e expressoes locais por pais",
+        "Diferencas culturais entre paises hispanicos"
+      ]
+    },
+    {
+      "id": "morar_fora",
+      "nome": "Vai Morar Fora",
+      "descricao": "Brasileiro que vai se mudar ou ja mora em um pais hispanico",
+      "dores": [
+        "Dificuldade com burocracia em espanhol",
+        "Isolamento social por nao falar bem o idioma",
+        "Problemas para conseguir emprego por causa do idioma",
+        "Nao entender contratos, documentos e leis locais"
+      ],
+      "desejos": [
+        "Se integrar na sociedade local",
+        "Conseguir um bom emprego no exterior",
+        "Resolver burocracias sem depender de terceiros",
+        "Sentir-se em casa no novo pais"
+      ],
+      "temas_relevantes": [
+        "Vocabulario para alugar apartamento",
+        "Espanhol para entrevistas de emprego",
+        "Documentacao e burocracia em espanhol",
+        "Sistema de saude em paises hispanicos",
+        "Abrir conta em banco no exterior",
+        "Expressoes formais para emails e cartas",
+        "Cultura corporativa em paises hispanicos",
+        "Direitos do imigrante em espanhol"
+      ]
+    },
+    {
+      "id": "academico",
+      "nome": "Academico",
+      "descricao": "Estudante que precisa do espanhol para fins academicos",
+      "dores": [
+        "Precisa passar em prova de proficiencia (DELE, CELU)",
+        "Dificuldade em ler textos academicos em espanhol",
+        "Nao consegue escrever redacoes em espanhol",
+        "Vestibular cobrando espanhol e nao sabe por onde comecar"
+      ],
+      "desejos": [
+        "Passar na prova de proficiencia",
+        "Conseguir bolsa de estudos no exterior",
+        "Ler e produzir textos academicos em espanhol",
+        "Tirar boa nota no vestibular/ENEM"
+      ],
+      "temas_relevantes": [
+        "Preparatorio DELE e CELU",
+        "Falsos cognatos portugues-espanhol",
+        "Conectivos e estrutura de redacao em espanhol",
+        "Vocabulario academico",
+        "Verbos irregulares mais cobrados em provas",
+        "Interpretacao de texto em espanhol",
+        "Regras gramaticais essenciais",
+        "Literatura hispanica para vestibular"
+      ]
+    },
+    {
+      "id": "profissional",
+      "nome": "Profissional",
+      "descricao": "Profissional que precisa do espanhol para o trabalho",
+      "dores": [
+        "Perder oportunidades de emprego por nao falar espanhol",
+        "Nao conseguir participar de reunioes em espanhol",
+        "Dificuldade em negociar com clientes hispanicos",
+        "Emails e apresentacoes em espanhol sao um desafio"
+      ],
+      "desejos": [
+        "Conseguir uma promocao ou novo emprego",
+        "Fechar negocios com clientes da America Latina",
+        "Participar de reunioes e conferencias em espanhol",
+        "Ter diferencial competitivo no curriculo"
+      ],
+      "temas_relevantes": [
+        "Espanhol para reunioes e videoconferencias",
+        "Vocabulario corporativo em espanhol",
+        "Como escrever emails profissionais em espanhol",
+        "Apresentacoes e pitches em espanhol",
+        "Negociacao em espanhol",
+        "Small talk profissional em espanhol",
+        "Espanhol para areas especificas (TI, marketing, vendas)",
+        "Etiqueta empresarial em paises hispanicos"
+      ]
+    }
+  ]
+}

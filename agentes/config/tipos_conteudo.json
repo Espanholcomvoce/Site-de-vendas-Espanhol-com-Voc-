@@ -1,0 +1,359 @@
+{
+  "tipos_conteudo": {
+    "atracao": {
+      "proporcao": 0.35,
+      "funcao": "Trazer publico novo diariamente — viralizar, ganhar seguidores, gerar alcance",
+      "posts_por_mes": 32,
+      "tipos": [
+        {
+          "id": 1,
+          "codigo": "A1",
+          "nome": "Expressao Nativa",
+          "descricao": "Como falar [expressao brasileira] em espanhol — conteudo viral que atrai publico frio",
+          "exemplos": [
+            "Como falar 'sei la' em espanhol",
+            "Como falar 'ficar de bobeira' em espanhol",
+            "Como falar 'cara de pau' em espanhol",
+            "Como falar 'to nem ai' em espanhol",
+            "Como falar 'dar um jeitinho' em espanhol"
+          ],
+          "formula": "COMO FALAR [EXPRESSAO BRASILEIRA] EM ESPANHOL",
+          "hooks": [
+            "Aposto que voce fala isso ERRADO em espanhol",
+            "NENHUM nativo fala isso — e voce fala todo dia",
+            "Se voce falar isso na Espanha, vao RIR de voce",
+            "3 formas de dizer [X] que a escola nunca ensinou",
+            "Pare de falar [X] — nativos falam ASSIM"
+          ],
+          "cta_engajamento": "Salva esse video / Manda pra quem precisa / Comenta qual expressao voce quer aprender",
+          "cta_manychat": null,
+          "palavra_chave": null,
+          "formato_preferido": "reel",
+          "formato_secundario": "carrossel",
+          "posts_reel": 10,
+          "posts_carrossel": 4,
+          "performance_historica": "top_performer",
+          "notas": "Formato mais viral do perfil. Sempre usar nos nativos falamos. Reel abre segunda, quarta e sexta."
+        },
+        {
+          "id": 2,
+          "codigo": "A2",
+          "nome": "Erro Perigoso",
+          "descricao": "Falsos cognatos e erros que causam vergonha — enquadrado como HISTORIA, nao como dica",
+          "exemplos": [
+            "Um brasileiro falou 'estoy embarazado' numa reuniao",
+            "Ela pediu 'polvo' achando que era po — trouxeram um polvo",
+            "Ele disse 'estoy excitado' pro chefe dele",
+            "Cuidado com 'borracha' — nao e o que voce pensa",
+            "5 palavras que parecem iguais mas significam coisas MUITO diferentes"
+          ],
+          "formula": "HISTORIA DE VERGONHA + CORRECAO — storytelling > informacao solta",
+          "hooks": [
+            "Um brasileiro falou isso numa reuniao e todos riram",
+            "NUNCA fale [X] num pais hispanico — significa [Y]",
+            "Eu ouvi um aluno meu dizer isso e quase morri",
+            "Os 5 erros que fazem voce parecer TURISTA",
+            "Meu aluno falou 'estoy excitado' pro chefe dele..."
+          ],
+          "cta_manychat": "Comenta TRAVA",
+          "palavra_chave": "TRAVA",
+          "formato_preferido": "carrossel",
+          "formato_secundario": "reel",
+          "posts_reel": 2,
+          "posts_carrossel": 8,
+          "performance_historica": "alto_engajamento",
+          "notas": "Slide 1 sempre: a situacao constrangedora. Slide final: CTA com keyword TRAVA."
+        },
+        {
+          "id": 3,
+          "codigo": "A3",
+          "nome": "Cultura Viva",
+          "descricao": "Diferencas entre paises, curiosidades, sotaques — altamente compartilhavel",
+          "exemplos": [
+            "Como cada pais chama 'onibus'",
+            "Argentina vs Espanha: as girias que mudam tudo",
+            "O que NAO fazer no Mexico (mas pode na Argentina)",
+            "Por que os uruguaios falam diferente dos argentinos",
+            "5 curiosidades sobre a Espanha que brasileiros nao sabem"
+          ],
+          "formula": "Em [PAIS] falam assim... em [PAIS] falam assado... — comparacao visual",
+          "hooks": [
+            "Voce sabia que [X] muda COMPLETAMENTE de pais pra pais?",
+            "Na Argentina dizem [X]. Na Espanha dizem [Y]. No Mexico...",
+            "5 coisas que so quem morou num pais hispanico sabe",
+            "A diferenca entre espanhol de [PAIS] e [PAIS] que ninguem te conta"
+          ],
+          "cta_manychat": null,
+          "palavra_chave": null,
+          "formato_preferido": "carrossel",
+          "posts_carrossel": 8,
+          "posts_reel": 0,
+          "performance_historica": "bom_alcance_compartilhavel",
+          "notas": "Atrai publico DIFERENTE do que ja segue. Quem viaja marca amigos. Quem mora fora se identifica."
+        }
+      ]
+    },
+    "conexao": {
+      "proporcao": 0.30,
+      "funcao": "Fazer o seguidor se identificar — ativar a dor, invalidar alternativas, construir confianca",
+      "posts_por_mes": 27,
+      "tipos": [
+        {
+          "id": 4,
+          "codigo": "C1",
+          "nome": "Dor e Espelho",
+          "descricao": "Conteudo que espelha a frustracao do seguidor — faz a pessoa dizer 'sou eu'",
+          "exemplos": [
+            "Voce entende tudo mas trava na hora de falar?",
+            "Voce traduz na cabeca antes de abrir a boca?",
+            "Voce estuda ha anos e ainda nao monta uma frase?",
+            "Voce tem vergonha de falar espanhol na frente de nativos?",
+            "Se alguem falasse espanhol com voce AGORA — o que aconteceria?"
+          ],
+          "formula": "VOCE [DOR DO AVATAR]? — espelhar a frustracao sem julgamento",
+          "hooks": [
+            "Voce entende tudo mas trava na hora de falar?",
+            "Voce traduz na cabeca antes de abrir a boca?",
+            "Voce estuda ha anos e ainda nao monta uma frase?",
+            "Voce assistiu 300 horas de serie e ainda nao fala?",
+            "Se alguem falasse espanhol com voce AGORA — o que aconteceria?"
+          ],
+          "cta_manychat": "Comenta TRAVA que eu te explico por que",
+          "palavra_chave": "TRAVA",
+          "formato_preferido": "reel",
+          "formato_secundario": "carrossel",
+          "posts_reel": 6,
+          "posts_carrossel": 4,
+          "performance_historica": "critico_para_conversao",
+          "notas": "TIPO MAIS IMPORTANTE para ativar leads. Ale olhando na camera, tom pessoal. Final: 'O problema nao e voce. E o metodo.' Aparece 4x/semana."
+        },
+        {
+          "id": 5,
+          "codigo": "C2",
+          "nome": "Quebra de Crenca",
+          "descricao": "Rompe o que a pessoa acredita sobre aprender espanhol — invalida alternativas",
+          "exemplos": [
+            "Quanto mais voce estuda espanhol, pior voce fala",
+            "Gramatica NAO te faz falar — e eu provo",
+            "Assistir series em espanhol NAO funciona (e por que)",
+            "Aplicativos te ensinam a traduzir, nao a falar",
+            "A escola te ensinou espanhol ao CONTRARIO"
+          ],
+          "formula": "[CRENCA POPULAR] — por que isso nao funciona",
+          "hooks": [
+            "Quanto mais voce ESTUDA espanhol, pior voce fala",
+            "Gramatica NAO te faz falar — e eu provo",
+            "Assistir series em espanhol NAO funciona (e por que)",
+            "Aplicativos te ensinam a traduzir, nao a falar",
+            "Decorar vocabulario e o PIOR jeito de aprender"
+          ],
+          "cta_manychat": "Comenta MANUAL que eu te explico o mecanismo",
+          "palavra_chave": "MANUAL",
+          "formato_preferido": "carrossel",
+          "formato_secundario": "reel",
+          "posts_reel": 2,
+          "posts_carrossel": 6,
+          "performance_historica": "importante_para_posicionamento",
+          "notas": "Se a pessoa acha que pode aprender com app/serie, nao precisa do curso. Invalidar alternativas com educacao, nao agressividade."
+        },
+        {
+          "id": 6,
+          "codigo": "C3",
+          "nome": "Historia da Ale",
+          "descricao": "Ale contando experiencia pessoal — vulnerabilidade constroi confianca e diferenciacao",
+          "exemplos": [
+            "Eu cheguei no Brasil com certificado avancado. E travei no primeiro dia.",
+            "O dia que eu chorei de vergonha tentando falar portugues no mercado",
+            "Por que eu larguei meu emprego pra ensinar espanhol",
+            "O que 5.000 alunos me ensinaram sobre aprender idiomas",
+            "A mensagem de uma aluna que mudou minha vida"
+          ],
+          "formula": "MOMENTO PESSOAL + LICAO — vulneravel, real, sem roteiro perfeito",
+          "hooks": [
+            "Eu cheguei no Brasil com certificado avancado. E travei no primeiro dia.",
+            "O dia que eu chorei de vergonha tentando falar portugues",
+            "Por que eu larguei meu emprego pra ensinar espanhol",
+            "O que 5.000 alunos me ensinaram sobre aprender idiomas",
+            "A mensagem de uma aluna que mudou minha vida"
+          ],
+          "cta_manychat": "Comenta MANUAL",
+          "palavra_chave": "MANUAL",
+          "formato_preferido": "reel",
+          "formato_secundario": "carrossel",
+          "posts_reel": 4,
+          "posts_carrossel": 1,
+          "performance_historica": "diferenciacao_unica",
+          "notas": "Intransferivel — ninguem pode copiar. Tom vulneravel, real. Final: 'Foi por isso que eu criei o Metodo Imersao Nativa'."
+        },
+        {
+          "id": 7,
+          "codigo": "D1",
+          "nome": "Desejo e Futuro",
+          "descricao": "Pinta o quadro do depois — faz o seguidor VISUALIZAR a vida apos destravar",
+          "exemplos": [
+            "Imagina chegar na Argentina e conversar com naturalidade...",
+            "Como seria participar de uma reuniao em espanhol sem travar?",
+            "Imagina pedir comida, negociar preco e fazer amigos — tudo em espanhol",
+            "6 meses para sair do 'entendo tudo' para 'falo de verdade'",
+            "A diferenca entre quem trava e quem fala? Nao e talento."
+          ],
+          "formula": "IMAGINA [SITUACAO DESEJADA PELO AVATAR]... — pintar o futuro possivel",
+          "hooks": [
+            "Imagina chegar na Argentina e conversar com naturalidade...",
+            "Como seria participar de uma reuniao em espanhol sem travar?",
+            "6 meses para sair do 'entendo tudo' para 'falo de verdade'",
+            "A diferenca entre quem trava e quem fala? Nao e talento.",
+            "Imagina pedir comida, negociar preco e fazer amigos — tudo em espanhol"
+          ],
+          "cta_manychat": "Comenta METODO que eu te mostro o caminho",
+          "palavra_chave": "METODO",
+          "formato_preferido": "carrossel",
+          "formato_secundario": "reel",
+          "posts_reel": 2,
+          "posts_carrossel": 6,
+          "performance_historica": "conecta_com_todos_avatares",
+          "notas": "Faz a transicao de conexao para desejo. A pessoa precisa VER o destino antes de querer o caminho."
+        }
+      ]
+    },
+    "desejo": {
+      "proporcao": 0.20,
+      "funcao": "Fazer a pessoa QUERER o programa — mostrar o produto, provar que funciona",
+      "posts_por_mes": 18,
+      "tipos": [
+        {
+          "id": 8,
+          "codigo": "D2",
+          "nome": "Metodo por Dentro",
+          "descricao": "Mostrar como o programa funciona na pratica — screen recording, bastidores, demonstracao",
+          "exemplos": [
+            "Olha como e uma aula REAL do meu programa — 5 minutos",
+            "Vou te mostrar por dentro o que meus alunos veem",
+            "E assim que o metodo funciona na pratica",
+            "Uma aluna mandou isso 3 dias depois de comecar",
+            "Aqui e o suporte por WhatsApp funcionando"
+          ],
+          "formula": "MOSTRAR, NAO CONTAR — screen recording + Ale narrando",
+          "hooks": [
+            "Olha como e uma aula REAL do meu programa — 5 minutos",
+            "Vou te mostrar por dentro o que meus alunos veem",
+            "E assim que o metodo funciona na pratica",
+            "Uma aluna mandou isso 3 dias depois de comecar"
+          ],
+          "cta_manychat": "Comenta AULA que eu te mando uma demonstracao",
+          "palavra_chave": "AULA",
+          "formato_preferido": "reel",
+          "formato_secundario": "carrossel",
+          "posts_reel": 4,
+          "posts_carrossel": 2,
+          "performance_historica": "resolve_objecao_principal",
+          "notas": "Resolve objecao 'nao sei o que vou receber'. Mostrar a plataforma por dentro em video."
+        },
+        {
+          "id": 9,
+          "codigo": "V1",
+          "nome": "Prova Social Narrativa",
+          "descricao": "Depoimentos como HISTORIA com arco narrativo: ANTES → METODO → DEPOIS",
+          "exemplos": [
+            "Ela travava em TUDO. Olha agora.",
+            "De zero a conversacao em 4 meses — historia real",
+            "Ele quase perdeu a promocao por nao falar espanhol",
+            "'Eu achava que o problema era eu' — depoimento real",
+            "Print REAL de aluna que viajou e se virou sozinha"
+          ],
+          "formula": "ANTES (dor com detalhes) → METODO (o que fez) → DEPOIS (resultado especifico)",
+          "hooks": [
+            "Ela travava em TUDO. Olha agora.",
+            "De zero a conversacao em 4 meses — historia real",
+            "Ele quase perdeu a promocao por nao falar espanhol",
+            "'Eu achava que o problema era eu' — depoimento real",
+            "Print REAL de aluna que viajou e se virou sozinha"
+          ],
+          "cta_manychat": "Comenta AULA que eu te mostro como",
+          "palavra_chave": "AULA",
+          "formato_preferido": "carrossel",
+          "posts_reel": 0,
+          "posts_carrossel": 8,
+          "performance_historica": "essencial_para_decisao",
+          "notas": "Slide 1: gancho emocional. Slides 2-3: ANTES. Slide 4: metodo. Slides 5-6: DEPOIS + prints. Slide 7: CTA. O aluno precisa ser IDENTIFICAVEL pelo avatar. Aparece 3x/semana (qua, sex, dom)."
+        }
+      ]
+    },
+    "decisao": {
+      "proporcao": 0.15,
+      "funcao": "Fazer a pessoa COMPRAR — oferta clara, objecoes respondidas, CTA direto",
+      "posts_por_mes": 13,
+      "tipos": [
+        {
+          "id": 10,
+          "codigo": "V2",
+          "nome": "CTA Direto",
+          "descricao": "Convite claro para o programa com oferta explicita — preco, garantia, o que inclui",
+          "exemplos": [
+            "Se voce quer destravar seu espanhol, le ate o final",
+            "180 aulas. 5 minutos cada. Acesso pra sempre.",
+            "12x de R$39,70 — menos que um cafe por dia",
+            "7 dias de garantia. Nao gostou = dinheiro de volta.",
+            "Comenta QUERO que eu te mando o link"
+          ],
+          "formula": "CLAREZA TOTAL NA OFERTA — o que inclui, preco, garantia, CTA",
+          "hooks": [
+            "Se voce quer destravar seu espanhol, le ate o final",
+            "180 aulas. 5 minutos cada. Acesso pra sempre.",
+            "12x de R$39,70 — menos que um cafe por dia",
+            "Tudo que voce recebe no Programa Imersao Nativa"
+          ],
+          "cta_manychat": "Comenta QUERO",
+          "palavra_chave": "QUERO",
+          "formato_preferido": "carrossel",
+          "posts_reel": 0,
+          "posts_carrossel": 4,
+          "performance_historica": "conversao_direta",
+          "notas": "MAXIMO 1x por semana. Sempre na sexta-feira noite. Slide 1: promessa. Slide 2: o que inclui. Slide 3: antes vs depois. Slide 4: depoimento. Slide 5: preco. Slide 6: garantia. Slide 7: CTA QUERO."
+        },
+        {
+          "id": 11,
+          "codigo": "V1_CTA",
+          "nome": "Prova Social + Oferta",
+          "descricao": "Depoimento forte + transicao para oferta no mesmo post",
+          "exemplos": [
+            "Ela travava. Hoje conversa com nativos. Quer o mesmo resultado?",
+            "De zero a apresentacao em espanhol em 4 meses. Comeca aqui.",
+            "5.000+ alunos. O proximo pode ser voce."
+          ],
+          "formula": "DEPOIMENTO FORTE → TRANSICAO NATURAL → OFERTA",
+          "cta_manychat": "Comenta AULA ou QUERO",
+          "palavra_chave": "AULA",
+          "formato_preferido": "carrossel",
+          "posts_reel": 0,
+          "posts_carrossel": 5,
+          "notas": "Combina prova social com CTA. Mais persuasivo que CTA puro porque vem com evidencia."
+        },
+        {
+          "id": 12,
+          "codigo": "D2_CTA",
+          "nome": "Metodo + Oferta",
+          "descricao": "Mostra o programa por dentro + transicao para oferta",
+          "exemplos": [
+            "Olha como funciona por dentro. Quer comecar?",
+            "Uma aula de 5 minutos resolve o que anos de escola nao resolveram"
+          ],
+          "formula": "DEMONSTRACAO → OFERTA",
+          "cta_manychat": "Comenta AULA",
+          "palavra_chave": "AULA",
+          "formato_preferido": "reel",
+          "posts_reel": 2,
+          "posts_carrossel": 2,
+          "notas": "Screen recording do programa + CTA no final. Resolve objecao E converte no mesmo post."
+        }
+      ]
+    },
+    "_resumo": {
+      "total_posts_mes": 90,
+      "total_reels": 30,
+      "total_carrosseis": 60,
+      "distribuicao_reels": "A1(10) + C1(6) + C3(4) + D2(4) + C2/A2(4) + D1(2) = 30",
+      "distribuicao_carrosseis": "A2(8) + A3(8) + C2(6) + V1(8) + C1(4) + D1(6) + V2(4) + V1_CTA(5) + D2_CTA(2) + A1(4) + outros(5) = 60"
+    }
+  }
+}

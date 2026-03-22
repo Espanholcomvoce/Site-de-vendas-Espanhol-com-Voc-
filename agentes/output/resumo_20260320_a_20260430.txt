@@ -1,0 +1,45 @@
+=================================================================
+  CALENDARIO @espanholcomvoce
+  Periodo: 20/03/2026 a 30/04/2026
+=================================================================
+  Total de posts: 252
+  Dias: 42 | Posts/dia: 6
+  Reels: 126 | Carrosseis: 126
+
+  --- FUNIL (meta: Topo 40% | Meio 35% | Fundo 25%) ---
+  TOPO: 90 posts (35.7%)
+  MEIO: 96 posts (38.1%)
+  FUNDO: 66 posts (26.2%)
+
+  --- AVATARES ---
+  Academico: 63 posts (25.0%)
+  Profissional: 63 posts (25.0%)
+  Vai Morar Fora: 63 posts (25.0%)
+  Viajante: 63 posts (25.0%)
+
+  --- TIPOS DE CONTEUDO ---
+  CTA Indireto: 18 posts (7.1%)
+  Cultura e Diferencas: 23 posts (9.1%)
+  Desejo e Transformacao: 16 posts (6.3%)
+  Dor e Identificacao: 18 posts (7.1%)
+  Erros e Falsos Amigos: 19 posts (7.5%)
+  Expressoes Idiomaticas: 23 posts (9.1%)
+  Historia e Autoridade Pessoal: 15 posts (6.0%)
+  Metodo e Bastidor: 25 posts (9.9%)
+  Palavras do Cotidiano: 25 posts (9.9%)
+  Perguntas de Seguidores: 31 posts (12.3%)
+  Prova Social: 23 posts (9.1%)
+  Quebra de Crencas: 16 posts (6.3%)
+
+  --- METAS DO MES ---
+  Vendas necessarias: 30/mes
+  Leads necessarios: 300+ leads pelas iscas
+  Crescimento: +20% por mes
+
+  --- REGRAS VALIDADAS ---
+  [x] Max 2 fundos por dia, nunca consecutivos
+  [x] Max 1 CTA direto (tipo 11) por dia
+  [x] Todo post de fundo com keyword ManyChat
+  [x] Rotacao equilibrada de avatares (25% cada)
+
+=================================================================

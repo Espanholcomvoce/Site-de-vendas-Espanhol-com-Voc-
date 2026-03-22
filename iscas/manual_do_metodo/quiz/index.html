@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Quiz — Espanhol com Voc&ecirc;</title>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Descubra seu n&iacute;vel real de espanhol">
+  <meta property="og:description" content="Descubra em 3 minutos qual &eacute; o REAL bloqueio que te impede de falar espanhol com confian&ccedil;a.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== CSS CUSTOM PROPERTIES ===== */
+    :root {
+      --navy-900: #0a1628;
+      --navy-800: #111d32;
+      --navy-700: #1a2740;
+      --gold: #fbbf24;
+      --gold-glow: rgba(251,191,36,0.15);
+      --sky: #38bdf8;
+      --emerald: #10b981;
+      --white: #ffffff;
+      --slate-400: #94a3b8;
+      --slate-600: #475569;
+      --red-soft: #ef4444;
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--navy-900);
+      color: var(--white);
+      min-height: 100dvh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      opacity: 0.03;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+    }
+
+    /* ===== APP CONTAINER ===== */
+    #app {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===== SCREEN VISIBILITY ===== */
+    .screen {
+      display: none;
+    }
+
+    .screen.active {
+      display: block;
+    }
+
+    /* Full-height screens */
+    .screen-full {
+      min-height: 100dvh;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .screen-full.active {
+      display: flex;
+    }
+
+    /* Scrollable screens */
+    .screen-scroll {
+      display: none;
+    }
+
+    .screen-scroll.active {
+      display: block;
+    }
+
+    /* ================================================================
+       SCREEN 1: INTRO
+       ================================================================ */
+    #intro-screen {
+      text-align: center;
+      padding: 40px 0;
+      position: relative;
+    }
+
+    /* Gold radial glow behind photo */
+    #intro-screen::before {
+      content: '';
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(251,191,36,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    #intro-screen > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .intro-logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--slate-400);
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    .intro-gold-line {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), #f59e0b);
+      border-radius: 2px;
+      margin: 0 auto 28px;
+    }
+
+    .intro-headline {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.25;
+      color: var(--white);
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .intro-headline .gold {
+      color: var(--gold);
+      text-shadow: 0 0 20px rgba(251,191,36,0.3);
+    }
+
+    .intro-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--slate-400);
+      margin-bottom: 32px;
+      padding: 0 8px;
+    }
+
+    .intro-subtitle .gold {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .ale-photo {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 36px;
+      border-radius: 50%;
+      background: var(--navy-800);
+      border: 3px solid rgba(251,191,36,0.2);
+      box-shadow:
+        0 0 40px rgba(251,191,36,0.15),
+        0 0 80px rgba(251,191,36,0.08);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--slate-600);
+      font-size: 13px;
+    }
+
+    .ale-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Gold CTA Button */
+    .cta-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 360px;
+      height: 56px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: var(--navy-900);
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 24px rgba(251,191,36,0.3);
+    }
+
+    .cta-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(251,191,36,0.4);
+    }
+
+    .cta-gold:active {
+      transform: translateY(0);
+    }
+
+    /* Shimmer effect */
+    .cta-gold::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255,255,255,0.3) 50%,
+        transparent 100%
+      );
+      animation: shimmer 2.5s ease-in-out infinite;
+    }
+
+    .intro-trust {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--slate-400);
+      letter-spacing: 0.3px;
+    }
+
+    /* ================================================================
+       SCREEN 2: QUESTIONS
+       ================================================================ */
+    #question-screen {
+      padding: 20px 0 40px;
+      min-height: 100dvh;
+    }
+
+    #question-screen.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Progress bar */
+    .progress-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 4px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1), background 0.5s ease;
+      width: 0%;
+      /* Default: gold */
+      background: var(--gold);
+      box-shadow: 0 0 8px rgba(251,191,36,0.4);
+    }
+
+    .progress-fill.act-1 {
+      background: var(--gold);
+      box-shadow: 0 0 8px rgba(251,191,36,0.4);
+    }
+
+    .progress-fill.act-2 {
+      background: var(--sky);
+      box-shadow: 0 0 8px rgba(56,189,248,0.4);
+    }
+
+    .progress-fill.act-3 {
+      background: var(--emerald);
+      box-shadow: 0 0 8px rgba(16,185,129,0.4);
+    }
+
+    .progress-counter {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--slate-400);
+      white-space: nowrap;
+      min-width: 36px;
+      text-align: right;
+    }
+
+    /* Question card */
+    .question-card {
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(251,191,36,0.1);
+      background: rgba(251,191,36,0.04);
+      transition: background 0.5s ease, border-color 0.5s ease;
+    }
+
+    .question-card.act-1 {
+      background: rgba(251,191,36,0.04);
+      border-color: rgba(251,191,36,0.1);
+    }
+
+    .question-card.act-2 {
+      background: rgba(56,189,248,0.04);
+      border-color: rgba(56,189,248,0.1);
+    }
+
+    .question-card.act-3 {
+      background: rgba(255,255,255,0.03);
+      border-color: rgba(255,255,255,0.06);
+    }
+
+    /* Question label */
+    .question-label {
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .question-label.act-1 {
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      color: var(--gold);
+    }
+
+    .question-label.act-2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--sky);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .question-label.act-3 {
+      font-family: 'Caveat', cursive;
+      font-size: 16px;
+      color: rgba(251,191,36,0.6);
+    }
+
+    /* Question text */
+    .question-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--white);
+    }
+
+    /* Audio player */
+    .audio-player {
+      display: none;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-top: 16px;
+    }
+
+    .audio-player.visible {
+      display: flex;
+    }
+
+    .audio-play-btn {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s ease;
+    }
+
+    .audio-play-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .audio-play-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--navy-900);
+    }
+
+    .audio-track {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .audio-track-bar {
+      width: 100%;
+      height: 4px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .audio-track-fill {
+      width: 0%;
+      height: 100%;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: width 0.1s linear;
+    }
+
+    .audio-time {
+      font-size: 12px;
+      color: var(--slate-400);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Options */
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .option-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 16px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-height: 44px;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .option-card:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(251,191,36,0.3);
+      transform: translateX(4px);
+    }
+
+    .option-card:hover .option-letter {
+      background: var(--gold);
+      color: var(--navy-900);
+      border-color: var(--gold);
+    }
+
+    .option-card.selected {
+      background: rgba(251,191,36,0.08);
+      border-color: rgba(251,191,36,0.4);
+    }
+
+    .option-card.selected .option-letter {
+      background: var(--gold);
+      color: var(--navy-900);
+      border-color: var(--gold);
+    }
+
+    .option-card.correct {
+      background: rgba(16,185,129,0.08);
+      border-color: rgba(16,185,129,0.4);
+    }
+
+    .option-card.correct .option-letter {
+      background: var(--emerald);
+      color: var(--navy-900);
+      border-color: var(--emerald);
+    }
+
+    .option-card.incorrect {
+      background: rgba(239,68,68,0.06);
+      border-color: rgba(239,68,68,0.3);
+      opacity: 0.7;
+    }
+
+    .option-card.incorrect .option-letter {
+      background: var(--red-soft);
+      color: var(--white);
+      border-color: var(--red-soft);
+    }
+
+    .option-card.disabled {
+      pointer-events: none;
+    }
+
+    .option-letter {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--slate-400);
+      transition: all 0.2s ease;
+    }
+
+    .option-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.45;
+      color: var(--white);
+    }
+
+    /* Feedback card */
+    .feedback-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-top: 16px;
+      animation: slideUpFade 0.4s ease-out forwards;
+      display: none;
+    }
+
+    .feedback-card.visible {
+      display: block;
+    }
+
+    .feedback-card.correct-variant {
+      border-left: 3px solid var(--emerald);
+      background: rgba(16,185,129,0.06);
+    }
+
+    .feedback-card.insight-variant {
+      border-left: 3px solid var(--sky);
+      background: rgba(56,189,248,0.06);
+    }
+
+    .feedback-title {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .feedback-body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #e2e8f0;
+    }
+
+    .feedback-highlight {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .feedback-mechanism {
+      color: var(--sky);
+      font-weight: 700;
+    }
+
+    .feedback-next-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+      padding: 12px 28px;
+      background: rgba(251,191,36,0.12);
+      border: 1px solid rgba(251,191,36,0.25);
+      border-radius: 12px;
+      color: var(--gold);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-height: 44px;
+    }
+
+    .feedback-next-btn:hover {
+      background: rgba(251,191,36,0.18);
+      transform: translateY(-1px);
+    }
+
+    /* ================================================================
+       SCREEN 3: TRANSITION
+       ================================================================ */
+    #transition-screen {
+      text-align: center;
+      padding: 40px 20px;
+      cursor: pointer;
+    }
+
+    .transition-line1 {
+      font-family: 'Caveat', cursive;
+      font-size: 24px;
+      color: var(--gold);
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .transition-line2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--white);
+      margin-top: 16px;
+      opacity: 0;
+      animation: fadeIn 0.8s ease 0.5s forwards;
+    }
+
+    .transition-arrow {
+      margin-top: 32px;
+      opacity: 0;
+      animation: fadeIn 0.8s ease 1s forwards;
+    }
+
+    .transition-arrow svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--gold);
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+
+    /* ================================================================
+       SCREEN 4: LOADING
+       ================================================================ */
+    #loading-screen {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .loading-dots {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .loading-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: dotPulse 1.2s ease-in-out infinite;
+    }
+
+    .loading-dot:nth-child(2) { animation-delay: 0.15s; }
+    .loading-dot:nth-child(3) { animation-delay: 0.3s; }
+    .loading-dot:nth-child(4) { animation-delay: 0.45s; }
+
+    .loading-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--slate-400);
+      min-height: 24px;
+      animation: textFade 1.5s ease-in-out infinite;
+    }
+
+    .loading-progress-track {
+      width: 100%;
+      max-width: 280px;
+      height: 4px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 2px;
+      margin: 32px auto 0;
+      overflow: hidden;
+    }
+
+    .loading-progress-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--sky));
+      width: 0%;
+      animation: loadFill 4.5s ease-out forwards;
+    }
+
+    /* ================================================================
+       SCREEN 5: RESULT
+       ================================================================ */
+    #result-screen {
+      padding: 40px 0 60px;
+    }
+
+    /* Section 1: Diagnostic */
+    .result-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .result-header-label {
+      font-family: 'Caveat', cursive;
+      font-size: 24px;
+      color: var(--gold);
+    }
+
+    .result-header-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: var(--white);
+      margin-top: 4px;
+    }
+
+    /* Avatar badge */
+    .avatar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      margin: 20px auto;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .avatar-badge.type-gold {
+      background: rgba(251,191,36,0.12);
+      border: 1px solid rgba(251,191,36,0.25);
+      color: var(--gold);
+    }
+
+    .avatar-badge.type-sky {
+      background: rgba(56,189,248,0.12);
+      border: 1px solid rgba(56,189,248,0.25);
+      color: var(--sky);
+    }
+
+    .avatar-badge.type-emerald {
+      background: rgba(16,185,129,0.12);
+      border: 1px solid rgba(16,185,129,0.25);
+      color: var(--emerald);
+    }
+
+    .avatar-badge-icon {
+      font-size: 20px;
+    }
+
+    /* Diagnostic card */
+    .diagnostic-card {
+      background: var(--navy-800);
+      border: 1px solid var(--navy-700);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 28px;
+    }
+
+    .diag-bar-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .diag-bar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .diag-bar-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--slate-400);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .diag-bar-value {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .diag-bar-value.sky { color: var(--sky); }
+    .diag-bar-value.gold { color: var(--gold); }
+
+    .diag-bar-track {
+      width: 100%;
+      height: 10px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .diag-bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      width: 0%;
+      transition: width 1s ease;
+    }
+
+    .diag-bar-fill.sky {
+      background: linear-gradient(90deg, #38bdf8, #7dd3fc);
+      box-shadow: 0 0 12px rgba(56,189,248,0.3);
+      animation: barGrow 1.2s ease-out forwards;
+    }
+
+    .diag-bar-fill.gold {
+      background: linear-gradient(90deg, #fbbf24, #fcd34d);
+      box-shadow: 0 0 12px rgba(251,191,36,0.3);
+      animation: barGrow 1.2s ease-out 0.3s forwards;
+    }
+
+    .diag-gap {
+      text-align: center;
+      padding: 24px 0 8px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 8px;
+    }
+
+    .diag-gap-number {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      background: linear-gradient(135deg, var(--gold), var(--red-soft));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+
+    .diag-gap-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--slate-400);
+      margin-top: 4px;
+    }
+
+    .impact-phrase {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--white);
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 48px;
+    }
+
+    /* Section 2: The 3 Errors */
+    .errors-section {
+      margin-bottom: 48px;
+    }
+
+    .errors-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .error-card {
+      background: linear-gradient(135deg, #fef9ef, #fdf6e3);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .error-card.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .error-card:nth-child(1) { transition-delay: 0s; }
+    .error-card:nth-child(2) { transition-delay: 0.15s; }
+    .error-card:nth-child(3) { transition-delay: 0.3s; }
+
+    .error-card-bg-number {
+      position: absolute;
+      top: -8px;
+      right: 12px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 80px;
+      color: rgba(0,0,0,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .error-card-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--red-soft);
+      margin-bottom: 8px;
+    }
+
+    .error-card-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--navy-900);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .error-card-desc {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    /* Section 3: Email Capture */
+    .email-section {
+      background: var(--navy-800);
+      border: 1px solid rgba(251,191,36,0.12);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(251,191,36,0.05);
+    }
+
+    .email-ale-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid rgba(251,191,36,0.3);
+      background: var(--navy-700);
+      margin: 0 auto 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--slate-600);
+      font-size: 11px;
+    }
+
+    .email-ale-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .email-quote {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      color: var(--white);
+      line-height: 1.4;
+      margin-bottom: 8px;
+      padding: 0 8px;
+    }
+
+    .email-signature {
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .email-input-wrapper {
+      margin-bottom: 14px;
+    }
+
+    .email-input {
+      width: 100%;
+      height: 52px;
+      padding: 0 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .email-input::placeholder {
+      color: var(--slate-600);
+    }
+
+    .email-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(251,191,36,0.12);
+    }
+
+    .email-submit-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 56px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: var(--navy-900);
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 24px rgba(251,191,36,0.3);
+    }
+
+    .email-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(251,191,36,0.4);
+    }
+
+    .email-submit-btn:active {
+      transform: translateY(0);
+    }
+
+    .email-submit-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255,255,255,0.3) 50%,
+        transparent 100%
+      );
+      animation: shimmer 2.5s ease-in-out infinite;
+    }
+
+    .email-privacy {
+      font-size: 13px;
+      color: var(--slate-400);
+      margin-top: 16px;
+    }
+
+    .email-social-proof {
+      font-size: 13px;
+      color: var(--slate-400);
+      margin-top: 8px;
+    }
+
+    /* ================================================================
+       SCREEN 6: THANK YOU
+       ================================================================ */
+    #thankyou-screen {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .thankyou-check {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: rgba(251,191,36,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .thankyou-check svg {
+      width: 36px;
+      height: 36px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      animation: checkDraw 0.6s ease 0.3s forwards;
+    }
+
+    .thankyou-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .thankyou-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--slate-400);
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    .thankyou-follow-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--slate-400);
+      margin-bottom: 16px;
+    }
+
+    .thankyou-ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      min-height: 48px;
+    }
+
+    .thankyou-ig-link:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(251,191,36,0.3);
+    }
+
+    .thankyou-back-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      padding: 12px 24px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      color: var(--slate-400);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      min-height: 44px;
+    }
+
+    .thankyou-back-btn:hover {
+      border-color: rgba(255,255,255,0.2);
+      color: var(--white);
+    }
+
+    /* ================================================================
+       KEYFRAMES
+       ================================================================ */
+
+    @keyframes shimmer {
+      0% { left: -100%; }
+      60% { left: 100%; }
+      100% { left: 100%; }
+    }
+
+    @keyframes slideUpFade {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes questionOut {
+      from {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+    }
+
+    @keyframes questionIn {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes dotPulse {
+      0%, 100% {
+        transform: scale(0.6);
+        opacity: 0.4;
+      }
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes textFade {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes loadFill {
+      0%   { width: 0%; }
+      20%  { width: 30%; }
+      45%  { width: 55%; }
+      70%  { width: 80%; }
+      100% { width: 100%; }
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% {
+        transform: translateY(0);
+        opacity: 0.7;
+      }
+      50% {
+        transform: translateY(6px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes barGrow {
+      from { width: 0%; }
+    }
+
+    @keyframes checkDraw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Utility class for JS transitions */
+    .anim-question-out {
+      animation: questionOut 0.3s ease forwards;
+    }
+
+    .anim-question-in {
+      animation: questionIn 0.3s ease forwards;
+    }
+
+    /* ================================================================
+       RESPONSIVE — DESKTOP
+       ================================================================ */
+    @media (min-width: 640px) {
+      #app {
+        max-width: 520px;
+      }
+
+      .intro-headline {
+        font-size: 42px;
+      }
+
+      .question-text {
+        font-size: 22px;
+      }
+
+      .result-header-title {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- ============================================================
+         SCREEN 1: INTRO
+         ============================================================ -->
+    <div id="intro-screen" class="screen screen-full active">
+      <span class="intro-logo">@espanholcomvoce</span>
+      <div class="intro-gold-line"></div>
+
+      <h1 class="intro-headline">
+        Voc&ecirc; <strong>ENTENDE</strong> espanhol mas
+        <span class="gold">TRAVA</span> na hora de falar?
+      </h1>
+
+      <p class="intro-subtitle">
+        Descubra em 3 minutos qual &eacute; o <span class="gold">REAL</span> bloqueio
+        que te impede de falar com confian&ccedil;a.
+      </p>
+
+      <div class="ale-photo" id="ale-photo-intro">
+        <!-- Replace with: <img src="ale.jpg" alt="Ale"> -->
+        <span>Foto da Ale</span>
+      </div>
+
+      <button class="cta-gold" id="btn-start-quiz">
+        DESCOBRIR MEU N&Iacute;VEL &rarr;
+      </button>
+
+      <p class="intro-trust">&#128274; Gratuito &bull; 3 min &bull; +2.847 diagn&oacute;sticos</p>
+    </div>
+
+    <!-- ============================================================
+         SCREEN 2: QUESTIONS
+         ============================================================ -->
+    <div id="question-screen" class="screen">
+      <!-- Progress -->
+      <div class="progress-wrapper">
+        <div class="progress-track">
+          <div class="progress-fill act-1" id="progress-fill" style="width: 0%"></div>
+        </div>
+        <span class="progress-counter" id="progress-counter">1/10</span>
+      </div>
+
+      <!-- Question content (JS populates this) -->
+      <div id="question-content">
+        <div class="question-card act-1" id="question-card">
+          <span class="question-label act-1" id="question-label" data-question-label></span>
+          <p class="question-text" id="question-text" data-question-text></p>
+
+          <!-- Audio player (hidden by default) -->
+          <div class="audio-player" id="audio-player">
+            <button class="audio-play-btn" id="audio-play-btn" aria-label="Reproduzir &aacute;udio">
+              <svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg>
+            </button>
+            <div class="audio-track">
+              <div class="audio-track-bar">
+                <div class="audio-track-fill" id="audio-track-fill"></div>
+              </div>
+              <span class="audio-time" id="audio-time">0:00 / 0:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Options -->
+        <div class="options-list" id="options-list" data-options>
+          <!-- JS will populate option cards here. Template: -->
+          <!--
+          <div class="option-card" data-index="0">
+            <div class="option-letter">A</div>
+            <span class="option-text">Option text</span>
+          </div>
+          -->
+        </div>
+
+        <!-- Feedback -->
+        <div class="feedback-card" id="feedback-card">
+          <div class="feedback-title" id="feedback-title" data-feedback-title></div>
+          <div class="feedback-body" id="feedback-body" data-feedback-body></div>
+          <button class="feedback-next-btn" id="feedback-next-btn">Pr&oacute;xima &rarr;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCREEN 3: TRANSITION
+         ============================================================ -->
+    <div id="transition-screen" class="screen screen-full">
+      <p class="transition-line1">At&eacute; aqui, tudo bem...</p>
+      <p class="transition-line2">Mas entender &eacute; s&oacute; metade da hist&oacute;ria.</p>
+      <div class="transition-arrow">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 4v16m0 0l-6-6m6 6l6-6"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCREEN 4: LOADING
+         ============================================================ -->
+    <div id="loading-screen" class="screen screen-full">
+      <div class="loading-dots">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+      </div>
+      <p class="loading-text" id="loading-text">Analisando suas respostas...</p>
+      <div class="loading-progress-track">
+        <div class="loading-progress-fill" id="loading-progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCREEN 5: RESULT
+         ============================================================ -->
+    <div id="result-screen" class="screen screen-scroll">
+
+      <!-- Section 1: Diagnostic -->
+      <div class="result-header">
+        <span class="result-header-label">Seu Diagn&oacute;stico</span>
+        <h2 class="result-header-title">de Espanhol</h2>
+      </div>
+
+      <!-- Avatar badge (JS sets type and text) -->
+      <div style="text-align:center;">
+        <div class="avatar-badge type-gold" id="avatar-badge">
+          <span class="avatar-badge-icon" id="avatar-badge-icon"></span>
+          <span id="avatar-badge-text"></span>
+        </div>
+      </div>
+
+      <!-- Diagnostic bars -->
+      <div class="diagnostic-card" id="diagnostic-card">
+        <div class="diag-bar-wrapper">
+          <div class="diag-bar-header">
+            <span class="diag-bar-label">Compreens&atilde;o</span>
+            <span class="diag-bar-value sky" id="comp-value">0%</span>
+          </div>
+          <div class="diag-bar-track">
+            <div class="diag-bar-fill sky" id="comp-bar" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="diag-bar-wrapper">
+          <div class="diag-bar-header">
+            <span class="diag-bar-label">Produ&ccedil;&atilde;o</span>
+            <span class="diag-bar-value gold" id="prod-value">0%</span>
+          </div>
+          <div class="diag-bar-track">
+            <div class="diag-bar-fill gold" id="prod-bar" style="width:0%"></div>
+          </div>
+        </div>
+
+        <!-- GAP -->
+        <div class="diag-gap">
+          <div class="diag-gap-number" id="gap-number">0</div>
+          <div class="diag-gap-label">pontos de dist&acirc;ncia</div>
+        </div>
+      </div>
+
+      <!-- Impact phrase -->
+      <p class="impact-phrase" id="impact-phrase">
+        Voc&ecirc; entende muito mais do que consegue falar.
+      </p>
+
+      <!-- Section 2: The 3 Errors -->
+      <div class="errors-section">
+        <h3 class="errors-title">Por que voc&ecirc; trava</h3>
+
+        <div class="error-card" id="error-card-1">
+          <span class="error-card-bg-number">1</span>
+          <div class="error-card-label">ERRO #1</div>
+          <h4 class="error-card-title" data-error-title></h4>
+          <p class="error-card-desc" data-error-desc></p>
+        </div>
+
+        <div class="error-card" id="error-card-2">
+          <span class="error-card-bg-number">2</span>
+          <div class="error-card-label">ERRO #2</div>
+          <h4 class="error-card-title" data-error-title></h4>
+          <p class="error-card-desc" data-error-desc></p>
+        </div>
+
+        <div class="error-card" id="error-card-3">
+          <span class="error-card-bg-number">3</span>
+          <div class="error-card-label">ERRO #3</div>
+          <h4 class="error-card-title" data-error-title></h4>
+          <p class="error-card-desc" data-error-desc></p>
+        </div>
+      </div>
+
+      <!-- Section 3: Email Capture -->
+      <div class="email-section" id="email-section">
+        <div class="email-ale-photo" id="ale-photo-result">
+          <!-- Replace with: <img src="ale.jpg" alt="Ale"> -->
+          <span>Ale</span>
+        </div>
+
+        <p class="email-quote" id="email-quote" data-email-quote>
+          &ldquo;Eu preparei um manual gratuito com o m&eacute;todo que vai destravar seu espanhol.&rdquo;
+        </p>
+        <p class="email-signature">&mdash; Ale</p>
+
+        <form id="email-form" autocomplete="on">
+          <div class="email-input-wrapper">
+            <input
+              type="email"
+              class="email-input"
+              id="email-input"
+              name="email"
+              placeholder="Seu melhor email"
+              required
+              autocomplete="email"
+              aria-label="Seu email"
+            >
+          </div>
+          <button type="submit" class="email-submit-btn" id="email-submit-btn">
+            RECEBER MEU MANUAL GRATUITO &rarr;
+          </button>
+        </form>
+
+        <p class="email-privacy">&#128274; Seu email est&aacute; seguro</p>
+        <p class="email-social-proof">+2.847 pessoas j&aacute; baixaram</p>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCREEN 6: THANK YOU
+         ============================================================ -->
+    <div id="thankyou-screen" class="screen screen-full">
+      <div class="thankyou-check">
+        <svg viewBox="0 0 24 24">
+          <polyline points="4 12 10 18 20 6"/>
+        </svg>
+      </div>
+
+      <h2 class="thankyou-title">Pronto! &#127881;</h2>
+      <p class="thankyou-subtitle">Olha seu email em 2 minutos.</p>
+
+      <p class="thankyou-follow-text">Enquanto isso, me segue:</p>
+      <a
+        href="https://www.instagram.com/espanholcomvoce"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="thankyou-ig-link"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="5"/>
+          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+        </svg>
+        @espanholcomvoce
+      </a>
+
+      <a
+        href="https://www.instagram.com/espanholcomvoce"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="thankyou-back-btn"
+      >
+        Voltar para @espanholcomvoce
+      </a>
+    </div>
+
+  </div><!-- /#app -->
+
+  <script src="quiz.js" defer></script>
+</body>
+</html>

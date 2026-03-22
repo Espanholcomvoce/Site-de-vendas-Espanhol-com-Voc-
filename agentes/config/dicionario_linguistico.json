@@ -1,0 +1,1066 @@
+{
+  "expressoes": {
+    "se vira nos 30": {
+      "espanhol": "arreglatelas como puedas",
+      "alternativa": "apanate solo / busca la vida",
+      "pronuncia": "a-RREH-gla-te-las CO-mo PUEH-das",
+      "exemplo_es": "Yo me voy, arreglatelas como puedas.",
+      "exemplo_pt": "Eu vou embora, se vira nos 30.",
+      "dica": "No Mexico tambem falam 'rascale como puedas'"
+    },
+    "dar um jeitinho": {
+      "espanhol": "buscar la vuelta",
+      "alternativa": "hacer un apaño / arreglarselas",
+      "pronuncia": "bus-CAR la VUEL-ta",
+      "exemplo_es": "Vamos a buscar la vuelta para resolver esto.",
+      "exemplo_pt": "Vamos dar um jeitinho pra resolver isso.",
+      "dica": "O famoso jeitinho brasileiro nao tem traducao exata — essa e a mais proxima"
+    },
+    "to de boa": {
+      "espanhol": "estoy tranqui / estoy bien",
+      "alternativa": "todo bien / estoy relajado",
+      "pronuncia": "es-TOY TRAN-qui",
+      "exemplo_es": "No te preocupes, estoy tranqui.",
+      "exemplo_pt": "Nao se preocupa, to de boa.",
+      "dica": "'Tranqui' e a forma coloquial de 'tranquilo' — muito usada no dia a dia"
+    },
+    "ficar de bobeira": {
+      "espanhol": "estar al pedo",
+      "alternativa": "no hacer nada / estar de vago",
+      "pronuncia": "es-TAR al PE-do",
+      "exemplo_es": "Hoy estuve todo el dia al pedo.",
+      "exemplo_pt": "Hoje fiquei o dia inteiro de bobeira.",
+      "dica": "Na Argentina usam 'al pedo', na Espanha 'sin hacer nada' e mais comum"
+    },
+    "chutar o balde": {
+      "espanhol": "mandar todo al diablo",
+      "alternativa": "tirar la toalla / mandar todo a la mierda",
+      "pronuncia": "man-DAR TO-do al DIA-blo",
+      "exemplo_es": "Estoy harto, voy a mandar todo al diablo.",
+      "exemplo_pt": "Cansei, vou chutar o balde.",
+      "dica": "'Tirar la toalla' e mais suave, 'mandar todo al diablo' tem mais forca"
+    },
+    "cara de pau": {
+      "espanhol": "caradura / descarado",
+      "alternativa": "sinverguenza / tiene mucha cara",
+      "pronuncia": "ca-ra-DU-ra / des-ca-RA-do",
+      "exemplo_es": "Ese tipo es un caradura, no le creas nada.",
+      "exemplo_pt": "Esse cara e um cara de pau, nao acredita nele.",
+      "dica": "'Caradura' funciona igual em quase todos os paises hispanicos"
+    },
+    "pagar mico": {
+      "espanhol": "hacer el ridiculo / pasar verguenza",
+      "alternativa": "quedar en ridiculo / hacer el oso",
+      "pronuncia": "a-SER el ri-DI-cu-lo",
+      "exemplo_es": "Hice el ridiculo delante de todos.",
+      "exemplo_pt": "Paguei o maior mico na frente de todo mundo.",
+      "dica": "Na Colombia falam 'hacer el oso' — literalmente 'fazer o urso'"
+    },
+    "dar mole": {
+      "espanhol": "dar pie / dar cabida",
+      "alternativa": "coquetear / darle alas",
+      "pronuncia": "DAR PIE / dar ca-BI-da",
+      "exemplo_es": "No le des pie, despues se confunde.",
+      "exemplo_pt": "Nao da mole, depois ele se confunde.",
+      "dica": "Se for no sentido romantico, 'coquetear' ou 'darle alas' funcionam melhor"
+    },
+    "saudade": {
+      "espanhol": "extranar / echar de menos",
+      "alternativa": "nostalgia / anoranza",
+      "pronuncia": "ex-tra-NIAR / e-CHAR de ME-nos",
+      "exemplo_es": "Te extrano mucho. / Te echo de menos.",
+      "exemplo_pt": "Sinto muita saudade de voce.",
+      "dica": "Na America Latina usam 'extranar', na Espanha 'echar de menos' — nenhuma traduz 100%"
+    },
+    "gambiarra": {
+      "espanhol": "apaño / chapuza / arreglo casero",
+      "alternativa": "solucion temporal / parche",
+      "pronuncia": "a-PA-nio / cha-PU-sa",
+      "exemplo_es": "Hice un apaño con cinta adhesiva y funciono.",
+      "exemplo_pt": "Fiz uma gambiarra com fita adesiva e funcionou.",
+      "dica": "Na Espanha 'chapuza' e mais comum, na America Latina 'apaño'"
+    },
+    "matar a saudade": {
+      "espanhol": "sacarse las ganas / reencontrarse",
+      "alternativa": "quitarse la nostalgia",
+      "pronuncia": "sa-CAR-se las GA-nas",
+      "exemplo_es": "Fui a Brasil a sacarme las ganas de ver a mi familia.",
+      "exemplo_pt": "Fui pro Brasil matar a saudade da minha familia.",
+      "dica": "Nao existe traducao perfeita — 'sacarse las ganas' e o mais proximo"
+    },
+    "quebrar o galho": {
+      "espanhol": "sacar del apuro / hacer un favor",
+      "alternativa": "echar una mano / salvar",
+      "pronuncia": "sa-CAR del a-PU-ro",
+      "exemplo_es": "Me sacaste del apuro, gracias.",
+      "exemplo_pt": "Voce quebrou meu galho, obrigado.",
+      "dica": "'Echar una mano' e mais informal e muito usado"
+    },
+    "dar conta": {
+      "espanhol": "poder con todo / arreglarselas",
+      "alternativa": "dar abasto / alcanzar",
+      "pronuncia": "po-DER con TO-do",
+      "exemplo_es": "Tengo tanto trabajo que no puedo con todo.",
+      "exemplo_pt": "Tenho tanto trabalho que nao to dando conta.",
+      "dica": "'Dar abasto' e perfeito quando o sentido e nao aguentar a demanda"
+    },
+    "puxar saco": {
+      "espanhol": "ser lambiscon / ser un barbero / ser un chupamedias",
+      "alternativa": "hacer la pelota / adular",
+      "pronuncia": "ser lam-bis-CON / SER un bar-BE-ro",
+      "exemplo_es": "No seas lambiscon con el jefe.",
+      "exemplo_pt": "Para de puxar saco do chefe.",
+      "dica": "Cada pais tem sua versao: 'lambiscon' (Mexico), 'chupamedias' (Argentina), 'hacer la pelota' (Espanha)"
+    },
+    "fazer hora": {
+      "espanhol": "hacer tiempo / matar el tiempo",
+      "alternativa": "pasar el rato",
+      "pronuncia": "a-SER TIEM-po",
+      "exemplo_es": "Estoy haciendo tiempo hasta que abra la tienda.",
+      "exemplo_pt": "To fazendo hora ate a loja abrir.",
+      "dica": "'Matar el tiempo' e mais coloquial"
+    },
+    "enrolar": {
+      "espanhol": "dar vueltas / enredar / alargar",
+      "alternativa": "darle largas / no ir al grano",
+      "pronuncia": "DAR VUEL-tas / en-re-DAR",
+      "exemplo_es": "Deja de dar vueltas y dime la verdad.",
+      "exemplo_pt": "Para de enrolar e me diz a verdade.",
+      "dica": "'Darle largas' e quando alguem enrola voce de proposito"
+    },
+    "colar na prova": {
+      "espanhol": "copiar en el examen / hacer trampa",
+      "alternativa": "copiarse / usar chuleta",
+      "pronuncia": "co-PIAR en el ex-A-men",
+      "exemplo_es": "Lo pillaron copiando en el examen.",
+      "exemplo_pt": "Pegaram ele colando na prova.",
+      "dica": "'Chuleta' e a cola escrita (o papelzinho) na Espanha"
+    },
+    "ralar muito": {
+      "espanhol": "estudiar a fondo / matarse estudiando",
+      "alternativa": "quemarse las pestanas / darle duro",
+      "pronuncia": "ma-TAR-se es-tu-DIAN-do",
+      "exemplo_es": "Me mate estudiando toda la noche.",
+      "exemplo_pt": "Ralei a noite inteira estudando.",
+      "dica": "'Quemarse las pestanas' e a expressao classica para estudar muito"
+    },
+    "ficar por fora": {
+      "espanhol": "quedarse afuera / no enterarse",
+      "alternativa": "estar desconectado / perderse algo",
+      "pronuncia": "que-DAR-se a-FUE-ra",
+      "exemplo_es": "Me quede afuera de la conversacion.",
+      "exemplo_pt": "Fiquei por fora da conversa.",
+      "dica": "'No enterarse' funciona quando voce nao ficou sabendo de algo"
+    },
+    "pegar no pe": {
+      "espanhol": "insistir / no dejar en paz / estar encima",
+      "alternativa": "hinchar / molestar / dar la lata",
+      "pronuncia": "in-sis-TIR / es-TAR en-CI-ma",
+      "exemplo_es": "Mi mama no me deja en paz con el tema.",
+      "exemplo_pt": "Minha mae pega no meu pe com isso.",
+      "dica": "Na Espanha 'dar la lata' e muito usado pra esse sentido"
+    },
+    "matar aula": {
+      "espanhol": "faltar a clase / hacer novillos / hacer la rabona",
+      "alternativa": "irse de pinta / capear clase",
+      "pronuncia": "a-SER no-VI-llos",
+      "exemplo_es": "Hicimos novillos para ir al cine.",
+      "exemplo_pt": "Matamos aula pra ir no cinema.",
+      "dica": "'Hacer novillos' (Espanha), 'hacer la rabona' (Argentina), 'irse de pinta' (Mexico)"
+    },
+    "tirar de letra": {
+      "espanhol": "hacer algo con facilidad / sacarselo de la manga",
+      "alternativa": "pan comido / hacerlo facil",
+      "pronuncia": "a-SER-lo con fa-si-li-DAD",
+      "exemplo_es": "El examen fue pan comido.",
+      "exemplo_pt": "A prova foi tirada de letra.",
+      "dica": "'Pan comido' e a expressao mais usada pra dizer que algo foi moleza"
+    },
+    "nao ter pe nem cabeca": {
+      "espanhol": "no tener ni pies ni cabeza",
+      "alternativa": "no tener sentido",
+      "pronuncia": "no te-NER ni PIES ni ca-BE-sa",
+      "exemplo_es": "Lo que dices no tiene ni pies ni cabeza.",
+      "exemplo_pt": "O que voce ta falando nao tem pe nem cabeca.",
+      "dica": "Essa e quase identica ao portugues — facil de lembrar!"
+    },
+    "dar um branco": {
+      "espanhol": "quedarse en blanco",
+      "alternativa": "tener un lapsus / bloquearse",
+      "pronuncia": "que-DAR-se en BLAN-co",
+      "exemplo_es": "En medio del examen me quede en blanco.",
+      "exemplo_pt": "No meio da prova me deu um branco.",
+      "dica": "Muito parecida com o portugues — 'quedarse en blanco' funciona perfeitamente"
+    },
+    "vestir a camisa": {
+      "espanhol": "ponerse la camiseta",
+      "alternativa": "comprometerse / darlo todo",
+      "pronuncia": "po-NER-se la ca-mi-SE-ta",
+      "exemplo_es": "Necesito que todos se pongan la camiseta.",
+      "exemplo_pt": "Preciso que todo mundo vista a camisa.",
+      "dica": "Expressao identica! Ate o sentido corporativo e o mesmo"
+    },
+    "botar a mao na massa": {
+      "espanhol": "poner manos a la obra",
+      "alternativa": "ponerse a trabajar / arremangarse",
+      "pronuncia": "po-NER MA-nos a la O-bra",
+      "exemplo_es": "Basta de hablar, pongamos manos a la obra.",
+      "exemplo_pt": "Chega de falar, vamos botar a mao na massa.",
+      "dica": "Funciona igual em todo o mundo hispanico"
+    },
+    "bater meta": {
+      "espanhol": "cumplir la meta / alcanzar el objetivo",
+      "alternativa": "llegar a la meta / lograr el target",
+      "pronuncia": "cum-PLIR la ME-ta",
+      "exemplo_es": "Este mes cumplimos la meta de ventas.",
+      "exemplo_pt": "Esse mes batemos a meta de vendas.",
+      "dica": "Em contexto corporativo 'alcanzar el objetivo' soa mais formal"
+    },
+    "dar um toque": {
+      "espanhol": "avisar / dar un toque / mandar un mensaje",
+      "alternativa": "llamar un momento",
+      "pronuncia": "DAR un TO-que",
+      "exemplo_es": "Dame un toque cuando llegues.",
+      "exemplo_pt": "Me da um toque quando chegar.",
+      "dica": "Essa funciona igual! 'Dar un toque' e muito usado na Espanha"
+    },
+    "pisar na bola": {
+      "espanhol": "meter la pata / cagarla",
+      "alternativa": "equivocarse / fallar",
+      "pronuncia": "me-TER la PA-ta",
+      "exemplo_es": "Meti la pata con el cliente.",
+      "exemplo_pt": "Pisei na bola com o cliente.",
+      "dica": "'Meter la pata' e universal em todo o mundo hispanico"
+    },
+    "tapar o sol com a peneira": {
+      "espanhol": "tapar el sol con un dedo",
+      "alternativa": "hacerse el tonto / negar lo evidente",
+      "pronuncia": "ta-PAR el SOL con un DE-do",
+      "exemplo_es": "Estan tapando el sol con un dedo, el problema es grave.",
+      "exemplo_pt": "Tao tapando o sol com a peneira, o problema e grave.",
+      "dica": "Quase identica — a unica diferenca e 'peneira' vira 'dedo'"
+    },
+    "puxar o tapete": {
+      "espanhol": "hacer una jugada sucia / traicionar",
+      "alternativa": "apunalar por la espalda / quitar el piso",
+      "pronuncia": "a-SER u-na ju-GA-da SU-sia",
+      "exemplo_es": "Mi socio me hizo una jugada sucia.",
+      "exemplo_pt": "Meu socio puxou o tapete de mim.",
+      "dica": "Na America Latina 'quitar el piso' e equivalente direto"
+    },
+    "empurrar com a barriga": {
+      "espanhol": "darle largas / postergar / patear para adelante",
+      "alternativa": "ir tirando / procrastinar",
+      "pronuncia": "DAR-le LAR-gas",
+      "exemplo_es": "Deja de darle largas al proyecto y hazlo.",
+      "exemplo_pt": "Para de empurrar o projeto com a barriga e faz.",
+      "dica": "'Patear para adelante' e muito usado na Argentina"
+    }
+  },
+  "palavras": {
+    "carona": {
+      "espanhol": "aventon (Mexico) / raid (Chile) / aventura (Colombia) / llevar",
+      "pronuncia": "a-ven-TON / le-VAR",
+      "exemplo_es": "¿Me das un aventon hasta el centro?",
+      "exemplo_pt": "Me da uma carona ate o centro?",
+      "dica": "Muda muito de pais pra pais — 'aventon' no Mexico, 'cola' na Venezuela"
+    },
+    "saudade": {
+      "espanhol": "extranar / echar de menos",
+      "pronuncia": "ex-tra-NIAR / e-CHAR de ME-nos",
+      "exemplo_es": "Te extrano mucho.",
+      "exemplo_pt": "Sinto muita saudade de voce.",
+      "dica": "Nao existe uma palavra unica — sempre e um verbo: 'extranar' ou 'echar de menos'"
+    },
+    "gorjeta": {
+      "espanhol": "propina",
+      "pronuncia": "pro-PI-na",
+      "exemplo_es": "¿Cuanto dejo de propina?",
+      "exemplo_pt": "Quanto deixo de gorjeta?",
+      "dica": "CUIDADO: 'propina' em espanhol e gorjeta, nao suborno! No Brasil e ao contrario"
+    },
+    "perrengue": {
+      "espanhol": "apuro / lio / quilombo",
+      "pronuncia": "a-PU-ro / LI-o",
+      "exemplo_es": "Pasamos un apuro terrible en el aeropuerto.",
+      "exemplo_pt": "Passamos um perrengue terrivel no aeroporto.",
+      "dica": "'Quilombo' na Argentina, 'lio' na Espanha, 'apuro' funciona em todo lugar"
+    },
+    "mochila": {
+      "espanhol": "mochila",
+      "pronuncia": "mo-CHI-la",
+      "exemplo_es": "Pon todo en la mochila.",
+      "exemplo_pt": "Poe tudo na mochila.",
+      "dica": "Essa e igual! Mas cuidado com a pronuncia do CH — e mais forte em espanhol"
+    },
+    "fila": {
+      "espanhol": "fila / cola",
+      "pronuncia": "FI-la / CO-la",
+      "exemplo_es": "Hay mucha cola para entrar.",
+      "exemplo_pt": "Tem muita fila pra entrar.",
+      "dica": "Na Espanha usam 'cola', na America Latina 'fila' funciona"
+    },
+    "troco": {
+      "espanhol": "cambio / vuelto",
+      "pronuncia": "CAM-bio / VUEL-to",
+      "exemplo_es": "¿Tiene cambio de cien?",
+      "exemplo_pt": "Tem troco de cem?",
+      "dica": "'Vuelto' na Argentina e Chile, 'cambio' no resto"
+    },
+    "mala": {
+      "espanhol": "maleta / valija",
+      "pronuncia": "ma-LE-ta / va-LI-ja",
+      "exemplo_es": "Ya hice la maleta para el viaje.",
+      "exemplo_pt": "Ja fiz a mala pra viagem.",
+      "dica": "CUIDADO: 'mala' em espanhol significa ma/ruim! Nunca fale 'mi mala', fale 'mi maleta'"
+    },
+    "aluguel": {
+      "espanhol": "alquiler",
+      "pronuncia": "al-qui-LER",
+      "exemplo_es": "El alquiler de este piso es 800 euros.",
+      "exemplo_pt": "O aluguel desse apartamento e 800 euros.",
+      "dica": "'Renta' tambem funciona no Mexico"
+    },
+    "conta de luz": {
+      "espanhol": "factura de la luz / recibo de la luz",
+      "pronuncia": "fac-TU-ra de la LUS",
+      "exemplo_es": "Me llego la factura de la luz altisima.",
+      "exemplo_pt": "Chegou a conta de luz altissima.",
+      "dica": "Na Espanha falam 'recibo', na America Latina 'factura' e mais comum"
+    },
+    "carteira de motorista": {
+      "espanhol": "carnet de conducir / licencia de conducir",
+      "pronuncia": "car-NET de con-du-SIR",
+      "exemplo_es": "Necesito sacar el carnet de conducir.",
+      "exemplo_pt": "Preciso tirar a carteira de motorista.",
+      "dica": "'Carnet' na Espanha, 'licencia' na America Latina"
+    },
+    "comprovante de residencia": {
+      "espanhol": "comprobante de domicilio / justificante de residencia",
+      "pronuncia": "com-pro-BAN-te de do-mi-SI-lio",
+      "exemplo_es": "Necesito un comprobante de domicilio para el tramite.",
+      "exemplo_pt": "Preciso de um comprovante de residencia pro tramite.",
+      "dica": "Na Espanha pedem 'empadronamiento' — e o registro no municipio"
+    },
+    "ficha medica": {
+      "espanhol": "historial medico / ficha medica",
+      "pronuncia": "is-to-RIAL ME-di-co",
+      "exemplo_es": "Traiga su historial medico a la consulta.",
+      "exemplo_pt": "Traga sua ficha medica na consulta.",
+      "dica": "'Historial clinico' e a forma mais formal"
+    },
+    "boleto": {
+      "espanhol": "recibo / factura",
+      "pronuncia": "re-SI-bo / fac-TU-ra",
+      "exemplo_es": "Tengo que pagar el recibo del agua.",
+      "exemplo_pt": "Tenho que pagar o boleto da agua.",
+      "dica": "CUIDADO: 'boleto' em espanhol e ingresso/passagem! Nao e conta pra pagar"
+    },
+    "mudanca": {
+      "espanhol": "mudanza",
+      "pronuncia": "mu-DAN-sa",
+      "exemplo_es": "La mudanza es el sabado.",
+      "exemplo_pt": "A mudanca e no sabado.",
+      "dica": "Essa e facil — quase identica! So muda o 'c' por 'z'"
+    },
+    "visto de trabalho": {
+      "espanhol": "permiso de trabajo / visa de trabajo",
+      "pronuncia": "per-MI-so de tra-BA-jo",
+      "exemplo_es": "Estoy tramitando el permiso de trabajo.",
+      "exemplo_pt": "To tramitando o visto de trabalho.",
+      "dica": "Na Espanha e 'permiso', na America Latina 'visa' e mais comum"
+    },
+    "bolsa de estudos": {
+      "espanhol": "beca",
+      "pronuncia": "BE-ca",
+      "exemplo_es": "Consegui una beca para estudiar en Madrid.",
+      "exemplo_pt": "Consegui uma bolsa de estudos pra estudar em Madrid.",
+      "dica": "Curta e direta — 'beca' e universal em todo o mundo hispanico"
+    },
+    "nota": {
+      "espanhol": "nota / calificacion",
+      "pronuncia": "NO-ta / ca-li-fi-ca-SION",
+      "exemplo_es": "Saque buena nota en el examen.",
+      "exemplo_pt": "Tirei boa nota na prova.",
+      "dica": "'Nota' funciona, mas 'calificacion' e mais formal e especifico"
+    },
+    "materia": {
+      "espanhol": "asignatura / materia",
+      "pronuncia": "a-sig-na-TU-ra",
+      "exemplo_es": "Mi asignatura favorita es historia.",
+      "exemplo_pt": "Minha materia favorita e historia.",
+      "dica": "'Asignatura' na Espanha, 'materia' na America Latina"
+    },
+    "TCC": {
+      "espanhol": "trabajo de fin de grado (TFG) / tesis",
+      "pronuncia": "tra-BA-jo de FIN de GRA-do",
+      "exemplo_es": "Estoy terminando mi trabajo de fin de grado.",
+      "exemplo_pt": "To terminando meu TCC.",
+      "dica": "Na Espanha e TFG (grado) ou TFM (master), na America Latina 'tesis'"
+    },
+    "mestrado": {
+      "espanhol": "master / maestria",
+      "pronuncia": "MAS-ter / ma-es-TRI-a",
+      "exemplo_es": "Voy a hacer un master en Barcelona.",
+      "exemplo_pt": "Vou fazer um mestrado em Barcelona.",
+      "dica": "'Master' na Espanha, 'maestria' na America Latina"
+    },
+    "prova": {
+      "espanhol": "examen / prueba",
+      "pronuncia": "ex-A-men / PRUE-ba",
+      "exemplo_es": "Manana tengo examen de espanol.",
+      "exemplo_pt": "Amanha tenho prova de espanhol.",
+      "dica": "'Examen' pra provas formais, 'prueba' pra testes rapidos"
+    },
+    "formatura": {
+      "espanhol": "graduacion",
+      "pronuncia": "gra-dua-SION",
+      "exemplo_es": "Mi graduacion es en diciembre.",
+      "exemplo_pt": "Minha formatura e em dezembro.",
+      "dica": "O verbo e 'graduarse' — 'Me gradue en 2024'"
+    },
+    "estagio": {
+      "espanhol": "practicas / pasantia",
+      "pronuncia": "PRAC-ti-cas / pa-san-TI-a",
+      "exemplo_es": "Estoy haciendo practicas en una empresa.",
+      "exemplo_pt": "To fazendo estagio numa empresa.",
+      "dica": "'Practicas' na Espanha, 'pasantia' na America Latina"
+    },
+    "reuniao": {
+      "espanhol": "reunion / junta",
+      "pronuncia": "re-u-NION",
+      "exemplo_es": "Tengo una reunion a las tres.",
+      "exemplo_pt": "Tenho uma reuniao as tres.",
+      "dica": "No Mexico 'junta' e muito usado pra reuniao de trabalho"
+    },
+    "prazo": {
+      "espanhol": "plazo / fecha limite",
+      "pronuncia": "PLA-so / FE-cha LI-mi-te",
+      "exemplo_es": "El plazo es hasta el viernes.",
+      "exemplo_pt": "O prazo e ate sexta.",
+      "dica": "'Deadline' tambem e usado em contexto corporativo hispanico"
+    },
+    "ferias": {
+      "espanhol": "vacaciones",
+      "pronuncia": "va-ca-SIO-nes",
+      "exemplo_es": "Me voy de vacaciones la semana que viene.",
+      "exemplo_pt": "Saio de ferias semana que vem.",
+      "dica": "Sempre no plural em espanhol — nunca 'vacacion'"
+    },
+    "demissao": {
+      "espanhol": "despido / renuncia",
+      "pronuncia": "des-PI-do / re-NUN-sia",
+      "exemplo_es": "Presento mi renuncia manana.",
+      "exemplo_pt": "Entrego minha demissao amanha.",
+      "dica": "'Despido' e quando te demitem, 'renuncia' e quando voce pede demissao"
+    },
+    "salario": {
+      "espanhol": "sueldo / salario",
+      "pronuncia": "SUEL-do",
+      "exemplo_es": "El sueldo es de dos mil euros.",
+      "exemplo_pt": "O salario e de dois mil euros.",
+      "dica": "'Sueldo' e mais coloquial e usado no dia a dia, 'salario' e mais formal"
+    },
+    "curriculo": {
+      "espanhol": "curriculum / hoja de vida",
+      "pronuncia": "cu-RRI-cu-lum",
+      "exemplo_es": "Envie mi curriculum a tres empresas.",
+      "exemplo_pt": "Mandei meu curriculo pra tres empresas.",
+      "dica": "Na Colombia e Venezuela falam 'hoja de vida'"
+    },
+    "hora extra": {
+      "espanhol": "horas extra / horas extras",
+      "pronuncia": "O-ras EX-tra",
+      "exemplo_es": "Hice tres horas extra esta semana.",
+      "exemplo_pt": "Fiz tres horas extra essa semana.",
+      "dica": "Praticamente igual — facil!"
+    },
+    "folga": {
+      "espanhol": "dia libre / dia franco / descanso",
+      "pronuncia": "DI-a LI-bre",
+      "exemplo_es": "Manana tengo el dia libre.",
+      "exemplo_pt": "Amanha e minha folga.",
+      "dica": "'Dia franco' e mais usado em trabalhos com escala"
+    }
+  },
+  "falsos_amigos": {
+    "embarazada": {
+      "parece_significar": "envergonhada",
+      "significa_realmente": "gravida",
+      "correto_pt": "Para dizer envergonhada, use 'avergonzada'",
+      "pronuncia": "em-ba-ra-SA-da",
+      "exemplo_errado_es": "Estoy embarazada (achando que e envergonhada)",
+      "exemplo_errado_pt": "Voce esta dizendo: Estou gravida!",
+      "exemplo_certo_es": "Estoy avergonzada.",
+      "exemplo_certo_pt": "Estou envergonhada."
+    },
+    "vaso": {
+      "parece_significar": "vaso de flor",
+      "significa_realmente": "copo",
+      "correto_pt": "Para dizer vaso de flor, use 'maceta' ou 'florero'",
+      "pronuncia": "VA-so",
+      "exemplo_errado_es": "Dame un vaso (achando que e vaso de planta)",
+      "exemplo_errado_pt": "Voce esta pedindo: Me da um copo!",
+      "exemplo_certo_es": "Pon las flores en la maceta.",
+      "exemplo_certo_pt": "Poe as flores no vaso."
+    },
+    "borracha": {
+      "parece_significar": "borracha (material)",
+      "significa_realmente": "mulher bebada",
+      "correto_pt": "Para dizer borracha (material), use 'goma' ou 'caucho'",
+      "pronuncia": "bo-RRA-cha",
+      "exemplo_errado_es": "Necesito una borracha (achando que e o material)",
+      "exemplo_errado_pt": "Voce esta dizendo: Preciso de uma bebada!",
+      "exemplo_certo_es": "Necesito una goma de borrar.",
+      "exemplo_certo_pt": "Preciso de uma borracha (de apagar)."
+    },
+    "polvo": {
+      "parece_significar": "polvo (animal)",
+      "significa_realmente": "po / poeira",
+      "correto_pt": "Para dizer polvo (animal), use 'pulpo'",
+      "pronuncia": "POL-vo",
+      "exemplo_errado_es": "Hay mucho polvo (achando que e o animal)",
+      "exemplo_errado_pt": "Voce esta dizendo: Tem muita poeira!",
+      "exemplo_certo_es": "Me encanta comer pulpo.",
+      "exemplo_certo_pt": "Adoro comer polvo."
+    },
+    "propina": {
+      "parece_significar": "propina / suborno",
+      "significa_realmente": "gorjeta",
+      "correto_pt": "Para dizer suborno, use 'soborno' ou 'coima'",
+      "pronuncia": "pro-PI-na",
+      "exemplo_errado_es": "Le di una propina (achando que e suborno)",
+      "exemplo_errado_pt": "Voce esta dizendo: Dei uma gorjeta pra ele!",
+      "exemplo_certo_es": "Deja buena propina, el servicio fue excelente.",
+      "exemplo_certo_pt": "Deixa uma boa gorjeta, o atendimento foi excelente."
+    },
+    "largo": {
+      "parece_significar": "largo (oposto de estreito)",
+      "significa_realmente": "comprido / longo",
+      "correto_pt": "Para dizer largo, use 'ancho'",
+      "pronuncia": "LAR-go",
+      "exemplo_errado_es": "La calle es larga (achando que e larga/ampla)",
+      "exemplo_errado_pt": "Voce esta dizendo: A rua e comprida!",
+      "exemplo_certo_es": "La calle es ancha.",
+      "exemplo_certo_pt": "A rua e larga."
+    },
+    "oficina": {
+      "parece_significar": "oficina mecanica",
+      "significa_realmente": "escritorio",
+      "correto_pt": "Para dizer oficina mecanica, use 'taller'",
+      "pronuncia": "o-fi-SI-na",
+      "exemplo_errado_es": "Voy a la oficina (achando que e oficina mecanica)",
+      "exemplo_errado_pt": "Voce esta dizendo: Vou ao escritorio!",
+      "exemplo_certo_es": "Lleve el coche al taller.",
+      "exemplo_certo_pt": "Levei o carro na oficina."
+    },
+    "exquisito": {
+      "parece_significar": "esquisito / estranho",
+      "significa_realmente": "delicioso / requintado",
+      "correto_pt": "Para dizer esquisito/estranho, use 'raro' ou 'extrano'",
+      "pronuncia": "ex-qui-SI-to",
+      "exemplo_errado_es": "La comida es exquisita (achando que e estranha)",
+      "exemplo_errado_pt": "Voce esta dizendo: A comida e deliciosa!",
+      "exemplo_certo_es": "Ese tipo es muy raro.",
+      "exemplo_certo_pt": "Aquele cara e muito esquisito."
+    },
+    "piso": {
+      "parece_significar": "piso / chao",
+      "significa_realmente": "apartamento (na Espanha)",
+      "correto_pt": "Para dizer chao, use 'suelo'",
+      "pronuncia": "PI-so",
+      "exemplo_errado_es": "Busco un piso (achando que e chao)",
+      "exemplo_errado_pt": "Voce esta dizendo: Estou procurando um apartamento!",
+      "exemplo_certo_es": "Se cayo al suelo.",
+      "exemplo_certo_pt": "Caiu no chao."
+    },
+    "firma": {
+      "parece_significar": "firma / empresa",
+      "significa_realmente": "assinatura",
+      "correto_pt": "Para dizer empresa, use 'empresa' ou 'compania'",
+      "pronuncia": "FIR-ma",
+      "exemplo_errado_es": "Necesito tu firma (achando que e empresa)",
+      "exemplo_errado_pt": "Voce esta dizendo: Preciso da sua assinatura!",
+      "exemplo_certo_es": "Trabajo en una empresa grande.",
+      "exemplo_certo_pt": "Trabalho numa empresa grande."
+    },
+    "contestar": {
+      "parece_significar": "contestar / discordar",
+      "significa_realmente": "responder",
+      "correto_pt": "Para dizer contestar/discordar, use 'rebatir' ou 'cuestionar'",
+      "pronuncia": "con-tes-TAR",
+      "exemplo_errado_es": "No me contesto (achando que e contestou)",
+      "exemplo_errado_pt": "Voce esta dizendo: Nao me respondeu!",
+      "exemplo_certo_es": "Contesta el telefono, por favor.",
+      "exemplo_certo_pt": "Atende o telefone, por favor."
+    },
+    "jubilacion": {
+      "parece_significar": "jubilacao / alegria religiosa",
+      "significa_realmente": "aposentadoria",
+      "correto_pt": "Em espanhol, 'jubilarse' e aposentar-se",
+      "pronuncia": "ju-bi-la-SION",
+      "exemplo_errado_es": "Mi padre esta en jubilacion (achando que e outra coisa)",
+      "exemplo_errado_pt": "Voce pode nao entender: Meu pai esta aposentado!",
+      "exemplo_certo_es": "Mi padre se jubilo el ano pasado.",
+      "exemplo_certo_pt": "Meu pai se aposentou ano passado."
+    },
+    "abonar": {
+      "parece_significar": "abonar / adubar",
+      "significa_realmente": "pagar",
+      "correto_pt": "Para dizer adubar, use 'fertilizar' ou 'abonar la tierra'",
+      "pronuncia": "a-bo-NAR",
+      "exemplo_errado_es": "Tiene que abonar la cuota (achando que e adubar)",
+      "exemplo_errado_pt": "Voce esta dizendo: Tem que pagar a parcela!",
+      "exemplo_certo_es": "¿Como quiere abonar? ¿Efectivo o tarjeta?",
+      "exemplo_certo_pt": "Como quer pagar? Dinheiro ou cartao?"
+    },
+    "cuenta": {
+      "parece_significar": "so conta bancaria",
+      "significa_realmente": "conta bancaria E conta do restaurante",
+      "correto_pt": "Uma so palavra pra dois significados — contexto define",
+      "pronuncia": "CUEN-ta",
+      "exemplo_errado_es": "La cuenta, por favor (no restaurante)",
+      "exemplo_errado_pt": "A conta, por favor — esse funciona!",
+      "exemplo_certo_es": "Abri una cuenta en el banco. / La cuenta, por favor.",
+      "exemplo_certo_pt": "Abri uma conta no banco. / A conta, por favor."
+    },
+    "coche": {
+      "parece_significar": "cocho / coisa estranha",
+      "significa_realmente": "carro (na Espanha)",
+      "correto_pt": "Na America Latina usam 'auto' ou 'carro'",
+      "pronuncia": "CO-che",
+      "exemplo_errado_es": "Voy en coche (achando que e outra coisa)",
+      "exemplo_errado_pt": "Voce esta dizendo: Vou de carro!",
+      "exemplo_certo_es": "Mi coche esta en el aparcamiento.",
+      "exemplo_certo_pt": "Meu carro esta no estacionamento."
+    },
+    "carpeta": {
+      "parece_significar": "carpete / tapete",
+      "significa_realmente": "pasta (de documentos)",
+      "correto_pt": "Para dizer carpete/tapete, use 'alfombra'",
+      "pronuncia": "car-PE-ta",
+      "exemplo_errado_es": "Pon los papeles en la carpeta (achando que e carpete)",
+      "exemplo_errado_pt": "Voce esta dizendo: Poe os papeis na pasta!",
+      "exemplo_certo_es": "La alfombra del salon es nueva.",
+      "exemplo_certo_pt": "O carpete da sala e novo."
+    },
+    "todavia": {
+      "parece_significar": "todavia / porem / contudo",
+      "significa_realmente": "ainda / ate agora",
+      "correto_pt": "Para dizer porem/contudo, use 'sin embargo' ou 'no obstante'",
+      "pronuncia": "to-da-VI-a",
+      "exemplo_errado_es": "Todavia no llego (achando que e contudo)",
+      "exemplo_errado_pt": "Voce esta dizendo: Ainda nao chegou!",
+      "exemplo_certo_es": "Estudie mucho, sin embargo no aprobe.",
+      "exemplo_certo_pt": "Estudei muito, porem nao passei."
+    },
+    "asignatura": {
+      "parece_significar": "assinatura",
+      "significa_realmente": "materia / disciplina escolar",
+      "correto_pt": "Para dizer assinatura, use 'firma'",
+      "pronuncia": "a-sig-na-TU-ra",
+      "exemplo_errado_es": "Mi asignatura favorita es matematicas",
+      "exemplo_errado_pt": "Minha materia favorita e matematica!",
+      "exemplo_certo_es": "Necesito tu firma en el documento.",
+      "exemplo_certo_pt": "Preciso da sua assinatura no documento."
+    },
+    "exito": {
+      "parece_significar": "saida / exit",
+      "significa_realmente": "sucesso",
+      "correto_pt": "Para dizer saida, use 'salida'",
+      "pronuncia": "E-xi-to",
+      "exemplo_errado_es": "Tuvo mucho exito (achando que e saida)",
+      "exemplo_errado_pt": "Voce esta dizendo: Teve muito sucesso!",
+      "exemplo_certo_es": "La salida de emergencia esta a la derecha.",
+      "exemplo_certo_pt": "A saida de emergencia fica a direita."
+    },
+    "aprobar": {
+      "parece_significar": "aprovar (dar aprovacao)",
+      "significa_realmente": "passar/ser aprovado na prova",
+      "correto_pt": "Tambem pode significar aprovar, mas o principal e passar na prova",
+      "pronuncia": "a-pro-BAR",
+      "exemplo_errado_es": "Aprobe el examen (nao e so dar aprovacao)",
+      "exemplo_errado_pt": "Passei na prova!",
+      "exemplo_certo_es": "Si no estudio, no voy a aprobar.",
+      "exemplo_certo_pt": "Se nao estudar, nao vou passar."
+    },
+    "carrera": {
+      "parece_significar": "corrida",
+      "significa_realmente": "curso universitario / carreira",
+      "correto_pt": "Tambem pode ser corrida, mas o sentido principal e curso/carreira",
+      "pronuncia": "ca-RRE-ra",
+      "exemplo_errado_es": "Estudio una carrera de cinco anos",
+      "exemplo_errado_pt": "Estou fazendo um curso universitario de 5 anos!",
+      "exemplo_certo_es": "¿Que carrera estudias?",
+      "exemplo_certo_pt": "Que curso voce faz?"
+    },
+    "apuntes": {
+      "parece_significar": "apontes / apontamentos",
+      "significa_realmente": "anotacoes de aula",
+      "correto_pt": "E o mesmo conceito, mas a palavra confunde brasileiros",
+      "pronuncia": "a-PUN-tes",
+      "exemplo_errado_es": "¿Me pasas los apuntes de la clase?",
+      "exemplo_errado_pt": "Me passa as anotacoes da aula?",
+      "exemplo_certo_es": "Tomo apuntes en todas las clases.",
+      "exemplo_certo_pt": "Faco anotacoes em todas as aulas."
+    },
+    "introduccion": {
+      "parece_significar": "apresentacao pessoal",
+      "significa_realmente": "introducao (de texto, tema)",
+      "correto_pt": "Para apresentacao pessoal, use 'presentacion'",
+      "pronuncia": "in-tro-duc-SION",
+      "exemplo_errado_es": "Haz tu introduccion (achando que e se apresentar)",
+      "exemplo_errado_pt": "Voce esta dizendo: Faz a introducao (do tema)!",
+      "exemplo_certo_es": "Les hago mi presentacion: soy Ana, de Brasil.",
+      "exemplo_certo_pt": "Me apresento: sou Ana, do Brasil."
+    },
+    "desde luego": {
+      "parece_significar": "desde logo / imediatamente",
+      "significa_realmente": "claro que sim / com certeza",
+      "correto_pt": "Para dizer 'desde logo/imediatamente', use 'enseguida' ou 'de inmediato'",
+      "pronuncia": "DES-de LUE-go",
+      "exemplo_errado_es": "Desde luego que voy (achando que e 'vou agora')",
+      "exemplo_errado_pt": "Voce esta dizendo: Claro que vou!",
+      "exemplo_certo_es": "¿Vienes a la fiesta? ¡Desde luego!",
+      "exemplo_certo_pt": "Voce vem na festa? Claro que sim!"
+    },
+    "negocio": {
+      "parece_significar": "negocio (identico)",
+      "significa_realmente": "negocio — mas o plural e 'negocios' (sem acento muda)",
+      "correto_pt": "O significado e o mesmo, mas cuidado com a pronuncia",
+      "pronuncia": "ne-GO-sio (singular) / ne-GO-sios (plural)",
+      "exemplo_errado_es": "Tengo un negocio propio",
+      "exemplo_errado_pt": "Tenho um negocio proprio — esse ta certo!",
+      "exemplo_certo_es": "Los negocios van bien este ano.",
+      "exemplo_certo_pt": "Os negocios estao indo bem esse ano."
+    },
+    "salario vs sueldo": {
+      "parece_significar": "sao a mesma coisa",
+      "significa_realmente": "'sueldo' e mais coloquial, 'salario' e formal",
+      "correto_pt": "No dia a dia, espanhois usam 'sueldo' — 'salario' e mais de documento",
+      "pronuncia": "SUEL-do / sa-LA-rio",
+      "exemplo_errado_es": "¿Cual es tu salario? (muito formal no dia a dia)",
+      "exemplo_errado_pt": "Soa estranho perguntar assim informalmente",
+      "exemplo_certo_es": "¿Cuanto cobras? / ¿Cual es tu sueldo?",
+      "exemplo_certo_pt": "Quanto voce ganha? / Qual e seu salario?"
+    },
+    "despedir": {
+      "parece_significar": "so despedir / demitir",
+      "significa_realmente": "demitir E tambem se despedir (dar adeus)",
+      "correto_pt": "O contexto define: 'me despidieron' (me demitiram) vs 'me despedi' (dei tchau)",
+      "pronuncia": "des-pe-DIR",
+      "exemplo_errado_es": "Me despidieron del trabajo (fui demitido)",
+      "exemplo_errado_pt": "Duplo sentido — cuidado!",
+      "exemplo_certo_es": "Me despedi de mis amigos en el aeropuerto.",
+      "exemplo_certo_pt": "Me despedi dos meus amigos no aeroporto."
+    },
+    "presupuesto": {
+      "parece_significar": "pressuposto / suposicao",
+      "significa_realmente": "orcamento",
+      "correto_pt": "Para suposicao, use 'suposicion' ou 'presuncion'",
+      "pronuncia": "pre-su-PUES-to",
+      "exemplo_errado_es": "¿Cual es el presupuesto? (achando que e suposicao)",
+      "exemplo_errado_pt": "Voce esta perguntando: Qual e o orcamento?",
+      "exemplo_certo_es": "El presupuesto del proyecto es de 50 mil euros.",
+      "exemplo_certo_pt": "O orcamento do projeto e de 50 mil euros."
+    },
+    "factura": {
+      "parece_significar": "fatura do cartao de credito",
+      "significa_realmente": "nota fiscal / recibo",
+      "correto_pt": "Para fatura do cartao, use 'estado de cuenta' ou 'extracto'",
+      "pronuncia": "fac-TU-ra",
+      "exemplo_errado_es": "Necesito la factura (achando que e do cartao)",
+      "exemplo_errado_pt": "Voce esta pedindo: Preciso da nota fiscal!",
+      "exemplo_certo_es": "¿Me da la factura con los datos fiscales?",
+      "exemplo_certo_pt": "Me da a nota fiscal com os dados?"
+    },
+    "cargo": {
+      "parece_significar": "cargo / funcao",
+      "significa_realmente": "cargo E TAMBEM cobranca/taxa",
+      "correto_pt": "Cuidado: 'cargo' pode ser funcao OU taxa/cobranca extra",
+      "pronuncia": "CAR-go",
+      "exemplo_errado_es": "Hay un cargo extra en la cuenta (nao e funcao)",
+      "exemplo_errado_pt": "Tem uma cobranca extra na conta!",
+      "exemplo_certo_es": "¿Cual es tu cargo en la empresa? / Hay un cargo adicional.",
+      "exemplo_certo_pt": "Qual e sua funcao na empresa? / Tem uma taxa adicional."
+    },
+    "jefe vs patron": {
+      "parece_significar": "sao a mesma coisa",
+      "significa_realmente": "'jefe' e chefe direto, 'patron' e dono/empregador",
+      "correto_pt": "Use 'jefe' pro seu chefe e 'patron' pro dono da empresa",
+      "pronuncia": "JE-fe / pa-TRON",
+      "exemplo_errado_es": "Mi patron me dijo (quando era pra ser jefe)",
+      "exemplo_errado_pt": "Confundir os dois muda o sentido",
+      "exemplo_certo_es": "Mi jefe directo es muy bueno. El patron de la empresa es otro.",
+      "exemplo_certo_pt": "Meu chefe direto e muito bom. O dono da empresa e outro."
+    },
+    "empresa vs compania": {
+      "parece_significar": "sao intercambiaveis",
+      "significa_realmente": "'empresa' e mais geral, 'compania' e mais corporativo",
+      "correto_pt": "No dia a dia use 'empresa', em contexto formal 'compania'",
+      "pronuncia": "em-PRE-sa / com-pa-NI-a",
+      "exemplo_errado_es": "Ambos funcionam, mas o registro muda",
+      "exemplo_errado_pt": "Nao e erro grave, mas soa diferente",
+      "exemplo_certo_es": "Trabajo en una empresa pequena. / Es una compania multinacional.",
+      "exemplo_certo_pt": "Trabalho numa empresa pequena. / E uma companhia multinacional."
+    }
+  },
+  "perguntas_seguidores": {
+    "como falar 'namorar' em espanhol": {
+      "resposta": "Em espanhol a gente diz 'salir con alguien' quando esta comecando, e 'ser novios' quando ja e namorado oficial.",
+      "espanhol": "salir con alguien / ser novios / estar de novios",
+      "pronuncia": "sa-LIR con AL-guien / SER NO-vios",
+      "exemplo_es": "Estamos saliendo hace dos meses. / Somos novios desde enero.",
+      "exemplo_pt": "Estamos saindo ha dois meses. / Somos namorados desde janeiro.",
+      "dica": "CUIDADO: 'enamorar' em espanhol e se apaixonar, nao namorar!"
+    },
+    "como pronunciar o s em espanhol": {
+      "resposta": "O S em espanhol e sempre sibilante, como o SS do portugues. Nunca vira som de Z entre vogais como no portugues.",
+      "espanhol": "casa = CA-sa (nunca CA-za), cosa = CO-sa",
+      "pronuncia": "O S sempre soa como SS: ca-SA, co-SA, me-SA",
+      "exemplo_es": "La casa es cosa seria. (todo S soa SS)",
+      "exemplo_pt": "A casa e coisa seria. (em PT o S entre vogais vira Z)",
+      "dica": "Essa e a diferenca que mais denuncia o brasileiro falando espanhol"
+    },
+    "qual diferenca entre buen e bueno": {
+      "resposta": "'Buen' e a forma apocopada — usa ANTES de substantivo masculino. 'Bueno' usa DEPOIS ou sozinho.",
+      "espanhol": "buen + substantivo / substantivo + bueno",
+      "pronuncia": "BUEN (antes) / BUE-no (depois)",
+      "exemplo_es": "Es un buen libro. / El libro es bueno. / ¡Bueno, vamos!",
+      "exemplo_pt": "E um bom livro. / O livro e bom. / Bom, vamos!",
+      "dica": "Funciona igual a 'gran' vs 'grande': un gran hombre / un hombre grande"
+    },
+    "como pedir cardapio no restaurante": {
+      "resposta": "Cardapio em espanhol e 'la carta' ou 'el menu'. Nunca fale 'cardapio' — nao existe!",
+      "espanhol": "la carta / el menu",
+      "pronuncia": "la CAR-ta / el me-NU",
+      "exemplo_es": "¿Me trae la carta, por favor? / ¿Tienen menu del dia?",
+      "exemplo_pt": "Me traz o cardapio, por favor? / Tem menu do dia?",
+      "dica": "'Menu del dia' e o prato executivo da Espanha — geralmente barato e com 3 tempos"
+    },
+    "como falar as horas em espanhol": {
+      "resposta": "Usa 'es la una' pra 1h e 'son las + numero' pra todas as outras. Minutos com 'y' (e) ou 'menos' (pra).",
+      "espanhol": "Es la una / Son las dos / Son las tres y media / Son las cinco menos cuarto",
+      "pronuncia": "SON las DOS / SON las TRES i ME-dia",
+      "exemplo_es": "¿Que hora es? Son las cuatro y veinticinco.",
+      "exemplo_pt": "Que horas sao? Sao quatro e vinte e cinco.",
+      "dica": "Na America Latina usam mais numeros diretos: 'Son las 4:25'. Na Espanha usam 'y cuarto', 'y media', 'menos cuarto'"
+    },
+    "como se apresentar em espanhol": {
+      "resposta": "O basico: 'Hola, me llamo [nome]. Soy de Brasil. Mucho gusto.' Pra contexto formal, adicione profissao.",
+      "espanhol": "Hola, me llamo... Soy de... Mucho gusto / Encantado(a)",
+      "pronuncia": "me LLA-mo / SOY de / MU-cho GUS-to / en-can-TA-do",
+      "exemplo_es": "Hola, me llamo Ana. Soy brasilena, de Sao Paulo. Mucho gusto.",
+      "exemplo_pt": "Ola, me chamo Ana. Sou brasileira, de Sao Paulo. Muito prazer.",
+      "dica": "'Encantado/a' e mais formal que 'mucho gusto' — use em reunioes e entrevistas"
+    },
+    "muy vs mucho qual usar": {
+      "resposta": "'Muy' vai antes de adjetivo ou advérbio. 'Mucho' vai antes de substantivo ou depois de verbo. Nunca 'muy mucho'!",
+      "espanhol": "muy + adjetivo/adverbio | mucho + substantivo | verbo + mucho",
+      "pronuncia": "MUI (antes de adjetivo) / MU-cho (antes de substantivo)",
+      "exemplo_es": "Es muy bueno. / Tengo mucho trabajo. / Estudio mucho.",
+      "exemplo_pt": "E muito bom. / Tenho muito trabalho. / Estudo muito.",
+      "dica": "Regra de ouro: se depois vem adjetivo = MUY, se depois vem substantivo = MUCHO"
+    },
+    "como falar os numeros grandes": {
+      "resposta": "A grande diferenca: mil (1000) nao muda no plural! '2000' e 'dos mil', nunca 'dos miles'. E 'millon' sempre leva 'de' antes do substantivo.",
+      "espanhol": "mil / dos mil / un millon de / cien mil",
+      "pronuncia": "MIL / dos MIL / un mi-LLON de",
+      "exemplo_es": "Cuesta dos mil quinientos pesos. / Hay un millon de personas.",
+      "exemplo_pt": "Custa dois mil e quinhentos pesos. / Ha um milhao de pessoas.",
+      "dica": "100 = cien (sozinho) ou ciento (ciento veinte = 120). Brasileiros erram muito nisso"
+    },
+    "como marcar consulta medica em espanhol": {
+      "resposta": "Use 'pedir cita' ou 'solicitar una cita medica'. O medico e 'medico de cabecera' (clinico geral) na Espanha.",
+      "espanhol": "pedir cita / solicitar una cita / medico de cabecera",
+      "pronuncia": "pe-DIR SI-ta / ME-di-co de ca-be-SE-ra",
+      "exemplo_es": "Quiero pedir cita con el medico de cabecera, por favor.",
+      "exemplo_pt": "Quero marcar consulta com o clinico geral, por favor.",
+      "dica": "Na Espanha liga pro 'centro de salud'. Na America Latina e mais direto no consultorio"
+    },
+    "como falar com casero proprietario": {
+      "resposta": "'Casero' e o proprietario do imovel na Espanha. Use tratamento formal (usted) ate ter confianca.",
+      "espanhol": "casero / propietario / arrendador",
+      "pronuncia": "ca-SE-ro / pro-pie-TA-rio",
+      "exemplo_es": "Buenos dias, le escribo porque hay un problema con la calefaccion del piso.",
+      "exemplo_pt": "Bom dia, te escrevo porque tem um problema com o aquecimento do apartamento.",
+      "dica": "Sempre por escrito (WhatsApp/email) pra ter registro. Use 'usted' no comeco"
+    },
+    "documentos para o nie vocabulario": {
+      "resposta": "NIE e o Numero de Identidad de Extranjero. Voce precisa de: empadronamiento, pasaporte, solicitud, tasa (taxa), foto carnet.",
+      "espanhol": "NIE / empadronamiento / solicitud / tasa / cita previa",
+      "pronuncia": "e-ne-IE / em-pa-dro-na-MIEN-to / so-li-si-TUD",
+      "exemplo_es": "Necesito una cita previa para tramitar el NIE.",
+      "exemplo_pt": "Preciso de um agendamento para tramitar o NIE.",
+      "dica": "'Cita previa' (agendamento) e a palavra mais importante — sem isso voce nao resolve nada na Espanha"
+    },
+    "como abrir conta bancaria em espanhol": {
+      "resposta": "Use 'abrir una cuenta bancaria'. Precisa de NIE/pasaporte, comprobante de domicilio e, as vezes, contrato de trabajo.",
+      "espanhol": "abrir una cuenta / cuenta corriente / cuenta de ahorro",
+      "pronuncia": "a-BRIR u-na CUEN-ta / CUEN-ta co-RRIEN-te",
+      "exemplo_es": "Quiero abrir una cuenta corriente. ¿Que documentos necesito?",
+      "exemplo_pt": "Quero abrir uma conta corrente. Que documentos preciso?",
+      "dica": "Bancos digitais como N26 e Revolut aceitam sem NIE — boa opcao pro comeco"
+    },
+    "como reclamar de um servico": {
+      "resposta": "Peca a 'hoja de reclamaciones' — todo estabelecimento na Espanha e obrigado a ter. E sua arma secreta!",
+      "espanhol": "hoja de reclamaciones / quiero poner una queja / reclamar",
+      "pronuncia": "O-ja de re-cla-ma-SIO-nes / QUE-ja",
+      "exemplo_es": "Quiero la hoja de reclamaciones, por favor. No estoy satisfecho con el servicio.",
+      "exemplo_pt": "Quero o livro de reclamacoes, por favor. Nao estou satisfeito com o servico.",
+      "dica": "So de pedir a 'hoja de reclamaciones' o problema geralmente se resolve na hora"
+    },
+    "como pedir orcamento em espanhol": {
+      "resposta": "Orcamento em espanhol e 'presupuesto'. Peca 'sin compromiso' (sem compromisso) pra deixar claro que e so cotacao.",
+      "espanhol": "presupuesto / pedir presupuesto sin compromiso",
+      "pronuncia": "pre-su-PUES-to sin com-pro-MI-so",
+      "exemplo_es": "¿Me podria pasar un presupuesto sin compromiso?",
+      "exemplo_pt": "Poderia me passar um orcamento sem compromisso?",
+      "dica": "CUIDADO: 'presupuesto' parece 'pressuposto' mas significa orcamento!"
+    },
+    "tu vs usted quando usar": {
+      "resposta": "'Tu' e informal (amigos, jovens, colegas). 'Usted' e formal (desconhecidos mais velhos, autoridades, clientes). Na duvida, comece com 'usted'.",
+      "espanhol": "tu (informal) / usted (formal) / vos (Argentina, informal)",
+      "pronuncia": "TU / us-TED / VOS",
+      "exemplo_es": "Tu: ¿Que quieres? / Usted: ¿Que desea? / Vos: ¿Que queres?",
+      "exemplo_pt": "Tu: O que voce quer? / Usted: O que o senhor deseja?",
+      "dica": "Na Espanha usam 'tu' quase sempre. Na Colombia 'usted' ate entre amigos. Cada pais e diferente!"
+    },
+    "como falar no telefone em espanhol": {
+      "resposta": "Atende com 'Hola' ou 'Digame' (Espanha) / 'Alo' ou 'Bueno' (Mexico). Pra pedir alguem: '¿Esta [nombre]?'.",
+      "espanhol": "Digame / Bueno / ¿De parte de quien? / Le paso con...",
+      "pronuncia": "DI-ga-me / BUE-no / de PAR-te de QUIEN",
+      "exemplo_es": "Hola, buenos dias. ¿Podria hablar con el senor Garcia, por favor?",
+      "exemplo_pt": "Ola, bom dia. Poderia falar com o senhor Garcia, por favor?",
+      "dica": "'Digame' na Espanha e como a gente atende. No Mexico e 'Bueno'. Na Argentina e 'Hola'"
+    },
+    "ser vs estar regra definitiva": {
+      "resposta": "SER = caracteristica permanente ou essencia (soy alto, soy brasileno). ESTAR = estado temporario ou localizacao (estoy cansado, estoy en casa).",
+      "espanhol": "SER: identidade, origem, profissao, hora / ESTAR: estado, localizacao, resultado",
+      "pronuncia": "SOY / ES / SOMOS — es-TOY / es-TA / es-TA-mos",
+      "exemplo_es": "Soy brasileno pero estoy en Espana. / La sopa es buena pero esta fria.",
+      "exemplo_pt": "Sou brasileiro mas estou na Espanha. / A sopa e boa mas esta fria.",
+      "dica": "Macete: se pode mudar amanha = ESTAR. Se nao pode = SER. 'Estoy gordo' (engordei) vs 'Soy gordo' (sempre fui)"
+    },
+    "quando usar subjuntivo": {
+      "resposta": "Subjuntivo aparece depois de: desejos (quiero que), duvidas (dudo que), emocoes (me alegra que), e pedidos (te pido que). Se e fato = indicativo.",
+      "espanhol": "quiero que + subjuntivo / dudo que + subjuntivo / es importante que + subjuntivo",
+      "pronuncia": "QUIE-ro que VEN-gas / DU-do que SE-pa",
+      "exemplo_es": "Quiero que vengas a la fiesta. / Dudo que sepa la respuesta.",
+      "exemplo_pt": "Quero que voce venha na festa. / Duvido que saiba a resposta.",
+      "dica": "Regra rapida: se tem 'QUE' no meio e o sujeito muda = provavelmente subjuntivo"
+    },
+    "por vs para como nao errar": {
+      "resposta": "POR = causa, troca, duracao, meio (por la manana, por ti, por avion). PARA = destino, finalidade, prazo (para ti, para aprender, para manana).",
+      "espanhol": "POR: causa/razao/troca/duracao / PARA: destino/objetivo/prazo",
+      "pronuncia": "POR / PA-ra",
+      "exemplo_es": "Estudio espanol por trabajo (causa). / Estudio espanol para viajar (objetivo).",
+      "exemplo_pt": "Estudo espanhol por causa do trabalho. / Estudo espanhol para viajar.",
+      "dica": "POR = olha pra tras (causa). PARA = olha pra frente (objetivo). Essa regra resolve 80% dos casos"
+    },
+    "como se preparar para o dele": {
+      "resposta": "1) Defina o nivel (A2-C2). 2) Faca simulados oficiais do Instituto Cervantes. 3) Treine as 4 competencias: leitura, escrita, audicao e fala.",
+      "espanhol": "DELE = Diploma de Espanol como Lengua Extranjera / Instituto Cervantes",
+      "pronuncia": "DE-le / ins-ti-TU-to ser-VAN-tes",
+      "exemplo_es": "Me estoy preparando para el DELE B2.",
+      "exemplo_pt": "Estou me preparando para o DELE B2.",
+      "dica": "B2 e o mais pedido pra trabalho e universidade. Prova tem 4 partes — treine todas igualmente"
+    },
+    "preterito perfecto vs indefinido": {
+      "resposta": "Perfecto (he comido) = passado conectado ao presente. Indefinido (comi) = passado encerrado. Na Espanha usam mais perfecto, na America Latina mais indefinido.",
+      "espanhol": "He comido (perfecto) / Comi (indefinido)",
+      "pronuncia": "E co-MI-do / co-MI",
+      "exemplo_es": "Hoy he comido paella. (Espanha) / Hoy comi paella. (America Latina)",
+      "exemplo_pt": "Hoje comi paella. (ambos significam a mesma coisa)",
+      "dica": "Na Espanha: 'hoy/esta semana/este mes' = perfecto. Na America Latina: quase sempre indefinido"
+    },
+    "como melhorar redacao em espanhol": {
+      "resposta": "1) Use conectivos (sin embargo, por lo tanto, ademas). 2) Escreva frases curtas. 3) Leia textos nativos e copie a estrutura.",
+      "espanhol": "sin embargo / por lo tanto / ademas / en conclusion / por otro lado",
+      "pronuncia": "sin em-BAR-go / por lo TAN-to / a-de-MAS",
+      "exemplo_es": "El metodo tradicional no funciona. Sin embargo, hay alternativas eficaces.",
+      "exemplo_pt": "O metodo tradicional nao funciona. No entanto, ha alternativas eficazes.",
+      "dica": "Conectivos sao o segredo — eles transformam uma redacao basica em uma avancada"
+    },
+    "como interpretar texto em espanhol": {
+      "resposta": "1) Leia o titulo e subtitulo primeiro. 2) Nao traduza palavra por palavra. 3) Preste atencao nos conectivos — eles mostram a logica. 4) Falsos cognatos sao armadilhas.",
+      "espanhol": "titulo / subtitulo / idea principal / conectivos / falsos amigos",
+      "pronuncia": "i-DE-a prin-si-PAL / co-nec-TI-vos",
+      "exemplo_es": "Identifica la idea principal de cada parrafo antes de responder.",
+      "exemplo_pt": "Identifique a ideia principal de cada paragrafo antes de responder.",
+      "dica": "No ENEM e DELE, a primeira leitura rapida vale mais que ficar preso numa palavra"
+    },
+    "verbos irregulares tem macete": {
+      "resposta": "Sim! A maioria segue padroes. Grupo E→IE (querer→quiero). Grupo O→UE (poder→puedo). Grupo E→I (pedir→pido). Decore o grupo, nao cada verbo.",
+      "espanhol": "E→IE: quiero, pienso, prefiero / O→UE: puedo, duermo, vuelvo / E→I: pido, sigo, repito",
+      "pronuncia": "QUIE-ro / PIEN-so / PUE-do / DUER-mo / PI-do",
+      "exemplo_es": "Quiero comer. / No puedo dormir. / Pido la cuenta.",
+      "exemplo_pt": "Quero comer. / Nao consigo dormir. / Peco a conta.",
+      "dica": "Os 3 padroes cobrem 80% dos irregulares. Decore o padrao e aplique a qualquer verbo do grupo"
+    },
+    "como comecar email formal em espanhol": {
+      "resposta": "Estimado/a Sr./Sra. [Sobrenome]: — com dois pontos, nao virgula! Pra menos formal: 'Hola [Nome],' funciona.",
+      "espanhol": "Estimado/a / Muy senor mio / A quien corresponda / Cordialmente",
+      "pronuncia": "es-ti-MA-do / MUI se-NIOR MI-o",
+      "exemplo_es": "Estimada Sra. Rodriguez: Le escribo en relacion con...",
+      "exemplo_pt": "Estimada Sra. Rodriguez: Escrevo-lhe em relacao a...",
+      "dica": "Termine com 'Atentamente' ou 'Cordialmente'. 'Un saludo' e semi-formal e muito usado"
+    },
+    "como dar feedback em espanhol": {
+      "resposta": "Comece com algo positivo, depois o ponto de melhora com 'seria bueno que' + subjuntivo. Evite 'pero' direto.",
+      "espanhol": "Hiciste un buen trabajo. Seria bueno que... / Te sugiero que... / Podrias mejorar en...",
+      "pronuncia": "se-RI-a BUE-no que / te su-GIE-ro que",
+      "exemplo_es": "El informe esta muy bien. Seria bueno que anadiras mas datos en la conclusion.",
+      "exemplo_pt": "O relatorio esta muito bom. Seria bom que adicionasse mais dados na conclusao.",
+      "dica": "Use 'condicional + subjuntivo' pra soar educado: 'seria ideal que...' em vez de 'tienes que...'"
+    },
+    "como encerrar reuniao em espanhol": {
+      "resposta": "Resuma os pontos com 'En resumen...', defina proximos passos com 'Los proximos pasos son...' e feche com 'Muchas gracias por su tiempo.'",
+      "espanhol": "En resumen / Para concluir / Los proximos pasos / Quedo a su disposicion",
+      "pronuncia": "en re-SU-men / los PROX-i-mos PA-sos",
+      "exemplo_es": "En resumen, quedamos en que el equipo entrega el informe el viernes. ¿Alguna duda? Muchas gracias por su tiempo.",
+      "exemplo_pt": "Resumindo, ficamos que a equipe entrega o relatorio na sexta. Alguma duvida? Muito obrigado pelo tempo.",
+      "dica": "'Quedo a su disposicion' (estou a disposicao) e o encerramento formal perfeito"
+    },
+    "como negociar preco em espanhol": {
+      "resposta": "Use '¿Hay algun descuento?' (tem desconto?) ou '¿Es su mejor precio?' (e o melhor preco?). Sempre educado, nunca agressivo.",
+      "espanhol": "¿Hay descuento? / ¿Me hace mejor precio? / ¿Es negociable?",
+      "pronuncia": "AI des-CUEN-to / me A-se me-JOR PRE-sio",
+      "exemplo_es": "Me gusta mucho, pero mi presupuesto es un poco mas bajo. ¿Es negociable?",
+      "exemplo_pt": "Gostei muito, mas meu orcamento e um pouco mais baixo. E negociavel?",
+      "dica": "Em mercados de rua funciona. Em lojas formais, pergunte pelo descuento 'por pago en efectivo' (a vista)"
+    },
+    "espanhol basico para entrevista": {
+      "resposta": "Prepare: apresentacao pessoal, experiencia ('Trabaje en...'), motivo ('Me interesa porque...'), pontos fortes e pergunta final.",
+      "espanhol": "Trabaje en... / Tengo experiencia en... / Me interesa porque... / Mi mayor fortaleza es...",
+      "pronuncia": "tra-ba-JE en / TEN-go ex-pe-RIEN-sia en",
+      "exemplo_es": "Trabaje cinco anos en marketing digital. Me interesa este puesto porque quiero crecer profesionalmente.",
+      "exemplo_pt": "Trabalhei cinco anos em marketing digital. Me interessa essa vaga porque quero crescer profissionalmente.",
+      "dica": "Termine com: '¿Tiene alguna pregunta para mi?' — mostra proatividade e confianca"
+    },
+    "como apresentar resultados em espanhol": {
+      "resposta": "Estrutura: 'En primer lugar...' (dados), 'Como pueden ver...' (analise), 'En conclusion...' (recomendacao).",
+      "espanhol": "En primer lugar / A continuacion / Como pueden ver / En conclusion / Recomendamos",
+      "pronuncia": "en pri-MER lu-GAR / co-mo PUE-den VER",
+      "exemplo_es": "En primer lugar, las ventas crecieron un 15%. Como pueden ver en el grafico, el crecimiento fue constante.",
+      "exemplo_pt": "Em primeiro lugar, as vendas cresceram 15%. Como podem ver no grafico, o crescimento foi constante.",
+      "dica": "Use numeros concretos e graficos. Em espanhol corporativo, 'los datos hablan' (os dados falam) funciona como transicao"
+    },
+    "small talk antes da reuniao": {
+      "resposta": "Comece com '¿Que tal?' ou '¿Como va todo?'. Fale de clima, fim de semana ou viagem. Evite politica e religiao.",
+      "espanhol": "¿Que tal? / ¿Como va todo? / ¿Que tal el fin de semana? / ¿Has viajado ultimamente?",
+      "pronuncia": "que TAL / CO-mo VA TO-do / que tal el FIN de se-MA-na",
+      "exemplo_es": "¿Que tal el fin de semana? Yo estuve en la playa, hacia un tiempo increible.",
+      "exemplo_pt": "Como foi o fim de semana? Eu fui na praia, o tempo estava incrivel.",
+      "dica": "Hispanicos valorizam muito o small talk — pular direto pro assunto e visto como rude"
+    },
+    "como pedir aumento em espanhol": {
+      "resposta": "Use 'Me gustaria hablar sobre mi compensacion' — mais suave que pedir diretamente. Traga resultados concretos.",
+      "espanhol": "Me gustaria hablar sobre... / Considero que mi desempeno... / ¿Seria posible revisar...?",
+      "pronuncia": "me gus-ta-RI-a a-BLAR SO-bre",
+      "exemplo_es": "Me gustaria hablar sobre mi compensacion. En los ultimos meses he liderado tres proyectos exitosos y creo que mi aporte se ha incrementado.",
+      "exemplo_pt": "Gostaria de falar sobre minha remuneracao. Nos ultimos meses liderei tres projetos de sucesso e acredito que minha contribuicao aumentou.",
+      "dica": "Nunca compare com colegas. Foque nos SEUS resultados. 'Considero que merezco' e direto sem ser agressivo"
+    }
+  }
+}

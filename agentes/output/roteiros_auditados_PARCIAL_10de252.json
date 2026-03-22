@@ -1,0 +1,507 @@
+[
+  {
+    "hook_3s": {
+      "fala": "'Namorar' em espanhol NAO e 'enamorar'. E esse erro pode ser bem constrangedor.",
+      "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta. Enfase em NAO."
+    },
+    "pilulas_visuais": {
+      "pilula_1": {
+        "texto": "SEGUIDOR PERGUNTOU",
+        "fundo": "#001e38",
+        "texto_cor": "branco"
+      },
+      "pilula_2": {
+        "texto": "ALE RESPONDE",
+        "fundo": "#FFFFFF",
+        "texto_cor": "preto bold"
+      },
+      "pilula_3": {
+        "texto": "NAO COMETA ESSE ERRO",
+        "fundo": "#001e38",
+        "texto_cor": "branco"
+      }
+    },
+    "desenvolvimento": {
+      "blocos_fala": [
+        "Um seguidor me perguntou: 'Ale, como falar namorar em espanhol?'",
+        "E eu entendo essa duvida porque o portugues te engana aqui. Voce pensa 'namorar, enamorar' — logico, ne? So que NAO.",
+        "'Enamorarse' em espanhol e se apaixonar. E um sentimento, nao uma relacao.",
+        "Nos nativos dizemos 'salir con alguien' quando esta comecando a sair com a pessoa, e 'ser novios' ou 'estar de novios' quando ja e namorado oficial.",
+        "Olha: Estamos saliendo hace dos meses. Somos novios desde enero.",
+        "Ou seja: Estamos saindo ha dois meses. Somos namorados desde janeiro.",
+        "Entao se voce falar 'yo enamoro a Maria'... voce ta dizendo que voce APAIXONA a Maria, que voce faz ela se apaixonar. Bem diferente, ne?"
+      ],
+      "instrucoes_gravacao": [
+        "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+        "Gesticular naturalmente — Ale e expressiva",
+        "Nos momentos de espanhol, falar com pronuncia nativa clara",
+        "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+      ],
+      "palavras_em_espanhol": "salir con alguien / ser novios / estar de novios / enamorarse | Pronuncia: sa-LIR con AL-guien / ser NO-vios / e-na-mo-RAR-se"
+    },
+    "cta_final": {
+      "fala": "Ja cometeu esse erro ou quase cometeu? Comenta ERROS que eu te mando mais falsos amigos que todo brasileiro precisa conhecer.",
+      "instrucao_gravacao": "Apontar pra baixo (comentarios). Tom convidativo, cumplice, nao desesperado."
+    },
+    "_auditado": true,
+    "_score": 91
+  },
+  {
+    "slides": [
+      {
+        "slide": 1,
+        "tipo_slide": "CAPA",
+        "texto_principal": "VOCE VAI SE MUDAR E JA TRAVA SO DE PENSAR EM FALAR?",
+        "texto_secundario": "Desliza que eu te mostro o real problema →",
+        "cor_fundo": "#ff421c"
+      },
+      {
+        "slide": 2,
+        "tipo_slide": "IDENTIFICACAO",
+        "texto_principal": "Voce pede um cafe\ne sai pedindo desculpa.",
+        "texto_secundario": "'Perdon... eh... un cafe... por favor...'\nE por dentro pensa: 'que vergonha.'",
+        "cor_fundo": "#ff421c"
+      },
+      {
+        "slide": 3,
+        "tipo_slide": "VALIDACAO",
+        "texto_principal": "Nos entendemos\nvoce perfeitamente.",
+        "texto_secundario": "O problema nunca foi seu sotaque.\nE que voce aprendeu a LER espanhol — nao a REAGIR em espanhol.",
+        "cor_fundo": "#FFFFFF"
+      },
+      {
+        "slide": 4,
+        "tipo_slide": "EXPLICACAO",
+        "texto_principal": "Olha a diferenca:",
+        "texto_secundario": "Traducao mental: 'Como eu estou... eh... Estoy bien... e voce?'\n\nReacao nativa: 'Bien, ¿y vos? Todo tranqui.'\n\nA segunda sai sem pensar. A primeira trava voce toda vez.",
+        "cor_fundo": "#ff421c"
+      },
+      {
+        "slide": 5,
+        "tipo_slide": "SOLUCAO",
+        "texto_principal": "Eu treino reacao,\nnao gramatica solta.",
+        "texto_secundario": "Meus alunos praticam situacoes reais:\n· Pedir comida: 'Me traes la cuenta' (nao 'podria traerme...')\n· Resolver perrengue: '¿Me ayudas con esto?'\nReacao automatica > frase perfeita.",
+        "cor_fundo": "#36c551"
+      },
+      {
+        "slide": 6,
+        "tipo_slide": "CTA",
+        "texto_principal": "Quer destravar?",
+        "texto_secundario": "Comenta TRAVA que eu te mando\num exercicio pra praticar hoje mesmo",
+        "cor_fundo": "#ff421c"
+      }
+    ],
+    "identidade_visual": {
+      "cor_fundo": "#ff421c",
+      "cor_nome": "Vermelho Laranja",
+      "fonte_titulo": "Bold, grande, impactante",
+      "fonte_corpo": "Regular, legivel",
+      "logo": "Espanhol com Voce — canto inferior",
+      "icone_mao": "Maozinha apontando — canto"
+    },
+    "_auditado": true,
+    "_score": 83
+  },
+  {
+    "post_id": "2026-03-20_1200",
+    "formato": "REEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 10,
+    "tipo_conteudo": "Prova Social",
+    "avatar": "Academico",
+    "keyword_manychat": "AULA",
+    "origem": "substituto_auditor",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Para! Voce fala isso em espanhol mas nenhum nativo entende.",
+        "instrucao_gravacao": "Olhar direto pra camera. Energia alta. Tom de revelacao."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "EM ESPANHOL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "DO JEITO CERTO",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": [
+        "Brasileiros aprendem expressoes que soam artificiais para nativos.",
+        "Nos, nativos, usamos versoes muito mais naturais no dia a dia.",
+        "A diferenca nao esta na gramatica — esta no vocabulario real."
+      ],
+      "cta_final": {
+        "fala": "Comenta AULA que te mando os 3 erros mais comuns agora",
+        "instrucao_gravacao": "Apontar pra baixo. Tom convidativo."
+      }
+    },
+    "legenda": "Voce fala espanhol mas os nativos nao entendem? Esse e o motivo.\n\nNos, nativos, falamos de um jeito bem diferente do que ensina a escola.\n\nComenta AULA que te mando o conteudo completo na hora!\n\n#espanhol #aprenderespanhol #espanholparaBrasileiros",
+    "duracao_estimada": "30-60 segundos"
+  },
+  {
+    "slides": [
+      {
+        "slide": 1,
+        "tipo_slide": "CAPA",
+        "texto_principal": "VOCE COMEÇA EMAIL FORMAL EM ESPANHOL IGUAL AO PORTUGUES?",
+        "texto_secundario": "Seguidor perguntou — Ale responde →",
+        "cor_fundo": "#36c551"
+      },
+      {
+        "slide": 2,
+        "tipo_slide": "PERGUNTA",
+        "texto_principal": "Recebi essa pergunta:",
+        "texto_secundario": "\"Ale, preciso mandar um email formal em espanhol pro trabalho e não sei nem como começar. Ajuda!\"",
+        "cor_fundo": "#36c551"
+      },
+      {
+        "slide": 3,
+        "tipo_slide": "RESPOSTA",
+        "texto_principal": "No português: vírgula.\nNo espanhol: DOIS PONTOS.",
+        "texto_secundario": "Estimado Sr. Rodríguez: ← isso aqui. Se colocar vírgula, parece que você traduziu do português. Nos fazemos assim.",
+        "cor_fundo": "#FFFFFF"
+      },
+      {
+        "slide": 4,
+        "tipo_slide": "EXEMPLO",
+        "texto_principal": "Estimada Sra. López:\nLe escribo en relación con...",
+        "texto_secundario": "Estimada Sra. López:\nEscrevo-lhe em relação a...",
+        "cor_fundo": "#36c551"
+      },
+      {
+        "slide": 5,
+        "tipo_slide": "DICA",
+        "texto_principal": "DICA DA ALE:",
+        "texto_secundario": "Pra fechar: 'Atentamente' ou 'Cordialmente' são seguros. 'Un saludo' é semi-formal e nos usamos MUITO no dia a dia.",
+        "cor_fundo": "#FFFFFF"
+      },
+      {
+        "slide": 6,
+        "tipo_slide": "CTA",
+        "texto_principal": "Tem dúvida de espanhol?\nManda nos comentários!",
+        "texto_secundario": "Comenta EMAIL e receba um material grátis",
+        "cor_fundo": "#ff421c"
+      }
+    ],
+    "identidade_visual": {
+      "cor_fundo": "#36c551",
+      "cor_nome": "Verde",
+      "fonte_titulo": "Bold, grande, impactante",
+      "fonte_corpo": "Regular, legivel",
+      "logo": "Espanhol com Voce — canto inferior",
+      "icone_mao": "Maozinha apontando — canto"
+    },
+    "_auditado": true,
+    "_score": 89
+  },
+  {
+    "post_id": "2026-03-20_1830",
+    "formato": "REEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 6,
+    "tipo_conteudo": "Metodo e Bastidor",
+    "avatar": "Viajante",
+    "keyword_manychat": "METODO",
+    "origem": "substituto_auditor",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Para! Voce fala isso em espanhol mas nenhum nativo entende.",
+        "instrucao_gravacao": "Olhar direto pra camera. Energia alta. Tom de revelacao."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "EM ESPANHOL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "DO JEITO CERTO",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": [
+        "Brasileiros aprendem expressoes que soam artificiais para nativos.",
+        "Nos, nativos, usamos versoes muito mais naturais no dia a dia.",
+        "A diferenca nao esta na gramatica — esta no vocabulario real."
+      ],
+      "cta_final": {
+        "fala": "Comenta METODO que te mando os 3 erros mais comuns agora",
+        "instrucao_gravacao": "Apontar pra baixo. Tom convidativo."
+      }
+    },
+    "legenda": "Voce fala espanhol mas os nativos nao entendem? Esse e o motivo.\n\nNos, nativos, falamos de um jeito bem diferente do que ensina a escola.\n\nComenta METODO que te mando o conteudo completo na hora!\n\n#espanhol #aprenderespanhol #espanholparaBrasileiros",
+    "duracao_estimada": "30-60 segundos"
+  },
+  {
+    "slides": [
+      {
+        "slide": 1,
+        "tipo_slide": "CAPA",
+        "texto_principal": "VOCÊ SABE PEDIR\nUM ALUGUEL\nEM ESPANHOL?",
+        "texto_secundario": "Desliza — tem palavra que muda por país →",
+        "cor_fundo": "#79458f"
+      },
+      {
+        "slide": 2,
+        "tipo_slide": "CONTEXTO",
+        "texto_principal": "Você chega na imobiliária...\ne não sabe nem como começar a frase.",
+        "texto_secundario": "Calma, eu te mostro como nós falamos.",
+        "cor_fundo": "#79458f"
+      },
+      {
+        "slide": 3,
+        "tipo_slide": "RESPOSTA",
+        "texto_principal": "ALQUILER\n(Espanha e maioria dos países)",
+        "texto_secundario": "Nós, nativos, falamos assim\nPronúncia: al-ki-LER (o 'qu' soa como K)",
+        "cor_fundo": "#FFFFFF"
+      },
+      {
+        "slide": 4,
+        "tipo_slide": "EXEMPLO",
+        "texto_principal": "Busco un piso en alquiler.\n¿Cuánto es el alquiler mensual?",
+        "texto_secundario": "Procuro um apartamento pra alugar.\nQuanto é o aluguel mensal?",
+        "cor_fundo": "#79458f"
+      },
+      {
+        "slide": 5,
+        "tipo_slide": "ALTERNATIVA",
+        "texto_principal": "NO MÉXICO → RENTA\nNA ARGENTINA → ALQUILER",
+        "texto_secundario": "Nós, nativos, falamos assim:\n'Pago la renta' (MX) = 'Pago el alquiler' (AR/ES)",
+        "cor_fundo": "#FFFFFF"
+      },
+      {
+        "slide": 6,
+        "tipo_slide": "DICA",
+        "texto_principal": "DICA DA ALE:",
+        "texto_secundario": "Quem ALUGA é o inquilino → INQUILINO\nQuem COBRA o aluguel → ARRENDADOR / PROPIETARIO\nVocê vai precisar dessas duas na imobiliária.",
+        "cor_fundo": "#79458f"
+      },
+      {
+        "slide": 7,
+        "tipo_slide": "CTA",
+        "texto_principal": "SALVA esse post!\nManda pra quem vai morar fora!",
+        "texto_secundario": "Comenta VIAGEM e receba um material grátis",
+        "cor_fundo": "#ff421c"
+      }
+    ],
+    "identidade_visual": {
+      "cor_fundo": "#79458f",
+      "cor_nome": "Roxo",
+      "fonte_titulo": "Bold, grande, impactante",
+      "fonte_corpo": "Regular, legível",
+      "logo": "Espanhol com Voce — canto inferior",
+      "icone_mao": "Maozinha apontando — canto"
+    },
+    "_auditado": true,
+    "_score": 81
+  },
+  {
+    "post_id": "2026-03-21_0700",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 4,
+    "tipo_conteudo": "Perguntas de Seguidores",
+    "avatar": "Academico",
+    "keyword_manychat": "ERROS",
+    "origem": "substituto_auditor",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Para! Voce fala isso em espanhol mas nenhum nativo entende.",
+        "instrucao_gravacao": "Olhar direto pra camera. Energia alta. Tom de revelacao."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "EM ESPANHOL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "DO JEITO CERTO",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": [
+        "Brasileiros aprendem expressoes que soam artificiais para nativos.",
+        "Nos, nativos, usamos versoes muito mais naturais no dia a dia.",
+        "A diferenca nao esta na gramatica — esta no vocabulario real."
+      ],
+      "cta_final": {
+        "fala": "Comenta ERROS que te mando os 3 erros mais comuns agora",
+        "instrucao_gravacao": "Apontar pra baixo. Tom convidativo."
+      }
+    },
+    "legenda": "Voce fala espanhol mas os nativos nao entendem? Esse e o motivo.\n\nNos, nativos, falamos de um jeito bem diferente do que ensina a escola.\n\nComenta ERROS que te mando o conteudo completo na hora!\n\n#espanhol #aprenderespanhol #espanholparaBrasileiros",
+    "duracao_estimada": "30-60 segundos"
+  },
+  {
+    "slides": [
+      {
+        "slide": 1,
+        "tipo_slide": "CAPA",
+        "texto_principal": "SEU ESPANHOL TRAVA NA HORA DA REUNIAO?\nNao e falta de estudo.",
+        "texto_secundario": "3 pilares que destravaram +5.000 profissionais →",
+        "cor_fundo": "#4e4b97"
+      },
+      {
+        "slide": 2,
+        "tipo_slide": "PROBLEMA",
+        "texto_principal": "Voce ja passou por isso:",
+        "texto_secundario": "Estudou meses → entrou na call com o cliente argentino → ele soltou um 'dale, lo vemos la' → e voce: 😶\nNao e culpa sua. E o metodo que nao te preparou pra como a gente realmente fala.",
+        "cor_fundo": "#001e38"
+      },
+      {
+        "slide": 3,
+        "tipo_slide": "PILAR 1",
+        "texto_principal": "Pilar 1:\nVocabulario Filtrado",
+        "texto_secundario": "Nao 500 palavras aleatorias.\nAs 80 que voce realmente usa: 'presupuesto', 'plazo de entrega', 'queda pendiente'.\nFiltradas pra sua area. Uteis desde a semana 1.",
+        "cor_fundo": "#001e38"
+      },
+      {
+        "slide": 4,
+        "tipo_slide": "PILAR 2",
+        "texto_principal": "Pilar 2:\nEspanhol Real",
+        "texto_secundario": "Nos nativos falamos rapido, engolimos silabas, encurtamos tudo.\n'Para adelante' vira 'pa'lante'. 'Espera' vira 'espérate'.\nVoce pratica com esse espanhol de verdade — nao com audio de laboratorio.",
+        "cor_fundo": "#FFFFFF"
+      },
+      {
+        "slide": 5,
+        "tipo_slide": "PILAR 3",
+        "texto_principal": "Pilar 3:\nRevisao que Gruda",
+        "texto_secundario": "Repeticao espacada (a ciencia mostra que revisar no momento certo fixa 80% mais) + conversacao guiada comigo e minha equipe + correcao personalizada do que VOCE erra.",
+        "cor_fundo": "#001e38"
+      },
+      {
+        "slide": 6,
+        "tipo_slide": "PROVA",
+        "texto_principal": "+5.000 alunos\nja destravaram",
+        "texto_secundario": "Profissionais que hoje lideram reunioes, negociam contratos e apresentam projetos — tudo em espanhol.",
+        "cor_fundo": "#36c551"
+      },
+      {
+        "slide": 7,
+        "tipo_slide": "CTA",
+        "texto_principal": "Quer ver como\nfunciona por dentro?",
+        "texto_secundario": "Comenta METODO que eu te mando um video mostrando uma aula real.\nAcesso vitalicio. Garantia de 7 dias. Voce testa sem risco.",
+        "cor_fundo": "#ff421c"
+      }
+    ],
+    "identidade_visual": {
+      "cor_fundo": "#001e38",
+      "cor_nome": "Azul Marinho",
+      "fonte_titulo": "Bold, grande, impactante",
+      "fonte_corpo": "Regular, legivel",
+      "logo": "Espanhol com Voce — canto inferior",
+      "icone_mao": "Maozinha apontando — canto"
+    },
+    "_auditado": true,
+    "_score": 83
+  },
+  {
+    "post_id": "2026-03-21_1200",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Viajante",
+    "keyword_manychat": "VIAGEM",
+    "origem": "substituto_auditor",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Para! Voce fala isso em espanhol mas nenhum nativo entende.",
+        "instrucao_gravacao": "Olhar direto pra camera. Energia alta. Tom de revelacao."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "EM ESPANHOL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "DO JEITO CERTO",
+          "fundo": "#fbbf24",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": [
+        "Brasileiros aprendem expressoes que soam artificiais para nativos.",
+        "Nos, nativos, usamos versoes muito mais naturais no dia a dia.",
+        "A diferenca nao esta na gramatica — esta no vocabulario real."
+      ],
+      "cta_final": {
+        "fala": "Comenta VIAGEM que te mando os 3 erros mais comuns agora",
+        "instrucao_gravacao": "Apontar pra baixo. Tom convidativo."
+      }
+    },
+    "legenda": "Voce fala espanhol mas os nativos nao entendem? Esse e o motivo.\n\nNos, nativos, falamos de um jeito bem diferente do que ensina a escola.\n\nComenta VIAGEM que te mando o conteudo completo na hora!\n\n#espanhol #aprenderespanhol #espanholparaBrasileiros",
+    "duracao_estimada": "30-60 segundos"
+  },
+  {
+    "post_id": "2026-03-21_1500",
+    "formato": "CARROSSEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Vai Morar Fora",
+    "keyword_manychat": "VIAGEM",
+    "origem": "substituto_auditor",
+    "roteiro": {
+      "slides": [
+        {
+          "numero": 1,
+          "tipo": "capa",
+          "texto_principal": "O QUE VOCE\nFALA EM\nESPANHOL",
+          "subtexto": "...e o que nenhum nativo entende",
+          "tag_pilula": "O PROBLEMA"
+        },
+        {
+          "numero": 2,
+          "tipo": "conteudo",
+          "texto_principal": "A ESCOLA\nTE ENSINOU\nERRADO",
+          "subtexto": "Expressoes que soam artificiais para nativos",
+          "tag_pilula": "A REALIDADE"
+        },
+        {
+          "numero": 3,
+          "tipo": "conteudo",
+          "texto_principal": "NOS, NATIVOS,\nFALAMOS\nASSIM",
+          "subtexto": "Versao real do dia a dia — simples e direta",
+          "tag_pilula": "A SOLUCAO"
+        },
+        {
+          "numero": 4,
+          "tipo": "cta",
+          "texto_principal": "VIAGEM",
+          "subtexto": "Comenta agora que te mando o conteudo completo",
+          "manuscrito_rodape": "chega de travar"
+        }
+      ]
+    },
+    "total_slides": 4,
+    "legenda": "Voce estuda espanhol mas na hora de falar trava? Isso tem solucao.\n\nNos, nativos, falamos de um jeito que nenhuma escola te ensina.\n\nComenta VIAGEM que te mando o conteudo completo agora!\n\n#espanhol #aprenderespanhol #espanholparaBrasileiros"
+  }
+]

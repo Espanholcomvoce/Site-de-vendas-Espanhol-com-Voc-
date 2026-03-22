@@ -1,0 +1,67 @@
+{
+  "hashtags_base": [
+    "#espanholcomvoce",
+    "#aprendaespanhol",
+    "#espanholparabrasileiros",
+    "#espanhol",
+    "#aprenderespanhol",
+    "#espanholonline",
+    "#espanholreal"
+  ],
+  "hashtags_por_avatar": {
+    "viajante": [
+      "#espanholparaviagem",
+      "#viagemparaaamericadosul",
+      "#espanholbasico",
+      "#viajarsozinho",
+      "#mochilao",
+      "#espanholnoexterior"
+    ],
+    "vai_morar_fora": [
+      "#brasileironoexterior",
+      "#morarfora",
+      "#vidanoexterior",
+      "#imigracao",
+      "#brasileirosnaespanha",
+      "#brasileirosnaargentina"
+    ],
+    "academico": [
+      "#dele",
+      "#celu",
+      "#siele",
+      "#espanholparaconcurso",
+      "#espanholparaenem",
+      "#estudarnoexterior",
+      "#proficienciaemespanhol"
+    ],
+    "profissional": [
+      "#espanholcorporativo",
+      "#espanholparatrabalho",
+      "#espanholparanegocio",
+      "#carreirainternacional",
+      "#espanholprofissional",
+      "#negociosinternacionais"
+    ]
+  },
+  "hashtags_por_tipo_conteudo": {
+    "1":  ["#expressoes", "#comofalarem", "#espanholnativo"],
+    "2":  ["#vocabulario", "#palavradodia", "#espanholdodia"],
+    "3":  ["#erroscomuns", "#falsoscognatos", "#cuidado"],
+    "4":  ["#perguntadeseguidor", "#duvida", "#aleresponde"],
+    "5":  ["#curiosidades", "#culturaespanhola", "#diferencas"],
+    "6":  ["#metodo", "#imersaonativa", "#comoaprender"],
+    "7":  ["#identificacao", "#voceseidentifica", "#travanoespanhol"],
+    "8":  ["#transformacao", "#destrave", "#faleespanhol"],
+    "9":  ["#quebradecrencas", "#verdade", "#mentiradoespanhol"],
+    "10": ["#depoimento", "#resultado", "#alunoreal"],
+    "11": ["#aulademonstrativa", "#comece", "#linknabioo"],
+    "12": ["#bastidores", "#historiadaale", "#professoranativa"]
+  },
+  "regras": {
+    "max_hashtags_por_post": 15,
+    "sempre_incluir_base": 3,
+    "incluir_avatar": 3,
+    "incluir_tipo": 3,
+    "complementares": 6
+  }
+}

@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Abril 2026 — Espanhol com Você</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a1628; color:#fff; font-family:system-ui,-apple-system,sans-serif; line-height:1.5; }
+
+/* ── Header ── */
+.header { background:linear-gradient(180deg,#0f1d35 0%,#0a1628 100%); padding:24px 16px 16px; border-bottom:1px solid rgba(251,191,36,0.15); position:sticky; top:0; z-index:100; }
+.header h1 { font-size:22px; font-weight:900; text-align:center; }
+.header h1 span { color:#fbbf24; }
+.header-sub { text-align:center; color:#94a3b8; font-size:13px; margin-top:2px; }
+
+/* Stats */
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:16px 0 12px; max-width:600px; margin-left:auto; margin-right:auto; }
+.stat { background:#1a2f5a; border-radius:10px; padding:10px 8px; text-align:center; }
+.stat-num { font-size:20px; font-weight:800; color:#fbbf24; }
+.stat-label { font-size:11px; color:#94a3b8; }
+
+/* Progress */
+.progress-wrap { max-width:600px; margin:0 auto 12px; }
+.progress-label { font-size:12px; color:#94a3b8; margin-bottom:4px; display:flex; justify-content:space-between; }
+.progress-track { height:6px; background:rgba(255,255,255,0.08); border-radius:3px; overflow:hidden; }
+.progress-fill { height:100%; background:linear-gradient(90deg,#fbbf24,#f59e0b); border-radius:3px; transition:width 0.5s; }
+
+/* ── Week nav ── */
+.week-nav { display:flex; gap:6px; padding:12px 16px; overflow-x:auto; -webkit-overflow-scrolling:touch; position:sticky; top:120px; z-index:90; background:#0a1628; border-bottom:1px solid rgba(255,255,255,0.06); }
+.week-btn { flex-shrink:0; padding:8px 16px; border-radius:10px; border:1px solid rgba(255,255,255,0.1); background:transparent; color:#94a3b8; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.2s; white-space:nowrap; }
+.week-btn:hover { border-color:rgba(251,191,36,0.3); color:#fff; }
+.week-btn.active { background:#fbbf24; color:#0a1628; border-color:#fbbf24; }
+
+/* ── Week section ── */
+.week-section { display:none; padding:16px; }
+.week-section.active { display:block; }
+.week-title { font-size:16px; font-weight:700; color:#94a3b8; margin-bottom:16px; padding-bottom:8px; border-bottom:1px solid rgba(255,255,255,0.06); }
+
+/* ── Day card ── */
+.day-card { background:#1a2f5a; border-radius:14px; margin-bottom:16px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); }
+.day-header { padding:14px 16px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; transition:background 0.2s; }
+.day-header:hover { background:rgba(251,191,36,0.05); }
+.day-date { font-size:14px; font-weight:700; color:#fff; }
+.day-date span { color:#94a3b8; font-weight:400; }
+.day-theme { font-size:15px; font-weight:700; color:#fbbf24; margin-top:2px; }
+.day-avatar { font-size:12px; color:#94a3b8; }
+.day-arrow { color:#94a3b8; font-size:18px; transition:transform 0.3s; flex-shrink:0; margin-left:12px; }
+.day-card.expanded .day-arrow { transform:rotate(180deg); }
+.day-header-left { flex:1; }
+
+/* Keyword badges on day header */
+.day-keywords { display:flex; gap:4px; margin-top:6px; flex-wrap:wrap; }
+.kw-badge { font-size:10px; font-weight:700; padding:2px 8px; border-radius:6px; text-transform:uppercase; letter-spacing:0.5px; }
+.kw-TRAVA { background:rgba(239,68,68,0.15); color:#ef4444; }
+.kw-MANUAL { background:rgba(251,191,36,0.15); color:#fbbf24; }
+.kw-METODO { background:rgba(56,189,248,0.15); color:#38bdf8; }
+.kw-AULA { background:rgba(16,185,129,0.15); color:#10b981; }
+.kw-QUERO { background:rgba(168,85,247,0.15); color:#a855f7; }
+
+/* Day content (expandable) */
+.day-content { display:none; padding:0 16px 16px; }
+.day-card.expanded .day-content { display:block; }
+
+/* Post card */
+.post-card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:14px; margin-bottom:12px; }
+.post-header { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.post-icon { font-size:18px; }
+.post-time { font-size:12px; color:#94a3b8; font-weight:600; }
+.post-format { font-size:11px; font-weight:700; padding:2px 8px; border-radius:6px; text-transform:uppercase; }
+.post-format.reel { background:rgba(251,191,36,0.15); color:#fbbf24; }
+.post-format.carousel { background:rgba(56,189,248,0.15); color:#38bdf8; }
+.post-type { font-size:11px; color:#94a3b8; background:rgba(255,255,255,0.06); padding:2px 8px; border-radius:6px; }
+
+.post-title { font-size:14px; font-weight:700; color:#fff; margin-bottom:4px; line-height:1.4; }
+.post-hook { font-size:13px; color:#fbbf24; font-style:italic; margin-bottom:8px; line-height:1.4; }
+.post-hook::before { content:'"'; }
+.post-hook::after { content:'"'; }
+
+.post-summary { font-size:12px; color:#c8d6e5; line-height:1.6; max-height:200px; overflow-y:auto; white-space:pre-line; padding:10px; background:rgba(0,0,0,0.2); border-radius:8px; margin-top:8px; }
+
+.post-meta { display:flex; align-items:center; gap:8px; margin-top:10px; flex-wrap:wrap; }
+
+/* Status button */
+.status-btn { font-size:11px; font-weight:600; padding:4px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); background:transparent; color:#94a3b8; cursor:pointer; transition:all 0.2s; }
+.status-btn.gravado { background:rgba(251,191,36,0.15); color:#fbbf24; border-color:rgba(251,191,36,0.3); }
+.status-btn.publicado { background:rgba(16,185,129,0.15); color:#10b981; border-color:rgba(16,185,129,0.3); }
+
+/* Toggle full content */
+.toggle-content { font-size:12px; color:#38bdf8; cursor:pointer; border:none; background:none; padding:4px 0; margin-top:6px; }
+.toggle-content:hover { text-decoration:underline; }
+
+/* ── Responsive ── */
+@media(min-width:768px) {
+  .week-section { max-width:800px; margin:0 auto; }
+  .header { padding:24px 24px 16px; }
+  .stats { grid-template-columns:repeat(4,1fr); }
+}
+@media(max-width:400px) {
+  .stats { grid-template-columns:repeat(2,1fr); }
+  .stat-num { font-size:18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span>Calendário</span> Abril 2026</h1>
+  <div class="header-sub">@espanholcomvoce — 90 roteiros completos</div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-num">90</div><div class="stat-label">posts</div></div>
+    <div class="stat"><div class="stat-num">30</div><div class="stat-label">dias</div></div>
+    <div class="stat"><div class="stat-num" id="reels-gravados">0</div><div class="stat-label">Reels gravados</div></div>
+    <div class="stat"><div class="stat-num" id="publicados">0</div><div class="stat-label">publicados</div></div>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Progresso</span>
+      <span id="progress-text">0/90 publicados</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+</div>
+
+<nav class="week-nav" id="week-nav"></nav>
+<main id="main-content"></main>
+
+<script>
+// ── Data ──
+const calendarData = [
+  {
+    "day": 1,
+    "date": "01/04",
+    "weekday": "QUARTA-FEIRA",
+    "theme": "Dar uma olhadinha",
+    "avatar": "Viajante)",
+    "week": 1,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Voce fala 'dar uma olhadinha' ERRADO em espanhol",
+        "title": "A1 Expressao",
+        "summary": "Tipo de conteudo: A1 — Expressao Nativa (TOPO)\\nObjetivo: Alcance maximo. Viralizar com expressao do dia a dia.\\nHorario: 09:00\\nDuracao alvo: 35-40 segundos\\nHOOK (0-3 segundos) — O MAIS IMPORTANTE\\n[Ale olha pra camera com expressao curiosa, como quem vai\\nrevelar um segredo]\\nTEXTO NA TELA (grande, centro):\\n\\\"Voce fala 'dar uma olhadinha' ERRADO em espanhol\\\"\\nALE FALA:\\n\\\"Voce sabe falar 'dar uma olhadinha' em espanhol?\\nAposto que nao.\\\"\\nINSTRUCAO DE GRAVACAO:\\n- Olhar direto na camera\\n- Expressao de desafio amigavel\\n- Tom de \\\"amiga que vai te ajudar\\\"\\n- Texto aparece ANTES da Ale falar (0,5 seg de antec..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A3",
+        "keyword": "",
+        "hook": "",
+        "title": "A3 Cultura",
+        "summary": "Tipo de conteudo: A3 — Cultura Viva (TOPO)\\nObjetivo: Alcance + compartilhamento. Curiosidade cultural.\\nHorario: 12:00\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"5 coisas que funcionam DIFERENTE\\\"\\n- Texto secundario (Inter 900, dourado #fbbf24): \\\"em lojas na Argentina vs Brasil\\\"\\n- Icone: bandeiras Argentina + Brasil\\n- Logo Espanhol com Voce no canto inferior\\n- Visual: texto grande, impactante, centralizado\\nSLIDE 2 — Texto puro\\n- Fundo: navy #0a1628\\n- Numero \\\"1\\\" grande em dourado (#fbbf24)\\n- Titulo (Inter 900, branco): \\\"HORARIO DE ALMOCO? ESQUECE.\\\"\\n- Text..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "AULA",
+        "hook": "",
+        "title": "V1 Prova Social",
+        "summary": "Tipo de conteudo: V1 — Prova Social Narrativa (DESEJO)\\nObjetivo: Prova social. Mostrar transformacao real.\\nHorario: 19:00\\nKeyword ManyChat: AULA\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Ela foi pra Buenos Aires SOZINHA.\\\"\\n- Texto secundario (Caveat, dourado #fbbf24): \\\"E se virou em tudo.\\\"\\n- Visual: texto grande, centralizado, impactante\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Card papel creme (ANTES)\\n- Fundo: creme #f5f0e8\\n- Etiqueta no topo (fundo vermelho #ff421c, texto branco): \\\"ANTES\\\"\\n- Titulo (Inter 900, navy): \\\"Dependia do Google Tr..."
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "date": "02/04",
+    "weekday": "QUINTA-FEIRA",
+    "theme": "A trava invisivel",
+    "avatar": "Profissional)",
+    "week": 1,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C3",
+        "keyword": "TRAVA",
+        "hook": "Eu tinha certificado avancado. E travei no mercado.",
+        "title": "C3 Historia Ale",
+        "summary": "Tipo de conteudo: C3 — Historia da Ale (CONEXAO)\\nObjetivo: Vulnerabilidade. Construir confianca. Conexao emocional.\\nHorario: 09:00\\nDuracao alvo: 55-60 segundos\\nHOOK (0-3 segundos) — O MAIS IMPORTANTE\\n[Ale olha pra camera com expressao seria, vulneravel.\\nPausa antes de comecar a falar.]\\nTEXTO NA TELA (grande, centro):\\n\\\"Eu tinha certificado avancado. E travei no mercado.\\\"\\nALE FALA:\\n\\\"Eu cheguei no Brasil com certificado avancado\\nde portugues. E travei no mercado.\\\"\\nINSTRUCAO DE GRAVACAO:\\n- Olhar direto na camera, sem sorriso\\n- Tom serio, pessoal, como quem vai contar um segredo\\n- Voz mais baixa qu..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "TRAVA",
+        "hook": "",
+        "title": "C1 Dor/Espelho",
+        "summary": "Tipo de conteudo: C1 — Dor e Espelho (CONEXAO)\\nObjetivo: Identificacao. Ativar a dor. Fazer o seguidor dizer \\\"sou eu\\\".\\nHorario: 12:00\\nKeyword ManyChat: TRAVA\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"7 sinais de que voce tem\\\"\\n- Texto destaque (Inter 900, dourado #fbbf24): \\\"a TRAVA INVISIVEL do espanhol\\\"\\n- Visual: texto grande, centralizado\\n- Icone de cadeado em dourado ao lado de \\\"TRAVA\\\"\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Texto puro\\n- Fundo: navy #0a1628\\n- Numeros \\\"1\\\" e \\\"2\\\" em dourado grande\\n- Texto (Inter 700, branco):\\n\\\"1. Voce TRAD..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "MANUAL",
+        "hook": "",
+        "title": "C2 Quebra Crenca",
+        "summary": "Tipo de conteudo: C2 — Quebra de Crenca (CONEXAO)\\nObjetivo: Invalidar alternativas. Mudar a perspectiva. Posicionar o metodo.\\nHorario: 19:00\\nKeyword ManyChat: MANUAL\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Voce nao trava porque estudou POUCO.\\\"\\n- Texto destaque (Inter 900, dourado #fbbf24): \\\"Trava porque estudou ERRADO.\\\"\\n- Visual: texto grande, centralizado, provocativo\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Texto puro\\n- Fundo: navy #0a1628\\n- Titulo (Inter 900, dourado): \\\"A mentira que te contaram:\\\"\\n- Texto (Inter 400, branco):\\n\\\"Voce pr..."
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "date": "03/04",
+    "weekday": "SEXTA-FEIRA",
+    "theme": "Cara de pau",
+    "avatar": "Todos)",
+    "week": 1,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Como falar 'CARA DE PAU' em espanhol",
+        "title": "A1 Expressao",
+        "summary": "Tipo de conteudo: A1 — Expressao Nativa (TOPO)\\nObjetivo: Alcance maximo. Viralizacao. Divertido e memoravel.\\nHorario: 09:00\\nDuracao alvo: 30-35 segundos\\nHOOK (0-3 segundos) — O MAIS IMPORTANTE\\n[Ale olha pra camera com expressao de \\\"nao acredito\\\",\\ncomo quem viu alguem fazendo algo absurdo]\\nTEXTO NA TELA (grande, centro):\\n\\\"Como falar 'CARA DE PAU' em espanhol\\\"\\nALE FALA:\\n\\\"Voce sabe como a gente fala 'cara de pau'\\nem espanhol?\\\"\\nINSTRUCAO DE GRAVACAO:\\n- Olhar direto na camera com expressao divertida\\n- Tom animado, como quem vai contar algo engraCado\\n- Leve sorriso de canto\\nDESENVOLVIMENTO (3-12 seg..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "AULA",
+        "hook": "",
+        "title": "V1 Prova Social",
+        "summary": "Tipo de conteudo: V1 — Prova Social Narrativa (DESEJO)\\nObjetivo: Prova social para avatar profissional.\\nHorario: 12:00\\nKeyword ManyChat: AULA\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Ele TRAVAVA em todas as reunioes.\\\"\\n- Texto secundario (Caveat, dourado #fbbf24): \\\"Hoje apresenta em espanhol pro time inteiro.\\\"\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Card papel creme (ANTES)\\n- Fundo: creme #f5f0e8\\n- Etiqueta no topo (fundo vermelho #ff421c, texto branco): \\\"ANTES\\\"\\n- Titulo (Inter 900, navy): \\\"Competente no trabalho. Mudo em espanhol.\\\"\\n- Tex..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V2",
+        "keyword": "QUERO",
+        "hook": "",
+        "title": "V2 CTA Direto",
+        "summary": "Tipo de conteudo: V2 — CTA Direto (DECISAO)\\nObjetivo: Conversao direta. Apresentar a oferta completa.\\nHorario: 19:00\\nKeyword ManyChat: QUERO\\nSLIDE 1 — Capa impacto (PROMESSA)\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Se voce quer DESTRAVAR seu espanhol,\\\"\\n- Texto destaque (Inter 900, dourado #fbbf24): \\\"le ate o final.\\\"\\n- Visual: texto grande, centralizado, direto\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Texto puro (O QUE INCLUI)\\n- Fundo: navy #0a1628\\n- Titulo (Inter 900, dourado): \\\"O que voce recebe:\\\"\\n- Lista com icones em dourado:\\n\\\"180+ aulas em video (5 min cad..."
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "date": "04/04",
+    "weekday": "SABADO",
+    "theme": "5 minutos que mudam tudo",
+    "avatar": "No time)",
+    "week": 1,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "D2",
+        "keyword": "AULA",
+        "hook": "Como e uma aula REAL do meu programa",
+        "title": "D2 Metodo",
+        "summary": "Tipo de conteudo: D2 — Metodo por Dentro (DESEJO)\\nObjetivo: Mostrar o produto. Resolver objecao \\\"nao sei o que vou receber\\\".\\nHorario: 09:00\\nDuracao alvo: 50-60 segundos\\nKeyword ManyChat: AULA\\nHOOK (0-3 segundos) — O MAIS IMPORTANTE\\n[Ale aparece na camera, depois corta pra tela do celular\\nmostrando a plataforma do programa]\\nTEXTO NA TELA (grande, centro):\\n\\\"Como e uma aula REAL do meu programa\\\"\\nALE FALA:\\n\\\"Vou abrir o meu programa na sua frente.\\nVoce nunca viu isso.\\\"\\nINSTRUCAO DE GRAVACAO:\\n- Comecar com Ale na camera (2 seg)\\n- Cortar pra screen recording da plataforma\\n- Ale narra por cima do scre..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "",
+        "title": "A1 Expressao",
+        "summary": "Tipo de conteudo: A1 — Expressao Nativa (TOPO)\\nObjetivo: Valor pratico imediato. Atracao. Salvamentos.\\nHorario: 12:00\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"5 frases em espanhol\\\"\\n- Texto destaque (Inter 900, dourado #fbbf24): \\\"pra usar AMANHA\\\"\\n- Texto menor (Inter 400, branco): \\\"Simples. Praticas. Como nativo fala.\\\"\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Texto puro\\n- Fundo: navy #0a1628\\n- Numero \\\"1\\\" grande em dourado\\n- Titulo (Inter 900, dourado): \\\"CUMPRIMENTO\\\"\\n- Frase em espanhol (Inter 700, branco): \\\"Hola, que tal? Todo bien?\\\"\\n- Tra..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "METODO",
+        "hook": "",
+        "title": "D1 Desejo",
+        "summary": "Tipo de conteudo: D1 — Desejo e Futuro (CONEXAO)\\nObjetivo: Pintar o quadro do futuro. Criar desejo pelo metodo.\\nHorario: 19:00\\nKeyword ManyChat: METODO\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Imagina aprender espanhol\\\"\\n- Texto destaque (Inter 900, dourado #fbbf24): \\\"no onibus, na fila, antes de dormir...\\\"\\n- Visual: texto grande, centralizado\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Texto puro\\n- Fundo: navy #0a1628\\n- Titulo (Inter 900, dourado): \\\"Voce nao tem tempo.\\\"\\n- Texto (Inter 400, branco):\\n\\\"Eu sei. Voce trabalha o dia inteiro.\\nChega..."
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "date": "05/04",
+    "weekday": "DOMINGO",
+    "theme": "Voce entende mas nao fala",
+    "avatar": "Todos)",
+    "week": 1,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "TRAVA",
+        "hook": "Voce entende TUDO mas trava na hora de falar?",
+        "title": "C1 Dor/Espelho",
+        "summary": "Tipo de conteudo: C1 — Dor e Espelho (CONEXAO)\\nObjetivo: Identificacao maxima. Ativar a dor. Gerar comentarios.\\nHorario: 09:00\\nDuracao alvo: 45-50 segundos\\nKeyword ManyChat: TRAVA\\nHOOK (0-3 segundos) — O MAIS IMPORTANTE\\n[Ale olha pra camera, expressao seria e empatica.\\nComo quem vai falar uma verdade que a pessoa\\nprecisa ouvir.]\\nTEXTO NA TELA (grande, centro):\\n\\\"Voce entende TUDO mas trava na hora de falar?\\\"\\nALE FALA:\\n\\\"Voce entende tudo em espanhol mas trava\\nna hora de falar? Isso tem explicacao.\\\"\\nINSTRUCAO DE GRAVACAO:\\n- Olhar direto na camera, sem sorriso\\n- Tom serio, empatico, de quem entend..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "MANUAL",
+        "hook": "",
+        "title": "A2 Erro",
+        "summary": "Tipo de conteudo: A2 — Erro Perigoso (TOPO)\\nObjetivo: Engajamento alto. Humor + aprendizado. Compartilhamento.\\nHorario: 12:00\\nKeyword ManyChat: TRAVA\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Os 5 erros que TODOS\\\"\\n- Texto destaque (Inter 900, dourado #fbbf24): \\\"os brasileiros cometem em espanhol\\\"\\n- Icone de alerta em vermelho #ff421c\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Texto puro\\n- Fundo: navy #0a1628\\n- Numero \\\"1\\\" grande em vermelho #ff421c\\n- Titulo (Inter 900, dourado): \\\"EMBARAZADO\\\"\\n- Texto brasileiro (Inter 400, cinza): \\\"Voce quis d..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "AULA",
+        "hook": "",
+        "title": "V1 Prova Social",
+        "summary": "Tipo de conteudo: V1 — Prova Social Narrativa (DESEJO)\\nObjetivo: Prova social para avatar academico. Resultado concreto.\\nHorario: 19:00\\nKeyword ManyChat: AULA\\nSLIDE 1 — Capa impacto\\n- Fundo: navy #0a1628\\n- Texto principal (Inter 900, branco): \\\"Ela precisava do DELE pra bolsa de estudos.\\\"\\n- Texto secundario (Caveat, dourado #fbbf24): \\\"Passou de primeira.\\\"\\n- Logo Espanhol com Voce no canto inferior\\nSLIDE 2 — Card papel creme (ANTES)\\n- Fundo: creme #f5f0e8\\n- Etiqueta no topo (fundo vermelho #ff421c, texto branco): \\\"ANTES\\\"\\n- Titulo (Inter 900, navy): \\\"A bolsa dos sonhos. E um requisito: DELE B2.\\\"\\n..."
+      }
+    ]
+  },
+  {
+    "day": 6,
+    "date": "06/04",
+    "weekday": "SEGUNDA-FEIRA",
+    "theme": "Tô nem aí",
+    "avatar": "Viajante",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Você tá numa roda de amigos em Buenos Aires...",
+        "title": "REEL A1",
+        "summary": "Tipo de conteúdo: A1 — Expressão Nativa (TOPO/ATRAÇÃO)\\nObjetivo: Alcance máximo. Viralizar. Atrair público novo.\\nHorário: 09:00\\nDuração alvo: 35-45 segundos\\nAvatar: Viajante + Morar fora\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de descaso proposital,\\ncomo se não se importasse com nada]\\nTEXTO NA TELA (grande, centro):\\n\\\"Você tá numa roda de amigos em Buenos Aires...\\\"\\nALE FALA:\\n\\\"Você tá numa roda de amigos em Buenos Aires\\ne quer dizer que não liga pra nada. O que fal..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A2",
+        "summary": "Tipo de conteúdo: A2 — Erro Perigoso (TOPO/ATRAÇÃO)\\nObjetivo: Engajamento alto. Storytelling. Captura com TRAVA.\\nHorário: 12:00\\nAvatar: Viajante + Morar fora + Profissional\\nPalavra-chave ManyChat: TRAVA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Impacto / Storytelling\\n- Fundo: Navy (#0a1628)\\n- Texto principal (Inter 900, branco):\\n\\\"Um brasileiro falou\\n'ESTOY EMBARAZADO'\\nnuma reunião de trabalho\\\"\\n- \\\"EMBARAZADO\\\" em destaque dourado (#fbbf24)\\n- Texto menor (Caveat, dourado): \\\"e todo mundo ficou em silêncio...\\\"\\n- Ícone de mãozinha no canto inferior\\nSLIDE 2 — A CENA\\n- Tipo: Narrativa\\n- Fundo: Navy (#0a1628)\\n- ..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C1",
+        "summary": "Tipo de conteúdo: C1 — Dor e Espelho (CONEXÃO)\\nObjetivo: Identificação. Empatia. Ativar lead.\\nHorário: 19:00\\nAvatar: Todos\\nPalavra-chave ManyChat: TRAVA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Identificação / Dor\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Você sabe 500 PALAVRAS\\nmas não monta\\nUMA FRASE?\\\"\\n- \\\"500 PALAVRAS\\\" e \\\"UMA FRASE\\\" em dourado (#fbbf24)\\n- Texto menor (Caveat, dourado): \\\"isso é mais comum do que você imagina\\\"\\nSLIDE 2 — ESPELHO\\n- Tipo: Identificação profunda\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 700, branco):\\n\\\"Você entende quase tudo.\\nLê textos em espanhol."
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "date": "07/04",
+    "weekday": "TERÇA-FEIRA",
+    "theme": "O mito da gramática",
+    "avatar": "Acadêmico",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "Estudou gramática por ANOS e não fala espanhol?",
+        "title": "REEL C1",
+        "summary": "Tipo de conteúdo: C1 — Dor e Espelho (CONEXÃO)\\nObjetivo: Identificação profunda. Ativar avatar acadêmico.\\nHorário: 09:00\\nDuração alvo: 40-50 segundos\\nAvatar: Acadêmico\\nPalavra-chave ManyChat: METODO\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão séria, como se fosse\\ncontar algo importante]\\nTEXTO NA TELA (grande, centro):\\n\\\"Estudou gramática por ANOS e não fala espanhol?\\\"\\nALE FALA:\\n\\\"Você estudou gramática por anos e ainda não fala espanhol?\\\"\\nINSTRUÇÃO:\\n- Olhar direto na câmera\\n- Tom sério, e..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C2",
+        "summary": "Tipo de conteúdo: C2 — Quebra de Crença (CONEXÃO)\\nObjetivo: Invalidar alternativa (gramática tradicional). Posicionamento.\\nHorário: 12:00\\nAvatar: Acadêmico\\nPalavra-chave ManyChat: MANUAL\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Provocação intelectual\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Gramática NÃO\\nte faz falar\\\"\\n- Texto (Inter 900, dourado):\\n\\\"e eu provo agora\\\"\\n- Texto menor (Caveat, dourado): \\\"desliza se você tem coragem\\\"\\nSLIDE 2 — O ARGUMENTO\\n- Tipo: Lógica\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, dourado):\\n\\\"Prova #1\\\"\\n- Texto (Inter 700, branco):"
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL D1",
+        "summary": "Tipo de conteúdo: D1 — Desejo e Futuro (CONEXÃO → DESEJO)\\nObjetivo: Pintar o futuro. Fazer o acadêmico VISUALIZAR a conquista.\\nHorário: 19:00\\nAvatar: Acadêmico\\nPalavra-chave ManyChat: METODO\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Desejo / Futuro\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Imagina passar no DELE\\nsem decorar UMA\\nregra gramatical\\\"\\n- \\\"DELE\\\" em dourado (#fbbf24)\\n- Texto menor (Caveat, dourado): \\\"parece impossível? lê até o final\\\"\\nSLIDE 2 — O CENÁRIO\\n- Tipo: Visualização\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 700, branco):\\n\\\"Imagina entrar na sala do exame\\ne se sentir PREPARADO."
+      }
+    ]
+  },
+  {
+    "day": 8,
+    "date": "08/04",
+    "weekday": "QUARTA-FEIRA",
+    "theme": "Ficar de bobeira",
+    "avatar": "Todos",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Se você falou 'sin hacer nada', ERROU. Nativos falam ASSIM.",
+        "title": "REEL A1",
+        "summary": "Tipo de conteúdo: A1 — Expressão Nativa (TOPO/ATRAÇÃO)\\nObjetivo: Viralizar. Divertido. Memorável.\\nHorário: 09:00\\nDuração alvo: 35-45 segundos\\nAvatar: Todos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão relaxada, como se\\nestivesse de bobeira no sofá]\\nTEXTO NA TELA (grande, centro):\\n\\\"Se você falou 'sin hacer nada', ERROU. Nativos falam ASSIM.\\\"\\nALE FALA:\\n\\\"Se você falou 'estoy sin hacer nada', errou.\\nNativos falam ASSIM.\\\"\\nINSTRUÇÃO:\\n- Tom de correção amigável\\n- Expressão de quem tá relaxada\\n-..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A3",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A3",
+        "summary": "Tipo de conteúdo: A3 — Cultura Viva (TOPO/ATRAÇÃO)\\nObjetivo: Compartilhamento. Cultural. Alcance.\\nHorário: 12:00\\nAvatar: Todos (foco Viajante)\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Lista / Curiosidade\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"10 gírias ARGENTINAS\\nque brasileiros\\nPRECISAM conhecer\\\"\\n- \\\"ARGENTINAS\\\" em dourado (#fbbf24)\\n- Texto menor (Caveat, dourado): \\\"a #7 vai te chocar\\\"\\n- Ícone de bandeira argentina\\nSLIDE 2 — GÍRIAS 1-3\\n- Tipo: Lista educacional\\n- Fundo: Navy (#0a1628)\\n- Layout: 3 blocos empilhados\\n1. \\\"BOLUDO\\\"\\n- (dourado, Inter 900)"
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1",
+        "summary": "Tipo de conteúdo: V1 — Prova Social Narrativa (DESEJO)\\nObjetivo: Mostrar resultado real. Before/after. Converter.\\nHorário: 19:00\\nAvatar: Vai Morar Fora\\nPalavra-chave ManyChat: AULA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Impacto emocional\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Ela se mudou pra Espanha\\nsem falar espanhol.\\\"\\n- Texto (Inter 900, dourado):\\n\\\"4 meses depois,\\njá estava integrada.\\\"\\n- Texto menor (Caveat, dourado): \\\"história real de uma aluna\\\"\\nSLIDE 2 — O ANTES\\n- Tipo: Narrativa / Dor\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, dourado):\\n\\\"ANTES\\\""
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "date": "09/04",
+    "weekday": "QUINTA-FEIRA",
+    "theme": "Por que larguei tudo",
+    "avatar": "Conexão",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C3",
+        "keyword": "",
+        "hook": "Por que larguei meu emprego pra ensinar espanhol",
+        "title": "REEL C3",
+        "summary": "Tipo de conteúdo: C3 — História da Ale (CONEXÃO)\\nObjetivo: Vulnerabilidade. Conexão profunda. Confiança.\\nHorário: 09:00\\nDuração alvo: 50-60 segundos\\nAvatar: Todos\\nPalavra-chave ManyChat: MANUAL\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão séria, quase emocional]\\nTEXTO NA TELA (grande, centro):\\n\\\"Por que larguei meu emprego pra ensinar espanhol\\\"\\nALE FALA:\\n\\\"Vou te contar por que eu larguei meu emprego\\npra ensinar espanhol.\\\"\\nINSTRUÇÃO:\\n- Olhar direto na câmera\\n- Tom sério, pessoal\\n- Sem sorr..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C1",
+        "summary": "Tipo de conteúdo: C1 — Dor e Espelho (CONEXÃO)\\nObjetivo: Empatia profunda. Ativar identificação.\\nHorário: 12:00\\nAvatar: Todos\\nPalavra-chave ManyChat: TRAVA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Dor / Identificação\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"As palavras estão\\nna sua cabeça.\\\"\\n- Texto (Inter 900, dourado):\\n\\\"Mas não chegam\\nna sua boca.\\\"\\n- Texto menor (Caveat, dourado): \\\"se isso é você, lê até o final\\\"\\nSLIDE 2 — A CENA\\n- Tipo: Espelho\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 700, branco):\\n\\\"Alguém fala espanhol com você."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C2",
+        "summary": "Tipo de conteúdo: C2 — Quebra de Crença (CONEXÃO)\\nObjetivo: Invalidar alternativa (séries) com educação.\\nHorário: 19:00\\nAvatar: Todos\\nPalavra-chave ManyChat: MANUAL\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Provocação\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Assistir série em espanhol\\nNÃO funciona.\\\"\\n- Texto (Inter 900, dourado):\\n\\\"E eu te provo.\\\"\\n- Texto menor (Caveat, dourado): \\\"antes de me xingar, lê tudo\\\"\\nSLIDE 2 — A CRENÇA\\n- Tipo: Espelho\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 700, branco):\\n\\\"Você já ouviu isso:\\n'Assiste série em espanhol"
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "date": "10/04",
+    "weekday": "SEXTA-FEIRA",
+    "theme": "Sei lá",
+    "avatar": "Viajante",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Essa expressão em espanhol vai te surpreender",
+        "title": "REEL A1",
+        "summary": "Tipo de conteúdo: A1 — Expressão Nativa (TOPO/ATRAÇÃO)\\nObjetivo: Viralizar. Rápido. Divertido. Informal.\\nHorário: 09:00\\nDuração alvo: 30-38 segundos\\nAvatar: Viajante\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale dá de ombros exageradamente olhando pra câmera]\\nTEXTO NA TELA (grande, centro):\\n\\\"Essa expressão em espanhol vai te surpreender\\\"\\nALE FALA:\\n\\\"Essa expressão em espanhol vai te surpreender.\\\"\\nINSTRUÇÃO:\\n- Dar de ombros de forma exagerada e divertida\\n- Tom de curiosidade, descontraído\\n- Expressão de quem tem algo su..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1",
+        "summary": "Tipo de conteúdo: V1 — Prova Social Narrativa (DESEJO)\\nObjetivo: Resultado real de viajante. Inspirar. Converter.\\nHorário: 12:00\\nAvatar: Viajante\\nPalavra-chave ManyChat: AULA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Impacto\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Ele não falava NADA\\nde espanhol.\\\"\\n- Texto (Inter 900, dourado):\\n\\\"3 meses depois, negociou\\npreços em Mendoza.\\\"\\n- Texto menor (Caveat, dourado): \\\"história real\\\"\\nSLIDE 2 — O ANTES\\n- Tipo: Narrativa / Dor\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, dourado):\\n\\\"ANTES\\\""
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V2",
+        "summary": "Tipo de conteúdo: V2 — CTA Direto (DECISÃO)\\nObjetivo: Conversão direta. Oferta clara. Sexta-feira noite.\\nHorário: 19:00\\nAvatar: Todos (foco Viajante)\\nPalavra-chave ManyChat: QUERO\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Promessa\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Se você quer destravar\\nseu espanhol de verdade\\\"\\n- Texto (Inter 900, dourado):\\n\\\"lê até o final.\\\"\\n- Texto menor (Caveat, dourado): \\\"essa é a oportunidade\\\"\\nSLIDE 2 — O QUE VOCÊ RECEBE\\n- Tipo: Oferta\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, dourado):\\n\\\"O Programa Imersão Nativa:\\\"\\n- Texto (Inter 700, branco):"
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "date": "11/04",
+    "weekday": "SÁBADO",
+    "theme": "O método por dentro",
+    "avatar": "Dúvida",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "D2",
+        "keyword": "",
+        "hook": "Vou te mostrar POR DENTRO o meu programa",
+        "title": "REEL D2",
+        "summary": "Tipo de conteúdo: D2 — Método por Dentro (DESEJO)\\nObjetivo: Resolver objeção \\\"não sei o que vou receber\\\". Screen recording.\\nHorário: 09:00\\nDuração alvo: 45-55 segundos\\nAvatar: Todos (product doubters)\\nPalavra-chave ManyChat: AULA\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de quem vai revelar algo]\\nTEXTO NA TELA (grande, centro):\\n\\\"Vou te mostrar POR DENTRO o meu programa\\\"\\nALE FALA:\\n\\\"Vou te mostrar exatamente o que meus alunos\\nveem quando abrem o programa.\\\"\\nINSTRUÇÃO:\\n- Tom de exclusivid..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A1",
+        "summary": "Tipo de conteúdo: A1 — Expressão Nativa (TOPO/ATRAÇÃO)\\nObjetivo: Educacional. Salvamentos. Alcance.\\nHorário: 12:00\\nAvatar: Todos\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Curiosidade\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"3 formas de dizer\\n'COM LICENÇA'\\nque nativos usam\\\"\\n- \\\"COM LICENÇA\\\" em dourado (#fbbf24)\\n- Texto menor (Caveat, dourado): \\\"e a escola NUNCA ensinou\\\"\\nSLIDE 2 — O QUE A ESCOLA ENSINA\\n- Tipo: Contraste\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, vermelho #ff421c):\\n\\\"A escola ensina:\\\"\\n- Texto (Inter 900, branco):\\n\\\"'Con permiso'\\\""
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL D1",
+        "summary": "Tipo de conteúdo: D1 — Desejo e Futuro (CONEXÃO → DESEJO)\\nObjetivo: Pintar o futuro. Timeline realista. Gerar desejo.\\nHorário: 19:00\\nAvatar: Todos\\nPalavra-chave ManyChat: METODO\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Promessa realista\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"6 meses pra sair do\\n'entendo tudo' pro\\\"\\n- Texto (Inter 900, dourado):\\n\\\"'falo de verdade'\\\"\\n- Texto menor (Caveat, dourado): \\\"timeline real, sem mentira\\\"\\nSLIDE 2 — MÊS 1\\n- Tipo: Timeline\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, dourado):\\n\\\"MÊS 1\\\"\\n- Texto (Inter 700, branco):"
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "date": "12/04",
+    "weekday": "DOMINGO",
+    "theme": "O circuito desligado",
+    "avatar": "Todos",
+    "week": 2,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "Seu cérebro ENTENDE espanhol mas não FALA?",
+        "title": "REEL C1",
+        "summary": "Tipo de conteúdo: C1 — Dor e Espelho (CONEXÃO)\\nObjetivo: Ângulo científico. Identificação + educação.\\nHorário: 09:00\\nDuração alvo: 40-50 segundos\\nAvatar: Todos\\nPalavra-chave ManyChat: TRAVA\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"preciso te contar algo\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Seu cérebro ENTENDE espanhol mas não FALA?\\\"\\nALE FALA:\\n\\\"Seu cérebro entende espanhol mas não consegue falar?\\\"\\nINSTRUÇÃO:\\n- Olhar direto na câmera\\n- Tom de curiosidade científica\\n- Expressão de \\\"eu..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A2",
+        "summary": "Tipo de conteúdo: A2 — Erro Perigoso (TOPO/ATRAÇÃO)\\nObjetivo: Engajamento alto. Story format. Compartilhável.\\nHorário: 12:00\\nAvatar: Todos\\nPalavra-chave ManyChat: TRAVA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Impacto / Curiosidade\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"7 frases que parecem\\nnormais mas são\\nCONSTRANGEDORAS\\\"\\n- \\\"CONSTRANGEDORAS\\\" em vermelho (#ff421c)\\n- Texto menor (Caveat, dourado): \\\"a #3 é imperdoável\\\"\\nSLIDE 2 — FRASE 1 e 2\\n- Tipo: Lista com história\\n- Fundo: Navy (#0a1628)\\n1. Texto (Inter 900, vermelho):\\n\\\"❌ 'Estoy excitado'\\\"\\nTexto (Inter 700, branco):"
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1",
+        "summary": "Tipo de conteúdo: V1 — Prova Social Narrativa (DESEJO)\\nObjetivo: Resultado real de profissional. Inspirar. Converter.\\nHorário: 19:00\\nAvatar: Profissional\\nPalavra-chave ManyChat: AULA\\nSLIDE 1 — GANCHO (Capa)\\n- Tipo: Impacto profissional\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, branco):\\n\\\"Ele quase perdeu o cliente\\npor não falar espanhol.\\\"\\n- Texto (Inter 900, dourado):\\n\\\"3 meses depois,\\nfechou o contrato.\\\"\\n- Texto menor (Caveat, dourado): \\\"história real de um aluno\\\"\\nSLIDE 2 — O ANTES\\n- Tipo: Narrativa / Dor profissional\\n- Fundo: Navy (#0a1628)\\n- Texto (Inter 900, dourado):\\n\\\"ANTES\\\""
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "date": "13/04",
+    "weekday": "SEGUNDA",
+    "theme": "Fazer de conta",
+    "avatar": "foco: Morar fora",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Brasileiro fala 'HACER DE CUENTA'. Nativo fala outra coisa.",
+        "title": "REEL A1",
+        "summary": "Tipo de conteúdo: Tipo 1 — Expressões Idiomáticas (TOPO)\\nObjetivo: Alcance máximo. Engajamento. Expressão útil para quem mora fora.\\nHorário de publicação: 09:00\\nDuração alvo: 35-45 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"preciso te contar isso\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Brasileiro fala 'HACER DE CUENTA'. Nativo fala outra coisa.\\\"\\nALE FALA:\\n\\\"Brasileiro fala 'hacer de cuenta'. Nativo fala outra coisa. Deixa eu te mostrar.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A2",
+        "summary": "Tipo de conteúdo: Tipo 3 — Erros e Falsos Amigos (TOPO)\\nObjetivo: Engajamento + captura de leads com KW TRAVA\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Impacto\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"'POLVO' não é PÓ\\\"\\nTEXTO SECUNDÁRIO (Inter 600, dourado #fbbf24):\\n\\\"5 falsos amigos que destroem\\nquem mora fora\\\"\\nELEMENTO: Emoji de caveira + bandeirinhas de países hispânicos\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE ..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C1",
+        "summary": "Tipo de conteúdo: Tipo 7 — Dor e Identificação (MEIO)\\nObjetivo: Conexão emocional com quem mora fora. Captura com KW METODO.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Impacto emocional\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Você mora fora e ainda\\nPENSA em português?\\\"\\nTEXTO SECUNDÁRIO (Caveat, dourado #fbbf24):\\n\\\"O problema é exatamente esse.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — IDENTIFICAÇÃO\\n═══════════..."
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "date": "14/04",
+    "weekday": "TERÇA",
+    "theme": "O app te enganou",
+    "avatar": "foco: Quem já tentou apps",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "Usou DUOLINGO por 1 ano e ainda não fala?",
+        "title": "REEL C1",
+        "summary": "Tipo de conteúdo: Tipo 7 — Dor e Identificação (MEIO)\\nObjetivo: Conexão com quem tentou apps e se frustrou. Captura com KW TRAVA.\\nHorário de publicação: 09:00\\nDuração alvo: 40-50 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de compreensão, quase indignação]\\nTEXTO NA TELA (grande, centro):\\n\\\"Usou DUOLINGO por 1 ano e ainda não fala?\\\"\\nALE FALA:\\n\\\"Você usou Duolingo por um ano e ainda não fala espanhol?\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto na câmera\\n- Expressão de \\\"eu sei, eu enten..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C2",
+        "summary": "Tipo de conteúdo: Tipo 9 — Quebra de Crenças (MEIO)\\nObjetivo: Destruir a crença de que apps são suficientes. Captura com KW MANUAL.\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Impacto\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Apps te ensinam a\\nTRADUZIR\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"não a FALAR.\\\"\\nTEXTO SECUNDÁRIO (Caveat, dourado #fbbf24):\\n\\\"E a diferença é TUDO.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSL..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL D1",
+        "summary": "Tipo de conteúdo: Tipo 8 — Desejo e Transformação (MEIO/FUNDO)\\nObjetivo: Ativar desejo pelo método. Captura com KW METODO.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Impacto\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"A diferença entre quem\\nTRAVA e quem FALA?\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"Não é talento.\\nÉ MÉTODO.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — O QUE PARECE\\n═════════════════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "date": "15/04",
+    "weekday": "QUARTA",
+    "theme": "Dar um jeitinho",
+    "avatar": "foco: Profissional",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Reunião com cliente colombiano. Seu chefe pede pra você 'dar um jeito'.",
+        "title": "REEL A1",
+        "summary": "Tipo de conteúdo: Tipo 1 — Expressões Idiomáticas (TOPO)\\nObjetivo: Alcance + relevância para o público profissional.\\nHorário de publicação: 09:00\\nDuração alvo: 35-45 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"olha essa\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Reunião com cliente colombiano. Seu chefe pede pra você 'dar um jeito'.\\\"\\nALE FALA:\\n\\\"Reunião com cliente colombiano. Seu chefe pede pra você 'dar um jeito'. Como fala isso em espanhol?\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Sorriso cúmpl..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A3",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A3",
+        "summary": "Tipo de conteúdo: Tipo 5 — Cultura e Diferenças (TOPO)\\nObjetivo: Valor prático para o avatar profissional.\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Impacto\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"ESPANHOL\\nCORPORATIVO\\\"\\nTEXTO SECUNDÁRIO (Inter 700, dourado #fbbf24):\\n\\\"Como falar em reuniões\\nsem parecer turista\\\"\\nÍCONE: Pasta/maleta\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — EXPRESSÃO 1\\n═══════════════════════════..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1",
+        "summary": "Tipo de conteúdo: Tipo 10 — Prova Social (FUNDO)\\nObjetivo: Converter avatar profissional. Captura com KW AULA.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Prova social\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Quase perdeu a PROMOÇÃO\\npor causa do espanhol.\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"Hoje lidera uma equipe\\ninteira em espanhol.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — ANTES\\n═══════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 16,
+    "date": "16/04",
+    "weekday": "QUINTA",
+    "theme": "5.000 alunos me ensinaram",
+    "avatar": "foco: Todos (autoridade)",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C3",
+        "keyword": "",
+        "hook": "O que 5.000 alunos me ENSINARAM",
+        "title": "REEL C3",
+        "summary": "Tipo de conteúdo: Tipo 12 — História e Autoridade (MEIO)\\nObjetivo: Posicionar autoridade + conexão emocional. Captura com KW MANUAL.\\nHorário de publicação: 09:00\\nDuração alvo: 50-60 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale sentada, olhando pra câmera com expressão reflexiva]\\nTEXTO NA TELA (grande, centro):\\n\\\"O que 5.000 alunos me ENSINARAM\\\"\\nALE FALA:\\n\\\"Eu já ensinei mais de cinco mil alunos. E sabe o que eles me ensinaram?\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Sentada, enquadrada do peito pra cima\\n- Tom introspectivo,..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C1",
+        "summary": "Tipo de conteúdo: Tipo 7 — Dor e Identificação (MEIO)\\nObjetivo: Provocar reflexão. Confronto gentil. Captura com KW TRAVA.\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Provocação\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Se alguém falasse espanhol\\ncom você AGORA...\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"o que aconteceria?\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — CENÁRIO\\n══════════════════════════════════..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C2",
+        "summary": "Tipo de conteúdo: Tipo 9 — Quebra de Crenças (MEIO)\\nObjetivo: Destruir crença na educação formal. Apresentar mecanismo. Captura com KW MANUAL.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Provocação\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"A escola te ensinou espanhol\\\"\\nTEXTO DESTAQUE (Inter 900, vermelho #ff421c):\\n\\\"AO CONTRÁRIO.\\\"\\nTEXTO SECUNDÁRIO (Caveat, dourado #fbbf24):\\n\\\"Era pra ser assim.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "date": "17/04",
+    "weekday": "SEXTA",
+    "theme": "Passar perrengue",
+    "avatar": "foco: Viajante",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Você sabe falar 'PASSAR PERRENGUE' em espanhol?",
+        "title": "REEL A1",
+        "summary": "Tipo de conteúdo: Tipo 1 — Expressões Idiomáticas (TOPO)\\nObjetivo: Alcance + conexão com viajantes. Tom divertido.\\nHorário de publicação: 09:00\\nDuração alvo: 35-45 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"menina, tenho história pra contar\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Você sabe falar 'PASSAR PERRENGUE' em espanhol?\\\"\\nALE FALA:\\n\\\"Você já passou perrengue numa viagem? Então precisa aprender isso.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Expressão animada, quase rindo\\n- Tom de quem vai..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1",
+        "summary": "Tipo de conteúdo: Tipo 10 — Prova Social (FUNDO)\\nObjetivo: Converter avatar viajante. Captura com KW AULA.\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Prova social\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Viajou pro Chile e conversou\\ncom nativos pela\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"PRIMEIRA VEZ.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — ANTES\\n═══════════════════════════════════════════════\\nTIPO: ..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V2",
+        "summary": "Tipo de conteúdo: Tipo 11 — CTA Direto (FUNDO)\\nObjetivo: Conversão direta. Captura com KW QUERO.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: CTA Direto\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Você tem viagem marcada?\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"Olha o que você pode\\nfazer em 30 DIAS.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — SEMANA 1\\n═══════════════════════════════════════════════\\nTIPO: Timel..."
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "date": "18/04",
+    "weekday": "SÁBADO",
+    "theme": "O suporte que faz diferença",
+    "avatar": "foco: Quem tem medo de estudar sozinho",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "D2",
+        "keyword": "",
+        "hook": "Olha esse print. Dúvida às 22h. Resposta às 8h.",
+        "title": "REEL D2",
+        "summary": "Tipo de conteúdo: Tipo 6 — Método e Bastidor (FUNDO)\\nObjetivo: Eliminar objeção \\\"e se eu tiver dúvida?\\\". Captura com KW AULA.\\nHorário de publicação: 09:00\\nDuração alvo: 40-50 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale segurando o celular, mostrando a tela pra câmera]\\nTEXTO NA TELA (grande, centro):\\n\\\"Olha esse print. Dúvida às 22h. Resposta às 8h.\\\"\\nALE FALA:\\n\\\"Olha esse print. Uma aluna mandou uma dúvida às 22h. Às 8h já tinha resposta. É assim que funciona.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Segurar o celular com a ..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A1",
+        "summary": "Tipo de conteúdo: Tipo 1 — Expressões Idiomáticas (TOPO)\\nObjetivo: Atração pura. Valor prático e divertido.\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Prático/divertido\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"7 expressões pra PEDIR\\nCOMIDA em espanhol\\\"\\nTEXTO SECUNDÁRIO (Inter 700, dourado #fbbf24):\\n\\\"como nativo\\\"\\nÍCONE: Garfo + faca / prato\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — EXPRESSÃO 1 E 2\\n══════════════..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL D1",
+        "summary": "Tipo de conteúdo: Tipo 8 — Desejo e Transformação (MEIO/FUNDO)\\nObjetivo: Ativar desejo. Pintar o futuro. Captura com KW METODO.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Desejo\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Imagina nunca mais\\nficar PERDIDO\\\"\\nTEXTO DESTAQUE (Inter 900, dourado #fbbf24):\\n\\\"quando alguém fala espanhol\\ncom você.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — O PRESENTE\\n═══════════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "date": "19/04",
+    "weekday": "DOMINGO",
+    "theme": "Traduzir na cabeça",
+    "avatar": "foco: Todos (dor universal)",
+    "week": 3,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "Você TRADUZ na cabeça antes de falar?",
+        "title": "REEL C1",
+        "summary": "Tipo de conteúdo: Tipo 7 — Dor e Identificação (MEIO)\\nObjetivo: Ativar dor universal. Captura com KW TRAVA.\\nHorário de publicação: 09:00\\nDuração alvo: 45-55 segundos\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos)\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão séria, quase preocupada]\\nTEXTO NA TELA (grande, centro):\\n\\\"Você TRADUZ na cabeça antes de falar?\\\"\\nALE FALA:\\n\\\"Você traduz na cabeça antes de falar espanhol? Então precisa ouvir isso.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Expressão séria, de quem vai revelar algo importante\\n- Tom firme, não agre..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A2",
+        "summary": "Tipo de conteúdo: Tipo 3 — Erros e Falsos Amigos (TOPO)\\nObjetivo: Engajamento + captura com KW TRAVA.\\nHorário de publicação: 12:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Impacto\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"'VASO' em espanhol\\nNÃO é vaso.\\\"\\nTEXTO SECUNDÁRIO (Inter 700, dourado #fbbf24):\\n\\\"E mais 4 palavras traiçoeiras.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — PALAVRA 1: VASO\\n═══════════════════════════════════════════════\\nTI..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1",
+        "summary": "Tipo de conteúdo: Tipo 10 — Prova Social (FUNDO)\\nObjetivo: Converter avatar morar fora. Captura com KW AULA.\\nHorário de publicação: 19:00\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA (GANCHO)\\n═══════════════════════════════════════════════\\nTIPO: Prova social\\nFUNDO: Navy #0a1628\\nTEXTO PRINCIPAL (Inter 900, branco):\\n\\\"Hoje TRABALHA e VIVE\\nem espanhol na Espanha.\\\"\\nTEXTO SECUNDÁRIO (Caveat, dourado #fbbf24):\\n\\\"E há 1 ano, mal conseguia\\npedir um café.\\\"\\nLOGO: Espanhol com Você (canto inferior)\\n═══════════════════════════════════════════════\\nSLIDE 2 — ANTES\\n═══════════════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "date": "20/04",
+    "weekday": "SEGUNDA",
+    "theme": "Chutar o balde",
+    "avatar": "foco: Todos",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Essa expressão em espanhol é FORTE. Mas nós usamos toda semana.",
+        "title": "REEL A1 EXPRESSÃO",
+        "summary": "Tipo: A1 Expressão Idiomática (TOPO)\\nObjetivo: Alcance máximo. Atração. Zero venda.\\nDuração alvo: 30-40 segundos\\nManyChat: Sem palavra-chave (atração pura)\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"essa é boa\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Essa expressão em espanhol é FORTE. Mas nós usamos toda semana.\\\"\\nALE FALA:\\n\\\"Essa expressão em espanhol é FORTE. Mas nós usamos toda semana. Bora aprender?\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto na câmera\\n- Expressão diver..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A2 ERRO",
+        "summary": "Tipo: A2 Erro / Falso Amigo (TOPO — formato história)\\nObjetivo: Engajamento e compartilhamento via storytelling.\\nManyChat: TRAVA\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado sutil\\nFOTO: Ale com expressão de espanto/vergonha alheia\\nHEADLINE (Inter 900, branco):\\n\\\"Ela disse 'estoy constipada'\\npro médico — ele entendeu\\nOUTRA coisa\\\"\\nDESTAQUE: \\\"OUTRA coisa\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"essa é de chorar de rir →\\\"\\n══════════════════════════════════════════════..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C1 DOR/ESPELHO",
+        "summary": "Tipo: C1 Dor e Identificação (MEIO)\\nObjetivo: Empatia profunda com quem desistiu. Reconectar.\\nManyChat: METODO\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628)\\nFOTO: Ale com expressão séria mas empática\\nHEADLINE (Inter 900, branco):\\n\\\"Você já desistiu\\nde aprender espanhol?\\\"\\nSUBTÍTULO (Inter 400, #94a3b8):\\n\\\"O problema nunca foi você.\\\"\\nDESTAQUE: \\\"nunca foi você\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"lê até o final, por favor →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 —..."
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "date": "21/04",
+    "weekday": "TERÇA",
+    "theme": "Decorar é o pior caminho",
+    "avatar": "foco: Acadêmico",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "Decorou 1.000 palavras e ainda TRAVA? 🧠",
+        "title": "REEL C1 DOR/ESPELHO",
+        "summary": "Tipo: C1 Dor e Identificação (MEIO)\\nObjetivo: Identificação com quem decorou e trava. Abalar a crença.\\nDuração alvo: 35-45 segundos\\nManyChat: TRAVA\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"dura verdade\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Decorou 1.000 palavras e ainda TRAVA? 🧠\\\"\\nALE FALA:\\n\\\"Você decorou mil palavras em espanhol\\ne ainda trava na hora de falar?\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto na câmera\\n- Expressão séria mas sem julgamento\\n- Tom de quem vai r..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C2 QUEBRA DE CRENÇA",
+        "summary": "Tipo: C2 Quebra de Crença (MEIO)\\nObjetivo: Destruir a crença de que decorar funciona. Posicionar padrões prontos.\\nManyChat: MANUAL\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow vermelho\\nFOTO: Ale com expressão séria, segurando uma lista\\nHEADLINE (Inter 900, branco):\\n\\\"Decorar vocabulário é o PIOR\\njeito de aprender espanhol\\\"\\nDESTAQUE: \\\"PIOR\\\" em vermelho (#ff421c)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"e eu provo com ciência →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — TEXTO PUR..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL D1 DESEJO",
+        "summary": "Tipo: D1 Desejo e Transformação (MEIO-FUNDO)\\nObjetivo: Pintar o cenário de aprovação na proficiência sem decoreba.\\nManyChat: METODO\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado\\nFOTO: Ale com expressão de \\\"imagina só\\\"\\nHEADLINE (Inter 900, branco):\\n\\\"Imagina passar na prova\\nde proficiência sem ter\\ndecorado NADA\\\"\\nDESTAQUE: \\\"NADA\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"é possível. eu explico →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — A DOR ATUAL\\n═══..."
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "date": "22/04",
+    "weekday": "QUARTA",
+    "theme": "Meio-dia e meia",
+    "avatar": "foco: Todos",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Que horas são? Se você fala 'DOCE Y MEDIA', tá errado.",
+        "title": "REEL A1 EXPRESSÃO",
+        "summary": "Tipo: A1 Expressão / Palavras do Cotidiano (TOPO)\\nObjetivo: Alcance máximo. Vocabulário prático do dia a dia.\\nDuração alvo: 30-40 segundos\\nManyChat: Sem palavra-chave (atração pura)\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão curiosa]\\nTEXTO NA TELA (grande, centro):\\n\\\"Que horas são? Se você fala 'DOCE Y MEDIA', tá errado.\\\"\\nALE FALA:\\n\\\"Que horas são? Se você fala 'doce y media', tá errado. Deixa eu te mostrar o certo.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto na câmera\\n- E..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A3",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A3 CULTURA",
+        "summary": "Tipo: A3 Cultura e Diferenças (TOPO)\\nObjetivo: Entreter + educar. Mostrar a diversidade do espanhol.\\nManyChat: Sem palavra-chave (atração pura)\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com bandeiras sutis\\nFOTO: Ale com expressão curiosa/divertida\\nHEADLINE (Inter 900, branco):\\n\\\"Como 5 países dizem as horas\\nde forma COMPLETAMENTE\\ndiferente\\\"\\nDESTAQUE: \\\"COMPLETAMENTE\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"o 3º vai te surpreender →\\\"\\n══════════════════════════════════════════════..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1 PROVA SOCIAL",
+        "summary": "Tipo: V1 Prova Social (FUNDO)\\nObjetivo: Mostrar resultado real de aluno acadêmico. Inspirar.\\nManyChat: AULA\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado\\nFOTO: Ale com expressão de orgulho\\nHEADLINE (Inter 900, branco):\\n\\\"Passou no SIELE e conseguiu\\na bolsa dos SONHOS\\\"\\nDESTAQUE: \\\"SONHOS\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"essa história me emociona →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — A SITUAÇÃO ANTES\\n═════════════════════════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 23,
+    "date": "23/04",
+    "weekday": "QUINTA",
+    "theme": "A mensagem que mudou tudo",
+    "avatar": "foco: Emocional / Todos",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C3",
+        "keyword": "",
+        "hook": "A mensagem que me fez CHORAR 😢",
+        "title": "REEL C3 HISTÓRIA ALE",
+        "summary": "Tipo: C3 História e Autoridade Pessoal (MEIO)\\nObjetivo: Conexão emocional profunda. Humanizar a marca.\\nDuração alvo: 40-55 segundos\\nManyChat: MANUAL\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão emocionada, séria]\\nTEXTO NA TELA (grande, centro):\\n\\\"A mensagem que me fez CHORAR 😢\\\"\\nALE FALA:\\n\\\"Uma aluna me mandou uma mensagem\\nque me fez chorar.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto na câmera, emoção contida\\n- Tom mais baixo, íntimo\\n- NÃO dramatizar demais — ser genuína\\n- T..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C1 DOR/ESPELHO",
+        "summary": "Tipo: C1 Dor e Identificação (MEIO)\\nObjetivo: Desestigmatizar o sentimento de \\\"se sentir burro\\\" por não falar.\\nManyChat: TRAVA\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow sutil\\nFOTO: Ale com olhar direto, sério mas acolhedor\\nHEADLINE (Inter 900, branco):\\n\\\"Você se sente burra\\npor não falar espanhol?\\\"\\nSUBTÍTULO (Inter 400, #94a3b8):\\n\\\"Eu preciso te dizer algo.\\\"\\nDESTAQUE: \\\"burra\\\" em vermelho (#ff421c)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"lê com calma →\\\"\\n══════════════════════════════════════..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "C2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL C2 QUEBRA DE CRENÇA",
+        "summary": "Tipo: C2 Quebra de Crença (MEIO)\\nObjetivo: Quebrar a crença de que séries = aprendizado. Introduzir zona de expansão.\\nManyChat: MANUAL\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com ícone de TV/streaming\\nFOTO: Ale com expressão de \\\"preciso te contar\\\"\\nHEADLINE (Inter 900, branco):\\n\\\"300 horas de série\\nem espanhol e NADA?\\\"\\nSUBTÍTULO (Inter 400, #94a3b8):\\n\\\"O problema é a calibração.\\\"\\nDESTAQUE: \\\"NADA\\\" em vermelho (#ff421c)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"não é o que você pensa →\\\"\\n═══════════════..."
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "date": "24/04",
+    "weekday": "SEXTA",
+    "theme": "Deixa eu ver se entendi",
+    "avatar": "foco: Profissional",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "Como falar 'DEIXA EU VER SE ENTENDI' em espanhol 🤔",
+        "title": "REEL A1 EXPRESSÃO",
+        "summary": "Tipo: A1 Expressão Idiomática (TOPO)\\nObjetivo: Alcance. Expressão profissional prática.\\nDuração alvo: 30-40 segundos\\nManyChat: Sem palavra-chave (atração pura)\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão profissional]\\nTEXTO NA TELA (grande, centro):\\n\\\"Como falar 'DEIXA EU VER SE ENTENDI' em espanhol 🤔\\\"\\nALE FALA:\\n\\\"Você tá numa reunião em espanhol\\ne precisa dizer 'deixa eu ver se entendi'.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto na câmera\\n- Expressão de quem tá em ambien..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1 PROVA SOCIAL",
+        "summary": "Tipo: V1 Prova Social (FUNDO)\\nObjetivo: Resultado real de profissional. Identificação com avatar 4.\\nManyChat: AULA\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado\\nFOTO: Ale com expressão de orgulho\\nHEADLINE (Inter 900, branco):\\n\\\"De TRAVAR em calls para\\napresentar em espanhol\\\"\\nDESTAQUE: \\\"TRAVAR\\\" em vermelho (#ff421c), \\\"apresentar\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"a história do Ricardo →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — A SITUAÇÃO ANTE..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V2 CTA DIRETO",
+        "summary": "Tipo: V2 CTA Direto — Oferta Completa (FUNDO)\\nObjetivo: Converter. Apresentar a oferta completa com tudo incluso.\\nManyChat: QUERO\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado intenso\\nFOTO: Ale confiante, braços cruzados\\nHEADLINE (Inter 900, branco):\\n\\\"Tudo que você recebe\\npra destravar seu espanhol\\\"\\nDESTAQUE: \\\"destravar\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"lê até o final →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — O PROGRAMA\\n══════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "date": "25/04",
+    "weekday": "SÁBADO",
+    "theme": "A zona de expansão",
+    "avatar": "foco: Quem tenta sozinho / Self-learners",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "D2",
+        "keyword": "",
+        "hook": "Eu vou te explicar em 30 segundos por que séries e apps NÃO funcionam.",
+        "title": "REEL D2 MÉTODO",
+        "summary": "Tipo: D2 Método e Bastidor (FUNDO)\\nObjetivo: Explicar a zona de expansão. Posicionar o método como solução.\\nDuração alvo: 40-55 segundos\\nManyChat: AULA\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão de \\\"senta que vou te explicar\\\"]\\nTEXTO NA TELA (grande, centro):\\n\\\"Eu vou te explicar em 30 segundos por que séries e apps NÃO funcionam.\\\"\\nALE FALA:\\n\\\"Eu vou te explicar em 30 segundos por que séries e apps não funcionam — e o que funciona.\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar diret..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A1 EXPRESSÃO",
+        "summary": "Tipo: A1 Expressão (TOPO)\\nObjetivo: Engajamento e compartilhamento. Expressões divertidas.\\nManyChat: Sem palavra-chave (atração pura)\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado\\nFOTO: Ale com expressão de \\\"olha que legal\\\"\\nHEADLINE (Inter 900, branco):\\n\\\"5 expressões que você\\nSÓ aprende convivendo com NATIVOS\\\"\\nDESTAQUE: \\\"SÓ\\\" e \\\"NATIVOS\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"a 4ª é a melhor →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — EXPRESSÃO 1\\n..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "D1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL D1 DESEJO",
+        "summary": "Tipo: D1 Desejo e Transformação (MEIO-FUNDO)\\nObjetivo: Pintar o cenário ideal — alguém calibrando seu espanhol todo dia.\\nManyChat: METODO\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado\\nFOTO: Ale com expressão acolhedora\\nHEADLINE (Inter 900, branco):\\n\\\"E se alguém calibrasse\\nseu espanhol TODO DIA?\\\"\\nDESTAQUE: \\\"TODO DIA\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"imagina comigo →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — A REALIDADE ATUAL\\n════════════════..."
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "date": "26/04",
+    "weekday": "DOMINGO",
+    "theme": "O próximo pode ser você",
+    "avatar": "foco: Todos (fechamento emocional do mês)",
+    "week": 4,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "C1",
+        "keyword": "",
+        "hook": "Daqui a 6 meses, você vai falar espanhol? 🤔",
+        "title": "REEL C1 DOR/ESPELHO",
+        "summary": "Tipo: C1 Dor e Identificação (MEIO)\\nObjetivo: Confrontar com carinho. Reflexão sobre o futuro.\\nDuração alvo: 35-45 segundos\\nManyChat: TRAVA\\n═══════════════════════════════════════════════\\nGANCHO (0-3 segundos) — O MAIS IMPORTANTE\\n═══════════════════════════════════════════════\\n[Ale olha pra câmera com expressão séria, direta]\\nTEXTO NA TELA (grande, centro):\\n\\\"Daqui a 6 meses, você vai falar espanhol? 🤔\\\"\\nALE FALA:\\n\\\"Daqui a seis meses...\\nse você não mudar nada...\\nvai falar espanhol?\\\"\\nINSTRUÇÃO DE GRAVAÇÃO:\\n- Olhar direto, firme\\n- Tom sério mas sem ser agressivo\\n- Pausa entre cada frase (1 seg)\\n- ..."
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "A2",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL A2 ERRO",
+        "summary": "Tipo: A2 Erro / Falso Amigo (TOPO — formato história)\\nObjetivo: Engajamento e compartilhamento. Falso cognato divertido.\\nManyChat: TRAVA\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow vermelho\\nFOTO: Ale com expressão de \\\"não é o que você pensa\\\"\\nHEADLINE (Inter 900, branco):\\n\\\"'BORRACHA' em espanhol\\nsignifica... NÃO é o que\\nvocê usa pra apagar\\\"\\nDESTAQUE: \\\"BORRACHA\\\" em vermelho (#ff421c)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"essa é perigosa →\\\"\\n═══════════════════════════════════════════════\\nSLI..."
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "V1",
+        "keyword": "",
+        "hook": "",
+        "title": "CARROSSEL V1 PROVA SOCIAL (COMPILAÇÃO)",
+        "summary": "Tipo: V1 Prova Social — Compilação mensal (FUNDO)\\nObjetivo: Fechamento emocional do mês. 4 histórias em 1. Inspirar ação.\\nManyChat: AULA\\n═══════════════════════════════════════════════\\nSLIDE 1 — CAPA IMPACTO\\n═══════════════════════════════════════════════\\nFUNDO: Navy (#0a1628) com glow dourado intenso\\nFOTO: Ale emocionada, orgulhosa\\nHEADLINE (Inter 900, branco):\\n\\\"4 histórias de alunos\\nque começaram como VOCÊ\\\"\\nDESTAQUE: \\\"como VOCÊ\\\" em dourado (#fbbf24)\\nMANUSCRITO (Caveat, dourado, rodapé):\\n\\\"o próximo pode ser você →\\\"\\n═══════════════════════════════════════════════\\nSLIDE 2 — HISTÓRIA 1 (Viajante..."
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "date": "27/04",
+    "weekday": "SEGUNDA-FEIRA",
+    "theme": "Por supuesto",
+    "avatar": "principal:** Viajante",
+    "week": 5,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "date": "28/04",
+    "weekday": "TERÇA-FEIRA",
+    "theme": "Padrões prontos",
+    "avatar": "principal:** Todos",
+    "week": 5,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      }
+    ]
+  },
+  {
+    "day": 29,
+    "date": "29/04",
+    "weekday": "QUARTA-FEIRA",
+    "theme": "Dando uma volta",
+    "avatar": "principal:** Viajante / Morar Fora",
+    "week": 5,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "date": "30/04",
+    "weekday": "QUINTA-FEIRA",
+    "theme": "O mês que tudo mudou",
+    "avatar": "principal:** Todos",
+    "week": 5,
+    "posts": [
+      {
+        "time": "09:00",
+        "format": "REEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "12:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      },
+      {
+        "time": "19:00",
+        "format": "CARROSSEL",
+        "type_code": "",
+        "keyword": "",
+        "hook": "",
+        "title": "(conteúdo pendente)",
+        "summary": ""
+      }
+    ]
+  }
+];
+
+// ── State (localStorage) ──
+const STORAGE_KEY = 'ecv_dashboard_abril';
+let state = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+// state[dayNum_postIdx] = 'gravar' | 'gravado' | 'publicado'
+
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  updateStats();
+}
+
+function getStatus(dayNum, postIdx) {
+  return state[dayNum + '_' + postIdx] || 'gravar';
+}
+
+function cycleStatus(dayNum, postIdx) {
+  const current = getStatus(dayNum, postIdx);
+  const next = current === 'gravar' ? 'gravado' : current === 'gravado' ? 'publicado' : 'gravar';
+  state[dayNum + '_' + postIdx] = next;
+  saveState();
+  return next;
+}
+
+// ── Build UI ──
+function init() {
+  buildWeekNav();
+  buildWeeks();
+  showWeek(1);
+  updateStats();
+}
+
+function buildWeekNav() {
+  const nav = document.getElementById('week-nav');
+  const weeks = [
+    { num: 1, label: 'Sem 1 (01-05)' },
+    { num: 2, label: 'Sem 2 (06-12)' },
+    { num: 3, label: 'Sem 3 (13-19)' },
+    { num: 4, label: 'Sem 4 (20-26)' },
+    { num: 5, label: 'Sem 5 (27-30)' }
+  ];
+  weeks.forEach(w => {
+    const btn = document.createElement('button');
+    btn.className = 'week-btn';
+    btn.dataset.week = w.num;
+    btn.textContent = w.label;
+    btn.addEventListener('click', () => showWeek(w.num));
+    nav.appendChild(btn);
+  });
+}
+
+function showWeek(num) {
+  document.querySelectorAll('.week-btn').forEach(b => b.classList.toggle('active', b.dataset.week == num));
+  document.querySelectorAll('.week-section').forEach(s => s.classList.toggle('active', s.dataset.week == num));
+}
+
+function buildWeeks() {
+  const main = document.getElementById('main-content');
+  const weeks = {};
+  calendarData.forEach(day => {
+    const w = day.week || 1;
+    if (!weeks[w]) weeks[w] = [];
+    weeks[w].push(day);
+  });
+
+  for (const [weekNum, days] of Object.entries(weeks)) {
+    const section = document.createElement('div');
+    section.className = 'week-section';
+    section.dataset.week = weekNum;
+
+    const weekLabels = {
+      1: 'Semana 1 — 01 a 05 de Abril',
+      2: 'Semana 2 — 06 a 12 de Abril',
+      3: 'Semana 3 — 13 a 19 de Abril',
+      4: 'Semana 4 — 20 a 26 de Abril',
+      5: 'Semana 5 — 27 a 30 de Abril'
+    };
+
+    section.innerHTML = '<div class="week-title">' + (weekLabels[weekNum] || 'Semana ' + weekNum) + ' (' + days.length + ' dias, ' + (days.length * 3) + ' posts)</div>';
+
+    days.forEach(day => {
+      section.appendChild(buildDayCard(day));
+    });
+
+    main.appendChild(section);
+  }
+}
+
+function buildDayCard(day) {
+  const card = document.createElement('div');
+  card.className = 'day-card';
+  card.id = 'day-' + day.day;
+
+  // Collect keywords for this day
+  const keywords = [...new Set(day.posts.map(p => p.keyword).filter(k => k))];
+
+  const kwHtml = keywords.map(k => '<span class="kw-badge kw-' + k + '">' + k + '</span>').join('');
+
+  card.innerHTML = `
+    <div class="day-header" onclick="toggleDay(${day.day})">
+      <div class="day-header-left">
+        <div class="day-date">${day.weekday} <span>${day.date}</span></div>
+        <div class="day-theme">${day.theme}</div>
+        <div class="day-avatar">${day.avatar}</div>
+        <div class="day-keywords">${kwHtml}</div>
+      </div>
+      <div class="day-arrow">▼</div>
+    </div>
+    <div class="day-content" id="day-content-${day.day}">
+      ${day.posts.map((p, i) => buildPostCard(day.day, p, i)).join('')}
+    </div>
+  `;
+
+  return card;
+}
+
+function buildPostCard(dayNum, post, idx) {
+  const isReel = post.format === 'REEL';
+  const icon = isReel ? '🎬' : '🃏';
+  const formatClass = isReel ? 'reel' : 'carousel';
+  const formatLabel = isReel ? 'REEL' : 'CARROSSEL';
+  const status = getStatus(dayNum, idx);
+
+  const statusLabel = {
+    'gravar': '○ A gravar',
+    'gravado': '◐ Gravado',
+    'publicado': '● Publicado'
+  }[status];
+
+  const statusClass = status;
+
+  let hookHtml = '';
+  if (post.hook) {
+    hookHtml = '<div class="post-hook">' + escapeHtml(post.hook) + '</div>';
+  }
+
+  let summaryHtml = '';
+  if (post.summary) {
+    const id = 'summary-' + dayNum + '-' + idx;
+    summaryHtml = `
+      <button class="toggle-content" onclick="toggleSummary('${id}')">▸ Ver roteiro completo</button>
+      <div class="post-summary" id="${id}" style="display:none">${escapeHtml(post.summary)}</div>
+    `;
+  }
+
+  const kwHtml = post.keyword ? '<span class="kw-badge kw-' + post.keyword + '">' + post.keyword + '</span>' : '';
+
+  return `
+    <div class="post-card">
+      <div class="post-header">
+        <span class="post-icon">${icon}</span>
+        <span class="post-time">${post.time}</span>
+        <span class="post-format ${formatClass}">${formatLabel}</span>
+        ${post.type_code ? '<span class="post-type">' + post.type_code + '</span>' : ''}
+        ${kwHtml}
+      </div>
+      <div class="post-title">${escapeHtml(post.title || '(sem título)')}</div>
+      ${hookHtml}
+      ${summaryHtml}
+      <div class="post-meta">
+        <button class="status-btn ${statusClass}" onclick="onStatusClick(${dayNum},${idx},this)">
+          ${statusLabel}
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+// ── Interactions ──
+function toggleDay(dayNum) {
+  const card = document.getElementById('day-' + dayNum);
+  card.classList.toggle('expanded');
+}
+
+function toggleSummary(id) {
+  const el = document.getElementById(id);
+  const btn = el.previousElementSibling;
+  if (el.style.display === 'none') {
+    el.style.display = 'block';
+    btn.textContent = '▾ Ocultar roteiro';
+  } else {
+    el.style.display = 'none';
+    btn.textContent = '▸ Ver roteiro completo';
+  }
+}
+
+function onStatusClick(dayNum, idx, btn) {
+  const newStatus = cycleStatus(dayNum, idx);
+  const labels = {
+    'gravar': '○ A gravar',
+    'gravado': '◐ Gravado',
+    'publicado': '● Publicado'
+  };
+  btn.textContent = labels[newStatus];
+  btn.className = 'status-btn ' + newStatus;
+}
+
+function updateStats() {
+  let gravados = 0;
+  let publicados = 0;
+  const total = calendarData.length * 3;
+
+  calendarData.forEach(day => {
+    day.posts.forEach((_, idx) => {
+      const s = getStatus(day.day, idx);
+      if (s === 'gravado') gravados++;
+      if (s === 'publicado') publicados++;
+    });
+  });
+
+  // Count Reels gravados (idx 0 = reel)
+  let reelsGravados = 0;
+  calendarData.forEach(day => {
+    const s = getStatus(day.day, 0);
+    if (s === 'gravado' || s === 'publicado') reelsGravados++;
+  });
+
+  document.getElementById('reels-gravados').textContent = reelsGravados;
+  document.getElementById('publicados').textContent = publicados;
+  document.getElementById('progress-text').textContent = publicados + '/' + total + ' publicados';
+  document.getElementById('progress-fill').style.width = (publicados / total * 100) + '%';
+}
+
+function escapeHtml(text) {
+  if (!text) return '';
+  return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

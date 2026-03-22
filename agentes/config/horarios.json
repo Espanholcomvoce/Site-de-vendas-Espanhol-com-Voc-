@@ -1,0 +1,85 @@
+{
+  "posts_por_dia": 3,
+  "posts_por_mes": 90,
+  "distribuicao_diaria": {
+    "reels": 1,
+    "carrossel": 2
+  },
+  "horarios": {
+    "slot_1": { "horario": "09:00", "formato": "reel",      "justificativa": "Manha - Ale em video, conteudo rapido para captar atencao no pico matinal" },
+    "slot_2": { "horario": "12:00", "formato": "carrossel",  "justificativa": "Horario de almoco - usuario com tempo para consumir carrossel educativo" },
+    "slot_3": { "horario": "19:00", "formato": "carrossel",  "justificativa": "Prime time noturno - usuario relaxado, conteudo mais denso e de conversao" }
+  },
+  "grade_semanal_fixa": {
+    "segunda": {
+      "slot_1": { "tipo": "A1", "camada": "atracao",  "descricao": "Expressao Nativa (Reel)" },
+      "slot_2": { "tipo": "A2", "camada": "atracao",  "descricao": "Erro Perigoso (Carrossel)" },
+      "slot_3": { "tipo": "C1", "camada": "conexao",  "descricao": "Dor e Espelho (Carrossel)" }
+    },
+    "terca": {
+      "slot_1": { "tipo": "C1", "camada": "conexao",  "descricao": "Dor e Espelho (Reel)" },
+      "slot_2": { "tipo": "C2", "camada": "conexao",  "descricao": "Quebra de Crenca (Carrossel)" },
+      "slot_3": { "tipo": "D1", "camada": "conexao",  "descricao": "Desejo e Futuro (Carrossel)" }
+    },
+    "quarta": {
+      "slot_1": { "tipo": "A1", "camada": "atracao",  "descricao": "Expressao Nativa (Reel)" },
+      "slot_2": { "tipo": "A3", "camada": "atracao",  "descricao": "Cultura Viva (Carrossel)" },
+      "slot_3": { "tipo": "V1", "camada": "desejo",   "descricao": "Prova Social (Carrossel)" }
+    },
+    "quinta": {
+      "slot_1": { "tipo": "C3", "camada": "conexao",  "descricao": "Historia da Ale (Reel)" },
+      "slot_2": { "tipo": "C1", "camada": "conexao",  "descricao": "Dor e Espelho (Carrossel)" },
+      "slot_3": { "tipo": "C2", "camada": "conexao",  "descricao": "Quebra de Crenca (Carrossel)" }
+    },
+    "sexta": {
+      "slot_1": { "tipo": "A1", "camada": "atracao",  "descricao": "Expressao Nativa (Reel)" },
+      "slot_2": { "tipo": "V1", "camada": "desejo",   "descricao": "Prova Social (Carrossel)" },
+      "slot_3": { "tipo": "V2", "camada": "decisao",  "descricao": "CTA Direto (Carrossel) — UNICO DIA com CTA direto" }
+    },
+    "sabado": {
+      "slot_1": { "tipo": "D2", "camada": "desejo",   "descricao": "Metodo por Dentro (Reel)" },
+      "slot_2": { "tipo": "A1", "camada": "atracao",  "descricao": "Expressao Nativa (Carrossel)" },
+      "slot_3": { "tipo": "D1", "camada": "conexao",  "descricao": "Desejo e Futuro (Carrossel)" }
+    },
+    "domingo": {
+      "slot_1": { "tipo": "C1", "camada": "conexao",  "descricao": "Dor e Espelho (Reel)" },
+      "slot_2": { "tipo": "A2", "camada": "atracao",  "descricao": "Erro Perigoso (Carrossel)" },
+      "slot_3": { "tipo": "V1", "camada": "desejo",   "descricao": "Prova Social (Carrossel)" }
+    }
+  },
+  "contagem_semanal": {
+    "atracao": 8,
+    "conexao": 7,
+    "desejo": 3,
+    "decisao": 3,
+    "total": 21,
+    "percentual": "atracao 38% / conexao 33% / desejo 14% / decisao 14%"
+  },
+  "regras_protecao": [
+    "Nunca 2 CTA diretos (QUERO) no mesmo dia — sexta e o unico",
+    "Nunca 2 posts de decisao seguidos no mesmo dia",
+    "Reel de expressao abre segunda, quarta e sexta (dias de maior alcance)",
+    "Prova social aparece 3x/semana (qua, sex, dom)",
+    "Dor/Espelho aparece 4x/semana — tipo que mais ativa leads",
+    "Todo avatar coberto ao menos 1x/semana nas provas sociais",
+    "CTA direto SEMPRE na sexta noite — fim de semana = decisao de compra"
+  ],
+  "stories": {
+    "volume_diario": "5-8 stories por dia",
+    "estrutura": [
+      { "horario": "09:30", "tipo": "Repost do Reel + contexto", "producao": "automatizado" },
+      { "horario": "11:00", "tipo": "Enquete ou quiz sobre o tema do dia", "producao": "automatizado" },
+      { "horario": "13:00", "tipo": "Ale responde pergunta/comentario", "producao": "Ale grava" },
+      { "horario": "15:00", "tipo": "Bastidor ou curiosidade", "producao": "Ale grava" },
+      { "horario": "17:00", "tipo": "Resultado enquete + comentario", "producao": "Ale grava 10s" },
+      { "horario": "19:30", "tipo": "Repost carrossel noite + texto", "producao": "automatizado" },
+      { "horario": "21:00", "tipo": "Caixinha de perguntas ou countdown", "producao": "automatizado" }
+    ],
+    "especiais_por_dia": {
+      "segunda": "Expressao da semana — Ale ensina 1 expressao com pronuncia (3-4 Stories)",
+      "quarta": "Errometro — erro comum + enquete interativa (4-5 Stories)",
+      "sexta": "Depoimento da semana — print aluno + Ale comenta + link VSL (3-4 Stories com link)",
+      "domingo": "Semana que vem — antecipacao do conteudo (2-3 Stories)"
+    }
+  }
+}

@@ -1,0 +1,2704 @@
+[
+  {
+    "post_id": "2026-03-20_0700",
+    "data": "2026-03-20",
+    "dia_semana": "Sexta",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 12,
+    "tipo_conteudo": "Historia e Autoridade Pessoal",
+    "avatar": "Viajante",
+    "tema": "Eu aprendi portugues sem escola — foi isso que me ensinou a ensinar",
+    "keyword_manychat": "METODO",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Pouca gente sabe disso sobre mim, mas...",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "ESPANHOL COM VOCE",
+          "fundo": "#001e38",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ALE EXPLICA",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#001e38",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Eu aprendi portugues sem escola — foi isso que me ensinou a ensinar",
+          "Quando eu cheguei no Brasil, eu nao falava UMA palavra em portugues.",
+          "Eu aprendi por imersao, por necessidade, por viver o idioma no dia a dia.",
+          "Foi essa experiencia que me mostrou COMO o cerebro realmente aprende.",
+          "E por isso que eu ensino diferente. Porque eu VIVI o processo."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta METODO. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Eu preciso te contar uma coisa sobre mim... 👇\n\nEu aprendi portugues sem escola — foi isso que me ensinou a ensinar\n\nQuando eu cheguei no Brasil, eu nao falava portugues.\nAprendi por imersao, por necessidade.\nEssa experiencia me ensinou COMO o cerebro realmente aprende.\n\nE por isso que eu ensino diferente.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanhol #aprendaespanhol #espanholreal #mochilao #viagemparaaamericadosul #viajarsozinho #professoranativa #historiadaale #bastidores"
+  },
+  {
+    "post_id": "2026-03-20_0930",
+    "data": "2026-03-20",
+    "dia_semana": "Sexta",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 6,
+    "tipo_conteudo": "Metodo e Bastidor",
+    "avatar": "Vai Morar Fora",
+    "tema": "Como nosso metodo prepara voce para o dia a dia real",
+    "keyword_manychat": "METODO",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "COMO NOSSO METODO PREPARA VOCE PARA O DIA A DIA REAL",
+          "texto_secundario": "A ciencia explica →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "PROBLEMA",
+          "texto_principal": "O metodo tradicional:",
+          "texto_secundario": "Decorar regras → esquecer → frustrar → desistir",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "PILAR 1",
+          "texto_principal": "Pilar 1:\nNucleo del Conocimiento",
+          "texto_secundario": "Vocabulario estrategico que voce usa de verdade",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PILAR 2",
+          "texto_principal": "Pilar 2:\nImersao Ativa",
+          "texto_secundario": "Exposicao ao espanhol real — sem depender de traducao",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PILAR 3",
+          "texto_principal": "Pilar 3:\nAcompanhamento Inteligente",
+          "texto_secundario": "Repeticao espacada + conversacao guiada + feedback",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "RESULTADO",
+          "texto_principal": "+5.000 alunos\nja destravaram",
+          "texto_secundario": "Acesso vitalicio. Garantia de 7 dias.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer conhecer\no metodo?",
+          "texto_secundario": "Comenta METODO que eu te explico tudo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#ff421c",
+        "cor_nome": "Vermelho Laranja",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Voce sabe POR QUE voce trava? A ciencia explica 👇\n\nComo nosso metodo prepara voce para o dia a dia real\n\nO Metodo Imersao Nativa tem 3 pilares:\n1️⃣ Nucleo del Conocimiento\n2️⃣ Imersao Ativa\n3️⃣ Acompanhamento Inteligente\n\nE assim que +5.000 alunos destravaram o espanhol.\n\n👉 Comenta METODO que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanholonline #aprenderespanhol #espanholreal #imigracao #vidanoexterior #morarfora #metodo #comoaprender #imersaonativa"
+  },
+  {
+    "post_id": "2026-03-20_1200",
+    "data": "2026-03-20",
+    "dia_semana": "Sexta",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 12,
+    "tipo_conteudo": "Historia e Autoridade Pessoal",
+    "avatar": "Academico",
+    "tema": "15 anos ensinando brasileiros — o que eu descobri",
+    "keyword_manychat": "METODO",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Quando eu cheguei no Brasil, eu nao falava uma palavra em portugues.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "ESPANHOL COM VOCE",
+          "fundo": "#ffcb15",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ALE EXPLICA",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#ffcb15",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "15 anos ensinando brasileiros — o que eu descobri",
+          "Quando eu cheguei no Brasil, eu nao falava UMA palavra em portugues.",
+          "Eu aprendi por imersao, por necessidade, por viver o idioma no dia a dia.",
+          "Foi essa experiencia que me mostrou COMO o cerebro realmente aprende.",
+          "E por isso que eu ensino diferente. Porque eu VIVI o processo."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta METODO. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Eu preciso te contar uma coisa sobre mim... 👇\n\n15 anos ensinando brasileiros — o que eu descobri\n\nQuando eu cheguei no Brasil, eu nao falava portugues.\nAprendi por imersao, por necessidade.\nEssa experiencia me ensinou COMO o cerebro realmente aprende.\n\nE por isso que eu ensino diferente.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholreal #aprendaespanhol #espanholcomvoce #celu #siele #estudarnoexterior #professoranativa #bastidores #historiadaale"
+  },
+  {
+    "post_id": "2026-03-20_1500",
+    "data": "2026-03-20",
+    "dia_semana": "Sexta",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 10,
+    "tipo_conteudo": "Prova Social",
+    "avatar": "Profissional",
+    "tema": "Aluno foi promovido depois de destravar o espanhol",
+    "keyword_manychat": "AULA",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "ALUNO FOI PROMOVIDO DEPOIS DE DESTRAVAR O ESPANHOL",
+          "texto_secundario": "Historia real de aluno →",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "ANTES",
+          "texto_principal": "ANTES:",
+          "texto_secundario": "[Nome] Nao consegue se expressar como realmente e no trabalho.\nTravado. Frustrado. Quase desistindo.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VIRADA",
+          "texto_principal": "Entao comecou com o\nMetodo Imersao Nativa",
+          "texto_secundario": "Sem decorar. Sem sofrer. Com metodo.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "DEPOIS",
+          "texto_principal": "DEPOIS:",
+          "texto_secundario": "[RESULTADO ESPECIFICO DO ALUNO]",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PRINT",
+          "texto_principal": "[PRINT DO DEPOIMENTO]",
+          "texto_secundario": "Mensagem real do aluno",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer o mesmo\nresultado?",
+          "texto_secundario": "Comenta AULA que eu te mando a aula demonstrativa gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#36c551",
+        "cor_nome": "Verde",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Olha o resultado que esse aluno teve 👇\n\nAluno foi promovido depois de destravar o espanhol\n\nEssa e uma historia real de um aluno do Imersao Nativa.\nEle/ela comecou travado, frustrado.\nHoje, fala espanhol com naturalidade.\n\nSe ele/ela conseguiu, voce tambem consegue.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanhol #aprenderespanhol #aprendaespanhol #espanholparanegocio #espanholparatrabalho #carreirainternacional #resultado #depoimento #alunoreal"
+  },
+  {
+    "post_id": "2026-03-20_1830",
+    "data": "2026-03-20",
+    "dia_semana": "Sexta",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Viajante",
+    "tema": "Argentina vs Espanha: como cada um fala 'voce'",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Voce sabia que em espanhol isso muda de pais pra pais?",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SABIA?",
+          "fundo": "#0090be",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "DIFERENCA CULTURAL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ESPANHOL REAL",
+          "fundo": "#0090be",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Isso que voce acha normal no Brasil funciona MUITO diferente no mundo hispanico.",
+          "Nos, nativos, falamos assim...",
+          "[EXPLICAÇÃO DA DIFERENÇA CULTURAL].",
+          "E isso muda de pais pra pais, viu?",
+          "Comenta qual pais hispanico voce mais quer conhecer."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Sabia que isso muda de pais pra pais? 🌎\n\nArgentina vs Espanha: como cada um fala 'voce'\n\nO mundo hispanico e muito mais diverso do que voce imagina.\nCada pais tem seus costumes, expressoes e formas de falar.\n\nDesliza/assiste pra descobrir.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholonline #aprendaespanhol #espanholparabrasileiros #viajarsozinho #espanholnoexterior #espanholparaviagem #culturaespanhola #diferencas #curiosidades"
+  },
+  {
+    "post_id": "2026-03-20_2000",
+    "data": "2026-03-20",
+    "dia_semana": "Sexta",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 9,
+    "tipo_conteudo": "Quebra de Crencas",
+    "avatar": "Vai Morar Fora",
+    "tema": "Morar fora NAO garante fluencia — tem brasileiro com 10 anos que nao fala",
+    "keyword_manychat": "METODO",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "MORAR FORA NAO GARANTE FLUENCIA — TEM BRASILEIRO COM 10 ANOS QUE NAO FALA",
+          "texto_secundario": "Voce acredita nisso? →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "CRENCA",
+          "texto_principal": "O que te ensinaram:",
+          "texto_secundario": "[CRENCA COMUM SOBRE APRENDER ESPANHOL]",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VERDADE",
+          "texto_principal": "A verdade:",
+          "texto_secundario": "[POR QUE ISSO NAO FUNCIONA]",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "CIENCIA",
+          "texto_principal": "O que a ciencia diz:",
+          "texto_secundario": "[EXPLICACAO BASEADA NO METODO]",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "SOLUCAO",
+          "texto_principal": "O que funciona\nDE VERDADE:",
+          "texto_secundario": "Imersao + pratica + acompanhamento",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Voce acreditava nisso?",
+          "texto_secundario": "Comenta METODO se voce quer saber mais",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#79458f",
+        "cor_nome": "Roxo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Tudo que te ensinaram sobre espanhol e MENTIRA. 👇\n\nMorar fora NAO garante fluencia — tem brasileiro com 10 anos que nao fala\n\nEu sei que parece contra-intuitivo.\nMas o metodo tradicional te ensina a ESTUDAR espanhol.\nNao a FALAR espanhol.\n\nA diferenca muda tudo.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanhol #aprenderespanhol #espanholonline #imigracao #morarfora #brasileirosnaespanha #verdade #quebradecrencas #mentiradoespanhol"
+  },
+  {
+    "post_id": "2026-03-21_0700",
+    "data": "2026-03-21",
+    "dia_semana": "Sabado",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 9,
+    "tipo_conteudo": "Quebra de Crencas",
+    "avatar": "Academico",
+    "tema": "Estudar gramatica nao vai te fazer falar espanhol",
+    "keyword_manychat": "METODO",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa crenca esta DESTRUINDO seu espanhol.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE ACREDITA NISSO?",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "MENTIRA!",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "A VERDADE E OUTRA",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Estudar gramatica nao vai te fazer falar espanhol",
+          "Eu sei que parece loucura, mas e a verdade.",
+          "O metodo tradicional te ensina a ESTUDAR espanhol. Nao a FALAR espanhol.",
+          "A diferenca? Uma te enche de regra. A outra te dá fluencia.",
+          "Se voce acreditava nisso, comenta ai. Voce nao e o unico."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta METODO. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Tudo que te ensinaram sobre espanhol e MENTIRA. 👇\n\nEstudar gramatica nao vai te fazer falar espanhol\n\nEu sei que parece contra-intuitivo.\nMas o metodo tradicional te ensina a ESTUDAR espanhol.\nNao a FALAR espanhol.\n\nA diferenca muda tudo.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprenderespanhol #aprendaespanhol #espanholonline #siele #dele #estudarnoexterior #mentiradoespanhol #quebradecrencas #verdade"
+  },
+  {
+    "post_id": "2026-03-21_0930",
+    "data": "2026-03-21",
+    "dia_semana": "Sabado",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 6,
+    "tipo_conteudo": "Metodo e Bastidor",
+    "avatar": "Profissional",
+    "tema": "Por que metodo generico nao resolve espanhol corporativo",
+    "keyword_manychat": "METODO",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "POR QUE METODO GENERICO NAO RESOLVE ESPANHOL CORPORATIVO",
+          "texto_secundario": "A ciencia explica →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "PROBLEMA",
+          "texto_principal": "O metodo tradicional:",
+          "texto_secundario": "Decorar regras → esquecer → frustrar → desistir",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "PILAR 1",
+          "texto_principal": "Pilar 1:\nNucleo del Conocimiento",
+          "texto_secundario": "Vocabulario estrategico que voce usa de verdade",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PILAR 2",
+          "texto_principal": "Pilar 2:\nImersao Ativa",
+          "texto_secundario": "Exposicao ao espanhol real — sem depender de traducao",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PILAR 3",
+          "texto_principal": "Pilar 3:\nAcompanhamento Inteligente",
+          "texto_secundario": "Repeticao espacada + conversacao guiada + feedback",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "RESULTADO",
+          "texto_principal": "+5.000 alunos\nja destravaram",
+          "texto_secundario": "Acesso vitalicio. Garantia de 7 dias.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer conhecer\no metodo?",
+          "texto_secundario": "Comenta METODO que eu te explico tudo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#001e38",
+        "cor_nome": "Azul Marinho",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Voce sabe POR QUE voce trava? A ciencia explica 👇\n\nPor que metodo generico nao resolve espanhol corporativo\n\nO Metodo Imersao Nativa tem 3 pilares:\n1️⃣ Nucleo del Conocimiento\n2️⃣ Imersao Ativa\n3️⃣ Acompanhamento Inteligente\n\nE assim que +5.000 alunos destravaram o espanhol.\n\n👉 Comenta METODO que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#aprenderespanhol #aprendaespanhol #espanholreal #espanholparatrabalho #carreirainternacional #espanholparanegocio #metodo #comoaprender #imersaonativa"
+  },
+  {
+    "post_id": "2026-03-21_1200",
+    "data": "2026-03-21",
+    "dia_semana": "Sabado",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 1,
+    "tipo_conteudo": "Expressoes Idiomaticas",
+    "avatar": "Viajante",
+    "tema": "Como falar 'se vira nos 30' em espanhol",
+    "keyword_manychat": "ERROS",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Eu, como nativa, nunca entendi essa expressao... ate agora.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "SE VIRA NOS 30",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ARREGLATELAS COMO PUEDAS",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'se vira nos 30' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: arreglatelas como puedas.",
+          "Repete comigo: a-RREH-gla-te-las CO-mo PUEH-das.",
+          "Olha o exemplo: Yo me voy, arreglatelas como puedas. — que significa: Eu vou embora, se vira nos 30..",
+          "No Mexico tambem falam 'rascale como puedas'",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "arreglatelas como puedas | Pronuncia: a-RREH-gla-te-las CO-mo PUEH-das | Alternativas: apanate solo / busca la vida"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta ERROS que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Voce fala isso todo dia mas nao sabe em espanhol 👇\n\nComo falar 'se vira nos 30' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta ERROS pra receber um material gratis!\n\n#espanholparabrasileiros #espanholreal #aprenderespanhol #viagemparaaamericadosul #mochilao #espanholparaviagem #comofalarem #expressoes #espanholnativo"
+  },
+  {
+    "post_id": "2026-03-21_1500",
+    "data": "2026-03-21",
+    "dia_semana": "Sabado",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 3,
+    "tipo_conteudo": "Erros e Falsos Amigos",
+    "avatar": "Vai Morar Fora",
+    "tema": "PISO em espanhol e apartamento, nao chao!",
+    "keyword_manychat": "FALSOS",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "CUIDADO!\nPISO EM ESPANHOL E APARTAMENTO, NAO CHAO",
+          "texto_secundario": "Esse erro e mais comum do que voce imagina →",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "ERRO",
+          "texto_principal": "O QUE VOCE ACHA\nQUE SIGNIFICA:",
+          "texto_secundario": "[SIGNIFICADO QUE BRASILEIRO ASSUME]",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "CORRETO",
+          "texto_principal": "O QUE REALMENTE\nSIGNIFICA:",
+          "texto_secundario": "[SIGNIFICADO REAL EM ESPANHOL]",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "EXEMPLO ERRADO",
+          "texto_principal": "❌ [FRASE USANDO ERRADO]",
+          "texto_secundario": "Isso pode ser MUITO constrangedor!",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "EXEMPLO CERTO",
+          "texto_principal": "✅ [FRASE USANDO CERTO]",
+          "texto_secundario": "Assim que nos, nativos, falamos",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "RESUMO",
+          "texto_principal": "RESUMINDO:",
+          "texto_secundario": "[Palavra] em espanhol = [significado real]\nNunca confunda com [significado errado]!",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Voce ja cometeu\nesse erro?",
+          "texto_secundario": "Comenta FALSOS e receba o PDF de Falsos Cognatos",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#ffcb15",
+        "cor_nome": "Amarelo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "⚠️ CUIDADO! Esse erro e mais perigoso do que voce imagina.\n\nPISO em espanhol e apartamento, nao chao!\n\nEsse e um dos erros mais classicos que brasileiros cometem.\nE dependendo da situacao, pode ser BEM constrangedor.\n\nAssiste/desliza pra nunca mais errar isso.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta FALSOS pra receber um material gratis!\n\n#espanholonline #espanholreal #espanhol #brasileirosnaespanha #morarfora #brasileironoexterior #cuidado #falsoscognatos #erroscomuns"
+  },
+  {
+    "post_id": "2026-03-21_1830",
+    "data": "2026-03-21",
+    "dia_semana": "Sabado",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 2,
+    "tipo_conteudo": "Palavras do Cotidiano",
+    "avatar": "Academico",
+    "tema": "Como falar 'bolsa de estudos' em espanhol",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa palavra simples tem traducao ERRADA na sua cabeca.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#36c551",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "BOLSA DE ESTUDOS",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "BECA",
+          "fundo": "#36c551",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'bolsa de estudos' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: beca.",
+          "Repete comigo: BE-ca.",
+          "Olha o exemplo: Consegui una beca para estudiar en Madrid. — que significa: Consegui uma bolsa de estudos pra estudar em Madrid..",
+          "Curta e direta — 'beca' e universal em todo o mundo hispanico",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "beca | Pronuncia: BE-ca"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Essa palavra simples vai te surpreender 👇\n\nComo falar 'bolsa de estudos' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholparabrasileiros #aprenderespanhol #aprendaespanhol #siele #espanholparaconcurso #proficienciaemespanhol #vocabulario #espanholdodia #palavradodia"
+  },
+  {
+    "post_id": "2026-03-21_2000",
+    "data": "2026-03-21",
+    "dia_semana": "Sabado",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 7,
+    "tipo_conteudo": "Dor e Identificacao",
+    "avatar": "Profissional",
+    "tema": "Voce e competente na sua area mas trava em espanhol?",
+    "keyword_manychat": "TRAVA",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VOCE E COMPETENTE NA SUA AREA MAS TRAVA EM ESPANHOL?",
+          "texto_secundario": "Se sim, desliza... →",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "IDENTIFICACAO",
+          "texto_principal": "Voce entende\nmas nao fala.",
+          "texto_secundario": "Voce traduz tudo na cabeca. Voce trava.",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VALIDACAO",
+          "texto_principal": "Isso nao e\nfalta de talento.",
+          "texto_secundario": "E falta de METODO.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "EXPLICACAO",
+          "texto_principal": "O problema:",
+          "texto_secundario": "Voce aprendeu a ESTUDAR espanhol.\nNao a FALAR espanhol.",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "SOLUCAO",
+          "texto_principal": "A solucao:",
+          "texto_secundario": "Um metodo que ativa a fala,\nnao que enche de regra.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer destravar?",
+          "texto_secundario": "Comenta TRAVA que eu te mando o proximo passo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#0090be",
+        "cor_nome": "Azul Ceu",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Se voce se identifica... esse post e pra voce. 👇\n\nVoce e competente na sua area mas trava em espanhol?\n\nEu sei como e essa frustracao.\nVoce estuda, se esforça, entende tudo...\nMas na hora de FALAR, trava.\n\nO problema nao e voce. E o metodo.\n\n💬 Se voce se identificou, comenta TRAVA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholreal #espanholonline #aprenderespanhol #negociosinternacionais #espanholcorporativo #carreirainternacional #voceseidentifica #travanoespanhol #identificacao"
+  },
+  {
+    "post_id": "2026-03-22_0700",
+    "data": "2026-03-22",
+    "dia_semana": "Domingo",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 9,
+    "tipo_conteudo": "Quebra de Crencas",
+    "avatar": "Viajante",
+    "tema": "Portunhol NAO e espanhol — e por isso que voce trava",
+    "keyword_manychat": "METODO",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Tudo que te ensinaram sobre aprender espanhol e mentira.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE ACREDITA NISSO?",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "MENTIRA!",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "A VERDADE E OUTRA",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Portunhol NAO e espanhol — e por isso que voce trava",
+          "Eu sei que parece loucura, mas e a verdade.",
+          "O metodo tradicional te ensina a ESTUDAR espanhol. Nao a FALAR espanhol.",
+          "A diferenca? Uma te enche de regra. A outra te dá fluencia.",
+          "Se voce acreditava nisso, comenta ai. Voce nao e o unico."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta METODO. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Tudo que te ensinaram sobre espanhol e MENTIRA. 👇\n\nPortunhol NAO e espanhol — e por isso que voce trava\n\nEu sei que parece contra-intuitivo.\nMas o metodo tradicional te ensina a ESTUDAR espanhol.\nNao a FALAR espanhol.\n\nA diferenca muda tudo.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprendaespanhol #aprenderespanhol #espanhol #espanholparaviagem #espanholbasico #viajarsozinho #mentiradoespanhol #verdade #quebradecrencas"
+  },
+  {
+    "post_id": "2026-03-22_0930",
+    "data": "2026-03-22",
+    "dia_semana": "Domingo",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Vai Morar Fora",
+    "tema": "Choque cultural: o que ninguem conta sobre morar na Espanha",
+    "keyword_manychat": "VIAGEM",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "CHOQUE CULTURAL: O QUE NINGUEM CONTA SOBRE MORAR NA ESPANHA",
+          "texto_secundario": "Voce sabia? Desliza →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "FATO 1",
+          "texto_principal": "[FATO/DIFERENCA 1]",
+          "texto_secundario": "[Explicacao]",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "FATO 2",
+          "texto_principal": "[FATO/DIFERENCA 2]",
+          "texto_secundario": "[Explicacao]",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "FATO 3",
+          "texto_principal": "[FATO/DIFERENCA 3]",
+          "texto_secundario": "[Explicacao]",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "CURIOSIDADE",
+          "texto_principal": "[DADO SURPREENDENTE]",
+          "texto_secundario": "Nos, nativos, achamos isso normal!",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "DICA",
+          "texto_principal": "DICA DA ALE:",
+          "texto_secundario": "[Dica pratica relacionada ao tema]",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Qual pais hispanico\nvoce mais quer conhecer?",
+          "texto_secundario": "Comenta! E salva esse post pra consultar depois.",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#4e4b97",
+        "cor_nome": "Indigo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Sabia que isso muda de pais pra pais? 🌎\n\nChoque cultural: o que ninguem conta sobre morar na Espanha\n\nO mundo hispanico e muito mais diverso do que voce imagina.\nCada pais tem seus costumes, expressoes e formas de falar.\n\nDesliza/assiste pra descobrir.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanhol #espanholreal #espanholparabrasileiros #brasileirosnaespanha #morarfora #imigracao #culturaespanhola #curiosidades #diferencas"
+  },
+  {
+    "post_id": "2026-03-22_1200",
+    "data": "2026-03-22",
+    "dia_semana": "Domingo",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 4,
+    "tipo_conteudo": "Perguntas de Seguidores",
+    "avatar": "Academico",
+    "tema": "Seguidor pergunta: SER vs ESTAR — regra definitiva?",
+    "keyword_manychat": "PRONUNCIA",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa e a duvida mais comum que eu recebo.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "SEGUIDOR PERGUNTOU",
+          "fundo": "#001e38",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ALE RESPONDE",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#001e38",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Um seguidor me perguntou: 'SER vs ESTAR — regra definitiva?'",
+          "Essa e uma duvida MUITO comum, e a resposta e mais simples do que voce imagina.",
+          "A gente fala assim...",
+          "[EXPLICAÇÃO DIDÁTICA DA ALE].",
+          "Entendeu? Agora manda a SUA duvida nos comentarios."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta PRONUNCIA. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Voces pediram, eu respondi 👇\n\nSeguidor pergunta: SER vs ESTAR — regra definitiva?\n\nRecebi essa pergunta e achei que MUITA gente tem a mesma duvida.\n\nA resposta e mais simples do que voce imagina.\n\n💬 Se voce se identificou, comenta PRONUNCIA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholparabrasileiros #espanhol #espanholonline #estudarnoexterior #siele #dele #aleresponde #perguntadeseguidor #duvida"
+  },
+  {
+    "post_id": "2026-03-22_1500",
+    "data": "2026-03-22",
+    "dia_semana": "Domingo",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 10,
+    "tipo_conteudo": "Prova Social",
+    "avatar": "Profissional",
+    "tema": "Vendedora triplicou clientes ao dominar espanhol de negocios",
+    "keyword_manychat": "AULA",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VENDEDORA TRIPLICOU CLIENTES AO DOMINAR ESPANHOL DE NEGOCIOS",
+          "texto_secundario": "Historia real de aluno →",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "ANTES",
+          "texto_principal": "ANTES:",
+          "texto_secundario": "[Nome] Nao consegue se expressar como realmente e no trabalho.\nTravado. Frustrado. Quase desistindo.",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VIRADA",
+          "texto_principal": "Entao comecou com o\nMetodo Imersao Nativa",
+          "texto_secundario": "Sem decorar. Sem sofrer. Com metodo.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "DEPOIS",
+          "texto_principal": "DEPOIS:",
+          "texto_secundario": "[RESULTADO ESPECIFICO DO ALUNO]",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PRINT",
+          "texto_principal": "[PRINT DO DEPOIMENTO]",
+          "texto_secundario": "Mensagem real do aluno",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer o mesmo\nresultado?",
+          "texto_secundario": "Comenta AULA que eu te mando a aula demonstrativa gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#ff421c",
+        "cor_nome": "Vermelho Laranja",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Olha o resultado que esse aluno teve 👇\n\nVendedora triplicou clientes ao dominar espanhol de negocios\n\nEssa e uma historia real de um aluno do Imersao Nativa.\nEle/ela comecou travado, frustrado.\nHoje, fala espanhol com naturalidade.\n\nSe ele/ela conseguiu, voce tambem consegue.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanholparabrasileiros #aprenderespanhol #espanholcomvoce #negociosinternacionais #espanholprofissional #espanholparanegocio #resultado #alunoreal #depoimento"
+  },
+  {
+    "post_id": "2026-03-22_1830",
+    "data": "2026-03-22",
+    "dia_semana": "Domingo",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 1,
+    "tipo_conteudo": "Expressoes Idiomaticas",
+    "avatar": "Viajante",
+    "tema": "Como falar 'dar um jeitinho' em espanhol",
+    "keyword_manychat": "ERROS",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Para! Voce fala isso todo dia mas nao sabe em espanhol.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#ffcb15",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "DAR UM JEITINHO",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "BUSCAR LA VUELTA",
+          "fundo": "#ffcb15",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'dar um jeitinho' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: buscar la vuelta.",
+          "Repete comigo: bus-CAR la VUEL-ta.",
+          "Olha o exemplo: Vamos a buscar la vuelta para resolver esto. — que significa: Vamos dar um jeitinho pra resolver isso..",
+          "O famoso jeitinho brasileiro nao tem traducao exata — essa e a mais proxima",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "buscar la vuelta | Pronuncia: bus-CAR la VUEL-ta | Alternativas: hacer un apaño / arreglarselas"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta ERROS que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Voce fala isso todo dia mas nao sabe em espanhol 👇\n\nComo falar 'dar um jeitinho' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta ERROS pra receber um material gratis!\n\n#aprenderespanhol #espanholparabrasileiros #aprendaespanhol #viajarsozinho #espanholparaviagem #espanholnoexterior #comofalarem #expressoes #espanholnativo"
+  },
+  {
+    "post_id": "2026-03-22_2000",
+    "data": "2026-03-22",
+    "dia_semana": "Domingo",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 11,
+    "tipo_conteudo": "CTA Indireto",
+    "avatar": "Vai Morar Fora",
+    "tema": "Se voce vai se mudar e quer chegar preparado, eu te ajudo",
+    "keyword_manychat": "AULA",
+    "total_slides": 5,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VOCE QUER DESTRAVAR\nSEU ESPANHOL?",
+          "texto_secundario": "Desliza →",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "VERDADE",
+          "texto_principal": "Eu vou ser sincera\ncom voce:",
+          "texto_secundario": "Sozinho e possivel.\nMas demora MUITO mais.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "CONVITE",
+          "texto_principal": "Eu preparei uma\naula gratuita",
+          "texto_secundario": "Onde eu te mostro o caminho\npra destravar de verdade.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PROVA",
+          "texto_principal": "+5.000 alunos\nja fizeram esse caminho",
+          "texto_secundario": "R$397 com acesso vitalicio\nGarantia de 7 dias",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "CTA",
+          "texto_principal": "Comenta AULA",
+          "texto_secundario": "Que eu te mando o link\nda aula demonstrativa gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#36c551",
+        "cor_nome": "Verde",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Eu tenho algo especial pra voce. Le ate o final. 👇\n\nSe voce vai se mudar e quer chegar preparado, eu te ajudo\n\nEu preparei uma aula demonstrativa gratuita.\nNessa aula, eu te mostro o caminho real pra destravar.\n\nSem promessa vazia. Sem enrolacao.\nSo o metodo que ja ajudou +5.000 alunos.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanholreal #espanholonline #aprenderespanhol #imigracao #morarfora #brasileirosnaespanha #linknabioo #aulademonstrativa #comece"
+  },
+  {
+    "post_id": "2026-03-23_0700",
+    "data": "2026-03-23",
+    "dia_semana": "Segunda",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Academico",
+    "tema": "Espanhol da Espanha vs America Latina — diferencas reais",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Voce sabia que em espanhol isso muda de pais pra pais?",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SABIA?",
+          "fundo": "#0090be",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "DIFERENCA CULTURAL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ESPANHOL REAL",
+          "fundo": "#0090be",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Isso que voce acha normal no Brasil funciona MUITO diferente no mundo hispanico.",
+          "No espanhol real...",
+          "[EXPLICAÇÃO DA DIFERENÇA CULTURAL].",
+          "E isso muda de pais pra pais, viu?",
+          "Comenta qual pais hispanico voce mais quer conhecer."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Sabia que isso muda de pais pra pais? 🌎\n\nEspanhol da Espanha vs America Latina — diferencas reais\n\nO mundo hispanico e muito mais diverso do que voce imagina.\nCada pais tem seus costumes, expressoes e formas de falar.\n\nDesliza/assiste pra descobrir.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholreal #espanholparabrasileiros #aprendaespanhol #dele #espanholparaenem #proficienciaemespanhol #curiosidades #diferencas #culturaespanhola"
+  },
+  {
+    "post_id": "2026-03-23_0930",
+    "data": "2026-03-23",
+    "dia_semana": "Segunda",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 12,
+    "tipo_conteudo": "Historia e Autoridade Pessoal",
+    "avatar": "Profissional",
+    "tema": "Como uma professora de espanhol construiu um negocio digital",
+    "keyword_manychat": "METODO",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "COMO UMA PROFESSORA DE ESPANHOL CONSTRUIU UM NEGOCIO DIGITAL",
+          "texto_secundario": "Minha historia →",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "HISTORIA 1",
+          "texto_principal": "Quando eu cheguei\nno Brasil...",
+          "texto_secundario": "Eu nao falava UMA palavra em portugues.",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "HISTORIA 2",
+          "texto_principal": "Eu aprendi por\nimersao e necessidade.",
+          "texto_secundario": "Sem escola. Sem metodo tradicional.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "APRENDIZADO",
+          "texto_principal": "Foi isso que me ensinou:",
+          "texto_secundario": "[APRENDIZADO QUE GEROU O METODO]",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "RESULTADO",
+          "texto_principal": "Hoje ja ajudei\n+5.000 alunos",
+          "texto_secundario": "Com o Metodo Imersao Nativa",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Me conta SUA historia\nnos comentarios",
+          "texto_secundario": "E comenta METODO pra saber mais sobre o metodo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#79458f",
+        "cor_nome": "Roxo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Eu preciso te contar uma coisa sobre mim... 👇\n\nComo uma professora de espanhol construiu um negocio digital\n\nQuando eu cheguei no Brasil, eu nao falava portugues.\nAprendi por imersao, por necessidade.\nEssa experiencia me ensinou COMO o cerebro realmente aprende.\n\nE por isso que eu ensino diferente.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprenderespanhol #aprendaespanhol #espanhol #espanholparatrabalho #espanholprofissional #carreirainternacional #historiadaale #bastidores #professoranativa"
+  },
+  {
+    "post_id": "2026-03-23_1200",
+    "data": "2026-03-23",
+    "dia_semana": "Segunda",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 1,
+    "tipo_conteudo": "Expressoes Idiomaticas",
+    "avatar": "Viajante",
+    "tema": "Como falar 'to de boa' em espanhol",
+    "keyword_manychat": "ERROS",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Eu, como nativa, nunca entendi essa expressao... ate agora.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "TO DE BOA",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ESTOY TRANQUI",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'to de boa' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: estoy tranqui / estoy bien.",
+          "Repete comigo: es-TOY TRAN-qui.",
+          "Olha o exemplo: No te preocupes, estoy tranqui. — que significa: Nao se preocupa, to de boa..",
+          "'Tranqui' e a forma coloquial de 'tranquilo' — muito usada no dia a dia",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "estoy tranqui / estoy bien | Pronuncia: es-TOY TRAN-qui | Alternativas: todo bien / estoy relajado"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta ERROS que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Voce fala isso todo dia mas nao sabe em espanhol 👇\n\nComo falar 'to de boa' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta ERROS pra receber um material gratis!\n\n#espanhol #aprendaespanhol #aprenderespanhol #viagemparaaamericadosul #espanholnoexterior #espanholbasico #comofalarem #espanholnativo #expressoes"
+  },
+  {
+    "post_id": "2026-03-23_1500",
+    "data": "2026-03-23",
+    "dia_semana": "Segunda",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 6,
+    "tipo_conteudo": "Metodo e Bastidor",
+    "avatar": "Vai Morar Fora",
+    "tema": "Repeticao espacada: por que voce esquece e como resolver",
+    "keyword_manychat": "METODO",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "REPETICAO ESPACADA: POR QUE VOCE ESQUECE E COMO RESOLVER",
+          "texto_secundario": "A ciencia explica →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "PROBLEMA",
+          "texto_principal": "O metodo tradicional:",
+          "texto_secundario": "Decorar regras → esquecer → frustrar → desistir",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "PILAR 1",
+          "texto_principal": "Pilar 1:\nNucleo del Conocimiento",
+          "texto_secundario": "Vocabulario estrategico que voce usa de verdade",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PILAR 2",
+          "texto_principal": "Pilar 2:\nImersao Ativa",
+          "texto_secundario": "Exposicao ao espanhol real — sem depender de traducao",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PILAR 3",
+          "texto_principal": "Pilar 3:\nAcompanhamento Inteligente",
+          "texto_secundario": "Repeticao espacada + conversacao guiada + feedback",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "RESULTADO",
+          "texto_principal": "+5.000 alunos\nja destravaram",
+          "texto_secundario": "Acesso vitalicio. Garantia de 7 dias.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer conhecer\no metodo?",
+          "texto_secundario": "Comenta METODO que eu te explico tudo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#001e38",
+        "cor_nome": "Azul Marinho",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Voce sabe POR QUE voce trava? A ciencia explica 👇\n\nRepeticao espacada: por que voce esquece e como resolver\n\nO Metodo Imersao Nativa tem 3 pilares:\n1️⃣ Nucleo del Conocimiento\n2️⃣ Imersao Ativa\n3️⃣ Acompanhamento Inteligente\n\nE assim que +5.000 alunos destravaram o espanhol.\n\n👉 Comenta METODO que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanhol #aprendaespanhol #aprenderespanhol #vidanoexterior #brasileironoexterior #brasileirosnaargentina #metodo #comoaprender #imersaonativa"
+  },
+  {
+    "post_id": "2026-03-23_1830",
+    "data": "2026-03-23",
+    "dia_semana": "Segunda",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 8,
+    "tipo_conteudo": "Desejo e Transformacao",
+    "avatar": "Academico",
+    "tema": "Imagina passar na prova com confianca total...",
+    "keyword_manychat": "AULA",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "E se eu te dissesse que isso e possivel em 6 meses?",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "ESPANHOL COM VOCE",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ALE EXPLICA",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Imagina passar na prova com confianca total...",
+          "Isso nao e um sonho. Isso e o que meus alunos vivem toda semana.",
+          "Cumprir o requisito, passar na prova, nao falhar.",
+          "Em 6 meses voce pode estar vivendo isso. Sem exagero.",
+          "O primeiro passo? Parar de tentar sozinho."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta AULA. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Fecha os olhos e imagina isso... ✨\n\nImagina passar na prova com confianca total...\n\nIsso nao e um sonho distante.\nE o que meus alunos vivem toda semana.\n\nEm 6 meses voce pode estar vivendo isso tambem.\n\n💬 Se voce se identificou, comenta AULA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprenderespanhol #espanholparabrasileiros #aprendaespanhol #dele #celu #espanholparaenem #transformacao #destrave #faleespanhol"
+  },
+  {
+    "post_id": "2026-03-23_2000",
+    "data": "2026-03-23",
+    "dia_semana": "Segunda",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 2,
+    "tipo_conteudo": "Palavras do Cotidiano",
+    "avatar": "Profissional",
+    "tema": "Como falar 'reuniao' em espanhol",
+    "keyword_manychat": "VIAGEM",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "COMO FALAR\nREUNIAO\nEM ESPANHOL?",
+          "texto_secundario": "Desliza pra aprender →",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "CONTEXTO",
+          "texto_principal": "Voce usa 'reuniao' todo dia em portugues...",
+          "texto_secundario": "Mas em espanhol e diferente!",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "RESPOSTA",
+          "texto_principal": "[TRADUCAO EM ESPANHOL]",
+          "texto_secundario": "Nos, nativos, falamos assim",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "EXEMPLO",
+          "texto_principal": "[FRASE DE EXEMPLO EM ESPANHOL]",
+          "texto_secundario": "[Traducao da frase]",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "EXEMPLO 2",
+          "texto_principal": "[SEGUNDA FRASE DE EXEMPLO]",
+          "texto_secundario": "[Traducao da frase]",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "DICA",
+          "texto_principal": "DICA DA ALE:",
+          "texto_secundario": "[Dica pratica de uso ou pronuncia]",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "SALVA esse post!\nManda pra quem precisa!",
+          "texto_secundario": "Comenta VIAGEM e receba um material gratis",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#ffcb15",
+        "cor_nome": "Amarelo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Essa palavra simples vai te surpreender 👇\n\nComo falar 'reuniao' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#aprenderespanhol #espanholreal #espanhol #carreirainternacional #espanholparatrabalho #negociosinternacionais #espanholdodia #vocabulario #palavradodia"
+  },
+  {
+    "post_id": "2026-03-24_0700",
+    "data": "2026-03-24",
+    "dia_semana": "Terca",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 7,
+    "tipo_conteudo": "Dor e Identificacao",
+    "avatar": "Viajante",
+    "tema": "Voce entende espanhol mas trava na hora de falar?",
+    "keyword_manychat": "TRAVA",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Se isso e voce, presta atencao ate o final.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SE IDENTIFICA?",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ISSO TEM SOLUCAO",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce entende espanhol mas trava na hora de falar?",
+          "Eu sei como e. Entende mas nao fala. Trava na hora de se comunicar.",
+          "O problema nao e voce. E o metodo que voce usou ate agora.",
+          "Voce nao precisa de mais vocabulario. Precisa de um caminho certo.",
+          "Se voce se identificou, comenta TRAVA que eu te mostro o proximo passo."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta TRAVA. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Se voce se identifica... esse post e pra voce. 👇\n\nVoce entende espanhol mas trava na hora de falar?\n\nEu sei como e essa frustracao.\nVoce estuda, se esforça, entende tudo...\nMas na hora de FALAR, trava.\n\nO problema nao e voce. E o metodo.\n\n💬 Se voce se identificou, comenta TRAVA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholonline #aprendaespanhol #espanholreal #espanholbasico #espanholnoexterior #viagemparaaamericadosul #voceseidentifica #travanoespanhol #identificacao"
+  },
+  {
+    "post_id": "2026-03-24_0930",
+    "data": "2026-03-24",
+    "dia_semana": "Terca",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Vai Morar Fora",
+    "tema": "Sistema de saude Espanha vs Brasil — a diferenca",
+    "keyword_manychat": "VIAGEM",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "SISTEMA DE SAUDE ESPANHA VS BRASIL — A DIFERENCA",
+          "texto_secundario": "Voce sabia? Desliza →",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "FATO 1",
+          "texto_principal": "[FATO/DIFERENCA 1]",
+          "texto_secundario": "[Explicacao]",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "FATO 2",
+          "texto_principal": "[FATO/DIFERENCA 2]",
+          "texto_secundario": "[Explicacao]",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "FATO 3",
+          "texto_principal": "[FATO/DIFERENCA 3]",
+          "texto_secundario": "[Explicacao]",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "CURIOSIDADE",
+          "texto_principal": "[DADO SURPREENDENTE]",
+          "texto_secundario": "Nos, nativos, achamos isso normal!",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "DICA",
+          "texto_principal": "DICA DA ALE:",
+          "texto_secundario": "[Dica pratica relacionada ao tema]",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Qual pais hispanico\nvoce mais quer conhecer?",
+          "texto_secundario": "Comenta! E salva esse post pra consultar depois.",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#0090be",
+        "cor_nome": "Azul Ceu",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Sabia que isso muda de pais pra pais? 🌎\n\nSistema de saude Espanha vs Brasil — a diferenca\n\nO mundo hispanico e muito mais diverso do que voce imagina.\nCada pais tem seus costumes, expressoes e formas de falar.\n\nDesliza/assiste pra descobrir.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#aprendaespanhol #espanholparabrasileiros #espanholonline #brasileirosnaespanha #vidanoexterior #morarfora #curiosidades #culturaespanhola #diferencas"
+  },
+  {
+    "post_id": "2026-03-24_1200",
+    "data": "2026-03-24",
+    "dia_semana": "Terca",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Academico",
+    "tema": "Paises onde espanhol e lingua oficial (sao mais que voce pensa)",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Em cada pais hispanico chamam isso de um jeito diferente.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SABIA?",
+          "fundo": "#79458f",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "DIFERENCA CULTURAL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ESPANHOL REAL",
+          "fundo": "#79458f",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Isso que voce acha normal no Brasil funciona MUITO diferente no mundo hispanico.",
+          "A gente fala assim...",
+          "[EXPLICAÇÃO DA DIFERENÇA CULTURAL].",
+          "E isso muda de pais pra pais, viu?",
+          "Comenta qual pais hispanico voce mais quer conhecer."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Sabia que isso muda de pais pra pais? 🌎\n\nPaises onde espanhol e lingua oficial (sao mais que voce pensa)\n\nO mundo hispanico e muito mais diverso do que voce imagina.\nCada pais tem seus costumes, expressoes e formas de falar.\n\nDesliza/assiste pra descobrir.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholreal #aprenderespanhol #espanhol #siele #espanholparaenem #estudarnoexterior #curiosidades #diferencas #culturaespanhola"
+  },
+  {
+    "post_id": "2026-03-24_1500",
+    "data": "2026-03-24",
+    "dia_semana": "Terca",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 6,
+    "tipo_conteudo": "Metodo e Bastidor",
+    "avatar": "Profissional",
+    "tema": "Como nosso metodo adapta o aprendizado para seu contexto",
+    "keyword_manychat": "METODO",
+    "total_slides": 7,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "COMO NOSSO METODO ADAPTA O APRENDIZADO PARA SEU CONTEXTO",
+          "texto_secundario": "A ciencia explica →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "PROBLEMA",
+          "texto_principal": "O metodo tradicional:",
+          "texto_secundario": "Decorar regras → esquecer → frustrar → desistir",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "PILAR 1",
+          "texto_principal": "Pilar 1:\nNucleo del Conocimiento",
+          "texto_secundario": "Vocabulario estrategico que voce usa de verdade",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PILAR 2",
+          "texto_principal": "Pilar 2:\nImersao Ativa",
+          "texto_secundario": "Exposicao ao espanhol real — sem depender de traducao",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PILAR 3",
+          "texto_principal": "Pilar 3:\nAcompanhamento Inteligente",
+          "texto_secundario": "Repeticao espacada + conversacao guiada + feedback",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "RESULTADO",
+          "texto_principal": "+5.000 alunos\nja destravaram",
+          "texto_secundario": "Acesso vitalicio. Garantia de 7 dias.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 7,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer conhecer\no metodo?",
+          "texto_secundario": "Comenta METODO que eu te explico tudo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#4e4b97",
+        "cor_nome": "Indigo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Voce sabe POR QUE voce trava? A ciencia explica 👇\n\nComo nosso metodo adapta o aprendizado para seu contexto\n\nO Metodo Imersao Nativa tem 3 pilares:\n1️⃣ Nucleo del Conocimiento\n2️⃣ Imersao Ativa\n3️⃣ Acompanhamento Inteligente\n\nE assim que +5.000 alunos destravaram o espanhol.\n\n👉 Comenta METODO que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanholcomvoce #espanholreal #aprendaespanhol #espanholprofissional #espanholcorporativo #carreirainternacional #imersaonativa #comoaprender #metodo"
+  },
+  {
+    "post_id": "2026-03-24_1830",
+    "data": "2026-03-24",
+    "dia_semana": "Terca",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 7,
+    "tipo_conteudo": "Dor e Identificacao",
+    "avatar": "Viajante",
+    "tema": "Voce traduz tudo na cabeca antes de abrir a boca?",
+    "keyword_manychat": "TRAVA",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa frustracao tem nome. E tem solucao.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SE IDENTIFICA?",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ISSO TEM SOLUCAO",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce traduz tudo na cabeca antes de abrir a boca?",
+          "Eu sei como e. Entende mas nao fala. Trava na hora de se comunicar.",
+          "O problema nao e voce. E o metodo que voce usou ate agora.",
+          "Voce nao precisa de mais vocabulario. Precisa de um caminho certo.",
+          "Se voce se identificou, comenta TRAVA que eu te mostro o proximo passo."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta TRAVA. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Se voce se identifica... esse post e pra voce. 👇\n\nVoce traduz tudo na cabeca antes de abrir a boca?\n\nEu sei como e essa frustracao.\nVoce estuda, se esforça, entende tudo...\nMas na hora de FALAR, trava.\n\nO problema nao e voce. E o metodo.\n\n💬 Se voce se identificou, comenta TRAVA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprendaespanhol #espanholonline #espanholparabrasileiros #espanholparaviagem #mochilao #espanholbasico #voceseidentifica #travanoespanhol #identificacao"
+  },
+  {
+    "post_id": "2026-03-24_2000",
+    "data": "2026-03-24",
+    "dia_semana": "Terca",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 12,
+    "tipo_conteudo": "Historia e Autoridade Pessoal",
+    "avatar": "Vai Morar Fora",
+    "tema": "Eu fui a imigrante que nao falava o idioma — sei como e",
+    "keyword_manychat": "METODO",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "EU FUI A IMIGRANTE QUE NAO FALAVA O IDIOMA — SEI COMO E",
+          "texto_secundario": "Minha historia →",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "HISTORIA 1",
+          "texto_principal": "Quando eu cheguei\nno Brasil...",
+          "texto_secundario": "Eu nao falava UMA palavra em portugues.",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "HISTORIA 2",
+          "texto_principal": "Eu aprendi por\nimersao e necessidade.",
+          "texto_secundario": "Sem escola. Sem metodo tradicional.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "APRENDIZADO",
+          "texto_principal": "Foi isso que me ensinou:",
+          "texto_secundario": "[APRENDIZADO QUE GEROU O METODO]",
+          "cor_fundo": "#ff421c"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "RESULTADO",
+          "texto_principal": "Hoje ja ajudei\n+5.000 alunos",
+          "texto_secundario": "Com o Metodo Imersao Nativa",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Me conta SUA historia\nnos comentarios",
+          "texto_secundario": "E comenta METODO pra saber mais sobre o metodo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#ff421c",
+        "cor_nome": "Vermelho Laranja",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Eu preciso te contar uma coisa sobre mim... 👇\n\nEu fui a imigrante que nao falava o idioma — sei como e\n\nQuando eu cheguei no Brasil, eu nao falava portugues.\nAprendi por imersao, por necessidade.\nEssa experiencia me ensinou COMO o cerebro realmente aprende.\n\nE por isso que eu ensino diferente.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholreal #espanhol #espanholcomvoce #brasileirosnaespanha #imigracao #brasileirosnaargentina #professoranativa #historiadaale #bastidores"
+  },
+  {
+    "post_id": "2026-03-25_0700",
+    "data": "2026-03-25",
+    "dia_semana": "Quarta",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 2,
+    "tipo_conteudo": "Palavras do Cotidiano",
+    "avatar": "Academico",
+    "tema": "Como falar 'nota' (da escola) em espanhol",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Voce usa isso todo dia mas em espanhol e completamente diferente.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#ffcb15",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "NOTA'",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "NOTA",
+          "fundo": "#ffcb15",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'nota'' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: nota / calificacion.",
+          "Repete comigo: NO-ta / ca-li-fi-ca-SION.",
+          "Olha o exemplo: Saque buena nota en el examen. — que significa: Tirei boa nota na prova..",
+          "'Nota' funciona, mas 'calificacion' e mais formal e especifico",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "nota / calificacion | Pronuncia: NO-ta / ca-li-fi-ca-SION"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Essa palavra simples vai te surpreender 👇\n\nComo falar 'nota' (da escola) em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholparabrasileiros #espanholreal #aprenderespanhol #espanholparaenem #dele #proficienciaemespanhol #espanholdodia #palavradodia #vocabulario"
+  },
+  {
+    "post_id": "2026-03-25_0930",
+    "data": "2026-03-25",
+    "dia_semana": "Quarta",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 10,
+    "tipo_conteudo": "Prova Social",
+    "avatar": "Profissional",
+    "tema": "Gerente fechou contrato gracas ao espanhol fluente",
+    "keyword_manychat": "AULA",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "GERENTE FECHOU CONTRATO GRACAS AO ESPANHOL FLUENTE",
+          "texto_secundario": "Historia real de aluno →",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "ANTES",
+          "texto_principal": "ANTES:",
+          "texto_secundario": "[Nome] Nao consegue se expressar como realmente e no trabalho.\nTravado. Frustrado. Quase desistindo.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VIRADA",
+          "texto_principal": "Entao comecou com o\nMetodo Imersao Nativa",
+          "texto_secundario": "Sem decorar. Sem sofrer. Com metodo.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "DEPOIS",
+          "texto_principal": "DEPOIS:",
+          "texto_secundario": "[RESULTADO ESPECIFICO DO ALUNO]",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "PRINT",
+          "texto_principal": "[PRINT DO DEPOIMENTO]",
+          "texto_secundario": "Mensagem real do aluno",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer o mesmo\nresultado?",
+          "texto_secundario": "Comenta AULA que eu te mando a aula demonstrativa gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#36c551",
+        "cor_nome": "Verde",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Olha o resultado que esse aluno teve 👇\n\nGerente fechou contrato gracas ao espanhol fluente\n\nEssa e uma historia real de um aluno do Imersao Nativa.\nEle/ela comecou travado, frustrado.\nHoje, fala espanhol com naturalidade.\n\nSe ele/ela conseguiu, voce tambem consegue.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#aprenderespanhol #espanhol #espanholreal #espanholprofissional #carreirainternacional #espanholcorporativo #alunoreal #resultado #depoimento"
+  },
+  {
+    "post_id": "2026-03-25_1200",
+    "data": "2026-03-25",
+    "dia_semana": "Quarta",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 2,
+    "tipo_conteudo": "Palavras do Cotidiano",
+    "avatar": "Viajante",
+    "tema": "Como falar 'carona' em espanhol",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa palavra simples tem traducao ERRADA na sua cabeca.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#0090be",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "CARONA",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "AVENTON (MEXICO)",
+          "fundo": "#0090be",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'carona' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: aventon (Mexico) / raid (Chile) / aventura (Colombia) / llevar.",
+          "Repete comigo: a-ven-TON / le-VAR.",
+          "Olha o exemplo: ¿Me das un aventon hasta el centro? — que significa: Me da uma carona ate o centro?.",
+          "Muda muito de pais pra pais — 'aventon' no Mexico, 'cola' na Venezuela",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "aventon (Mexico) / raid (Chile) / aventura (Colombia) / llevar | Pronuncia: a-ven-TON / le-VAR"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Essa palavra simples vai te surpreender 👇\n\nComo falar 'carona' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholreal #espanhol #espanholcomvoce #espanholparaviagem #espanholnoexterior #viagemparaaamericadosul #espanholdodia #palavradodia #vocabulario"
+  },
+  {
+    "post_id": "2026-03-25_1500",
+    "data": "2026-03-25",
+    "dia_semana": "Quarta",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 8,
+    "tipo_conteudo": "Desejo e Transformacao",
+    "avatar": "Vai Morar Fora",
+    "tema": "Imagina resolver tudo sozinho no seu novo pais...",
+    "keyword_manychat": "AULA",
+    "total_slides": 5,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "IMAGINA RESOLVER TUDO SOZINHO NO SEU NOVO PAIS",
+          "texto_secundario": "Desliza e sente isso →",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "VISAO",
+          "texto_principal": "Autonomia, pertencer, comecar bem a nova vida.",
+          "texto_secundario": "Isso pode ser a sua realidade.",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "PROVA",
+          "texto_principal": "Meus alunos vivem\nisso TODA semana.",
+          "texto_secundario": "Mais de 5.000 ja destravaram.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "CAMINHO",
+          "texto_principal": "O caminho:",
+          "texto_secundario": "Metodo Imersao Nativa\n3 pilares. Resultado real.",
+          "cor_fundo": "#79458f"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer comecar?",
+          "texto_secundario": "Comenta AULA que eu te mando uma aula gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#79458f",
+        "cor_nome": "Roxo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Fecha os olhos e imagina isso... ✨\n\nImagina resolver tudo sozinho no seu novo pais...\n\nIsso nao e um sonho distante.\nE o que meus alunos vivem toda semana.\n\nEm 6 meses voce pode estar vivendo isso tambem.\n\n💬 Se voce se identificou, comenta AULA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholcomvoce #espanholparabrasileiros #aprenderespanhol #imigracao #brasileironoexterior #brasileirosnaargentina #transformacao #destrave #faleespanhol"
+  },
+  {
+    "post_id": "2026-03-25_1830",
+    "data": "2026-03-25",
+    "dia_semana": "Quarta",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 5,
+    "tipo_conteudo": "Cultura e Diferencas",
+    "avatar": "Academico",
+    "tema": "A origem do espanhol: do latim ate hoje",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Em cada pais hispanico chamam isso de um jeito diferente.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SABIA?",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "DIFERENCA CULTURAL",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ESPANHOL REAL",
+          "fundo": "#4e4b97",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Isso que voce acha normal no Brasil funciona MUITO diferente no mundo hispanico.",
+          "O problema nao e voce, e o metodo.",
+          "[EXPLICAÇÃO DA DIFERENÇA CULTURAL].",
+          "E isso muda de pais pra pais, viu?",
+          "Comenta qual pais hispanico voce mais quer conhecer."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Sabia que isso muda de pais pra pais? 🌎\n\nA origem do espanhol: do latim ate hoje\n\nO mundo hispanico e muito mais diverso do que voce imagina.\nCada pais tem seus costumes, expressoes e formas de falar.\n\nDesliza/assiste pra descobrir.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholonline #espanholparabrasileiros #espanhol #dele #espanholparaenem #espanholparaconcurso #curiosidades #culturaespanhola #diferencas"
+  },
+  {
+    "post_id": "2026-03-25_2000",
+    "data": "2026-03-25",
+    "dia_semana": "Quarta",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 11,
+    "tipo_conteudo": "CTA Indireto",
+    "avatar": "Profissional",
+    "tema": "Quer destravar o espanhol da sua carreira? Comeca por aqui",
+    "keyword_manychat": "AULA",
+    "total_slides": 5,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VOCE QUER DESTRAVAR\nSEU ESPANHOL?",
+          "texto_secundario": "Desliza →",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "VERDADE",
+          "texto_principal": "Eu vou ser sincera\ncom voce:",
+          "texto_secundario": "Sozinho e possivel.\nMas demora MUITO mais.",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "CONVITE",
+          "texto_principal": "Eu preparei uma\naula gratuita",
+          "texto_secundario": "Onde eu te mostro o caminho\npra destravar de verdade.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PROVA",
+          "texto_principal": "+5.000 alunos\nja fizeram esse caminho",
+          "texto_secundario": "R$397 com acesso vitalicio\nGarantia de 7 dias",
+          "cor_fundo": "#001e38"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "CTA",
+          "texto_principal": "Comenta AULA",
+          "texto_secundario": "Que eu te mando o link\nda aula demonstrativa gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#001e38",
+        "cor_nome": "Azul Marinho",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Eu tenho algo especial pra voce. Le ate o final. 👇\n\nQuer destravar o espanhol da sua carreira? Comeca por aqui\n\nEu preparei uma aula demonstrativa gratuita.\nNessa aula, eu te mostro o caminho real pra destravar.\n\nSem promessa vazia. Sem enrolacao.\nSo o metodo que ja ajudou +5.000 alunos.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanhol #espanholonline #espanholreal #negociosinternacionais #espanholparatrabalho #espanholprofissional #aulademonstrativa #linknabioo #comece"
+  },
+  {
+    "post_id": "2026-03-26_0700",
+    "data": "2026-03-26",
+    "dia_semana": "Quinta",
+    "horario": "07:00",
+    "formato": "REEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 10,
+    "tipo_conteudo": "Prova Social",
+    "avatar": "Viajante",
+    "tema": "Ela travava... hoje conversa com nativos na viagem",
+    "keyword_manychat": "AULA",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa historia me emociona toda vez que eu conto.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "ESPANHOL COM VOCE",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ALE EXPLICA",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Eu quero compartilhar uma historia com voce.",
+          "[NOME DO ALUNO] veio ate mim travado. Entende mas nao fala. Trava na hora de se comunicar.",
+          "Depois de comecar com o Metodo Imersao Nativa...",
+          "[RESULTADO ESPECIFICO DO ALUNO].",
+          "Se voce quer o mesmo resultado, comenta QUERO."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce quer destravar seu espanhol de verdade, comenta AULA aqui embaixo que eu te mando o proximo passo. E salva esse video pra assistir de novo!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Olha o resultado que esse aluno teve 👇\n\nEla travava... hoje conversa com nativos na viagem\n\nEssa e uma historia real de um aluno do Imersao Nativa.\nEle/ela comecou travado, frustrado.\nHoje, fala espanhol com naturalidade.\n\nSe ele/ela conseguiu, voce tambem consegue.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#aprendaespanhol #espanholreal #espanholonline #viagemparaaamericadosul #mochilao #viajarsozinho #resultado #alunoreal #depoimento"
+  },
+  {
+    "post_id": "2026-03-26_0930",
+    "data": "2026-03-26",
+    "dia_semana": "Quinta",
+    "horario": "09:30",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 9,
+    "tipo_conteudo": "Quebra de Crencas",
+    "avatar": "Vai Morar Fora",
+    "tema": "Voce nao vai aprender espanhol 'naturalmente' so por estar la",
+    "keyword_manychat": "METODO",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VOCE NAO VAI APRENDER ESPANHOL 'NATURALMENTE' SO POR ESTAR LA",
+          "texto_secundario": "Voce acredita nisso? →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "CRENCA",
+          "texto_principal": "O que te ensinaram:",
+          "texto_secundario": "[CRENCA COMUM SOBRE APRENDER ESPANHOL]",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VERDADE",
+          "texto_principal": "A verdade:",
+          "texto_secundario": "[POR QUE ISSO NAO FUNCIONA]",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "CIENCIA",
+          "texto_principal": "O que a ciencia diz:",
+          "texto_secundario": "[EXPLICACAO BASEADA NO METODO]",
+          "cor_fundo": "#ffcb15"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "SOLUCAO",
+          "texto_principal": "O que funciona\nDE VERDADE:",
+          "texto_secundario": "Imersao + pratica + acompanhamento",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Voce acreditava nisso?",
+          "texto_secundario": "Comenta METODO se voce quer saber mais",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#ffcb15",
+        "cor_nome": "Amarelo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Tudo que te ensinaram sobre espanhol e MENTIRA. 👇\n\nVoce nao vai aprender espanhol 'naturalmente' so por estar la\n\nEu sei que parece contra-intuitivo.\nMas o metodo tradicional te ensina a ESTUDAR espanhol.\nNao a FALAR espanhol.\n\nA diferenca muda tudo.\n\n💬 Se voce se identificou, comenta METODO!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprendaespanhol #espanholonline #espanhol #imigracao #morarfora #brasileironoexterior #mentiradoespanhol #verdade #quebradecrencas"
+  },
+  {
+    "post_id": "2026-03-26_1200",
+    "data": "2026-03-26",
+    "dia_semana": "Quinta",
+    "horario": "12:00",
+    "formato": "REEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 7,
+    "tipo_conteudo": "Dor e Identificacao",
+    "avatar": "Academico",
+    "tema": "Voce ja estudou espanhol e mesmo assim nao consegue conversar?",
+    "keyword_manychat": "TRAVA",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Essa frustracao tem nome. E tem solucao.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "VOCE SE IDENTIFICA?",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "ISSO TEM SOLUCAO",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "ASSISTE ATE O FINAL",
+          "fundo": "#ff421c",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce ja estudou espanhol e mesmo assim nao consegue conversar?",
+          "Eu sei como e. Pode perder a oportunidade da carreira pelo idioma.",
+          "O problema nao e voce. E o metodo que voce usou ate agora.",
+          "Voce nao precisa de mais vocabulario. Precisa de um caminho certo.",
+          "Se voce se identificou, comenta TRAVA que eu te mostro o proximo passo."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "[Verificar: expressao nao encontrada no dicionario]"
+      },
+      "cta_final": {
+        "fala": "Se voce se identificou, comenta TRAVA. E manda esse video pra alguem que precisa ouvir isso.",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Se voce se identifica... esse post e pra voce. 👇\n\nVoce ja estudou espanhol e mesmo assim nao consegue conversar?\n\nEu sei como e essa frustracao.\nVoce estuda, se esforça, entende tudo...\nMas na hora de FALAR, trava.\n\nO problema nao e voce. E o metodo.\n\n💬 Se voce se identificou, comenta TRAVA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#aprendaespanhol #espanholcomvoce #espanholonline #dele #espanholparaenem #estudarnoexterior #identificacao #travanoespanhol #voceseidentifica"
+  },
+  {
+    "post_id": "2026-03-26_1500",
+    "data": "2026-03-26",
+    "dia_semana": "Quinta",
+    "horario": "15:00",
+    "formato": "CARROSSEL",
+    "funil": "FUNDO",
+    "tipo_conteudo_id": 11,
+    "tipo_conteudo": "CTA Indireto",
+    "avatar": "Profissional",
+    "tema": "Comenta AULA — tenho uma aula que vai mudar sua visao",
+    "keyword_manychat": "AULA",
+    "total_slides": 5,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VOCE QUER DESTRAVAR\nSEU ESPANHOL?",
+          "texto_secundario": "Desliza →",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "VERDADE",
+          "texto_principal": "Eu vou ser sincera\ncom voce:",
+          "texto_secundario": "Sozinho e possivel.\nMas demora MUITO mais.",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "CONVITE",
+          "texto_principal": "Eu preparei uma\naula gratuita",
+          "texto_secundario": "Onde eu te mostro o caminho\npra destravar de verdade.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "PROVA",
+          "texto_principal": "+5.000 alunos\nja fizeram esse caminho",
+          "texto_secundario": "R$397 com acesso vitalicio\nGarantia de 7 dias",
+          "cor_fundo": "#0090be"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "CTA",
+          "texto_principal": "Comenta AULA",
+          "texto_secundario": "Que eu te mando o link\nda aula demonstrativa gratuita",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#0090be",
+        "cor_nome": "Azul Ceu",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Eu tenho algo especial pra voce. Le ate o final. 👇\n\nComenta AULA — tenho uma aula que vai mudar sua visao\n\nEu preparei uma aula demonstrativa gratuita.\nNessa aula, eu te mostro o caminho real pra destravar.\n\nSem promessa vazia. Sem enrolacao.\nSo o metodo que ja ajudou +5.000 alunos.\n\n👉 Comenta AULA que eu te mando o proximo passo!\n📌 Salva esse post pra consultar depois.\n📲 Link na bio!\n\n#espanholcomvoce #aprenderespanhol #espanholonline #espanholcorporativo #carreirainternacional #espanholprofissional #aulademonstrativa #linknabioo #comece"
+  },
+  {
+    "post_id": "2026-03-26_1830",
+    "data": "2026-03-26",
+    "dia_semana": "Quinta",
+    "horario": "18:30",
+    "formato": "REEL",
+    "funil": "TOPO",
+    "tipo_conteudo_id": 2,
+    "tipo_conteudo": "Palavras do Cotidiano",
+    "avatar": "Viajante",
+    "tema": "Como falar 'saudade' em espanhol",
+    "keyword_manychat": "VIAGEM",
+    "duracao_estimada": "30-60 segundos",
+    "roteiro": {
+      "hook_3s": {
+        "fala": "Uma palavra. Mil confusoes. Bora resolver.",
+        "instrucao_gravacao": "Olhar direto pra camera. Expressao de quem vai revelar algo. Energia alta."
+      },
+      "pilulas_visuais": {
+        "pilula_1": {
+          "texto": "COMO FALAR",
+          "fundo": "#79458f",
+          "texto_cor": "branco"
+        },
+        "pilula_2": {
+          "texto": "SAUDADE",
+          "fundo": "#FFFFFF",
+          "texto_cor": "preto bold"
+        },
+        "pilula_3": {
+          "texto": "EXTRANAR",
+          "fundo": "#79458f",
+          "texto_cor": "branco"
+        }
+      },
+      "desenvolvimento": {
+        "blocos_fala": [
+          "Voce fala 'saudade' todo dia, ne? Mas em espanhol... e bem diferente.",
+          "Nos, nativos, falamos assim: extranar / echar de menos.",
+          "Repete comigo: ex-tra-NIAR / e-CHAR de ME-nos.",
+          "Olha o exemplo: Te extrano mucho. / Te echo de menos. — que significa: Sinto muita saudade de voce..",
+          "Na America Latina usam 'extranar', na Espanha 'echar de menos' — nenhuma traduz 100%",
+          "Agora voce ja sabe. Nao vai mais travar nessa."
+        ],
+        "instrucoes_gravacao": [
+          "Falar olhando pra camera, tom conversacional, como se tivesse falando com uma amiga",
+          "Gesticular naturalmente — Ale e expressiva",
+          "Nos momentos de espanhol, falar com pronuncia nativa clara",
+          "Energia alta no hook, tom mais intimo no desenvolvimento, confiante no CTA"
+        ],
+        "palavras_em_espanhol": "extranar / echar de menos | Pronuncia: ex-tra-NIAR / e-CHAR de ME-nos | Alternativas: nostalgia / anoranza"
+      },
+      "cta_final": {
+        "fala": "Gostou? Salva pra nao esquecer e segue o @espanholcomvoce pra aprender espanhol de verdade todo dia. Comenta VIAGEM que eu te mando um material gratis!",
+        "instrucao_gravacao": "Apontar pra baixo (comentarios) ou pra bio. Tom convidativo, nao desesperado."
+      }
+    },
+    "legenda": "Essa palavra simples vai te surpreender 👇\n\nComo falar 'saudade' em espanhol\n\nNos, nativos, falamos isso de um jeito que voce provavelmente nunca aprendeu na escola.\n\nAssiste/desliza pra aprender a forma CERTA de falar isso em espanhol.\n\n📌 Salva esse post!\n📤 Manda pra quem precisa aprender isso.\n💬 Comenta VIAGEM pra receber um material gratis!\n\n#espanholcomvoce #espanhol #aprendaespanhol #viajarsozinho #espanholparaviagem #espanholbasico #palavradodia #espanholdodia #vocabulario"
+  },
+  {
+    "post_id": "2026-03-26_2000",
+    "data": "2026-03-26",
+    "dia_semana": "Quinta",
+    "horario": "20:00",
+    "formato": "CARROSSEL",
+    "funil": "MEIO",
+    "tipo_conteudo_id": 7,
+    "tipo_conteudo": "Dor e Identificacao",
+    "avatar": "Vai Morar Fora",
+    "tema": "Voce vai se mudar e tem medo de nao se adaptar?",
+    "keyword_manychat": "TRAVA",
+    "total_slides": 6,
+    "roteiro": {
+      "slides": [
+        {
+          "slide": 1,
+          "tipo_slide": "CAPA",
+          "texto_principal": "VOCE VAI SE MUDAR E TEM MEDO DE NAO SE ADAPTAR?",
+          "texto_secundario": "Se sim, desliza... →",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 2,
+          "tipo_slide": "IDENTIFICACAO",
+          "texto_principal": "Voce entende\nmas nao fala.",
+          "texto_secundario": "Voce traduz tudo na cabeca. Voce trava.",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 3,
+          "tipo_slide": "VALIDACAO",
+          "texto_principal": "Isso nao e\nfalta de talento.",
+          "texto_secundario": "E falta de METODO.",
+          "cor_fundo": "#FFFFFF"
+        },
+        {
+          "slide": 4,
+          "tipo_slide": "EXPLICACAO",
+          "texto_principal": "O problema:",
+          "texto_secundario": "Voce aprendeu a ESTUDAR espanhol.\nNao a FALAR espanhol.",
+          "cor_fundo": "#4e4b97"
+        },
+        {
+          "slide": 5,
+          "tipo_slide": "SOLUCAO",
+          "texto_principal": "A solucao:",
+          "texto_secundario": "Um metodo que ativa a fala,\nnao que enche de regra.",
+          "cor_fundo": "#36c551"
+        },
+        {
+          "slide": 6,
+          "tipo_slide": "CTA",
+          "texto_principal": "Quer destravar?",
+          "texto_secundario": "Comenta TRAVA que eu te mando o proximo passo",
+          "cor_fundo": "#ff421c"
+        }
+      ],
+      "identidade_visual": {
+        "cor_fundo": "#4e4b97",
+        "cor_nome": "Indigo",
+        "fonte_titulo": "Bold, grande, impactante",
+        "fonte_corpo": "Regular, legivel",
+        "logo": "Espanhol com Voce — canto inferior",
+        "icone_mao": "Maozinha apontando — canto"
+      }
+    },
+    "legenda": "Se voce se identifica... esse post e pra voce. 👇\n\nVoce vai se mudar e tem medo de nao se adaptar?\n\nEu sei como e essa frustracao.\nVoce estuda, se esforça, entende tudo...\nMas na hora de FALAR, trava.\n\nO problema nao e voce. E o metodo.\n\n💬 Se voce se identificou, comenta TRAVA!\n📌 Salva e manda pra quem precisa.\n👉 Segue @espanholcomvoce pra mais conteudo assim.\n\n#espanholreal #espanholonline #aprenderespanhol #brasileironoexterior #vidanoexterior #brasileirosnaargentina #travanoespanhol #identificacao #voceseidentifica"
+  }
+]
