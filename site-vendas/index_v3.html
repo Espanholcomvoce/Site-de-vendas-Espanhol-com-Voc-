@@ -27,6 +27,8 @@
 <meta name="twitter:site" content="@espanholcomvoce">
 
 <script src="assets/js/tracking.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <!-- Fonts extras removidas (Playfair/Lato nao usadas) -->
 <style>
@@ -237,7 +239,6 @@ iframe { max-width: 100%; }
 
 <!-- Styles: mod01 -->
 <style>
-html { scroll-behavior: smooth; }
 
   :root {
     --navy:       #001e38;
@@ -277,7 +278,7 @@ html { scroll-behavior: smooth; }
     right: -200px;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.10) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 144, 190, 0.10) 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(80px);
     pointer-events: none;
@@ -290,7 +291,7 @@ html { scroll-behavior: smooth; }
     left: -150px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(54, 197, 81, 0.08) 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(80px);
     pointer-events: none;
@@ -304,7 +305,7 @@ html { scroll-behavior: smooth; }
     transform: translate(-50%, -50%);
     width: 800px;
     height: 400px;
-    background: radial-gradient(ellipse, rgba(96, 165, 250, 0.06) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(0, 144, 190, 0.06) 0%, transparent 70%);
     filter: blur(60px);
     pointer-events: none;
   }
@@ -316,8 +317,8 @@ html { scroll-behavior: smooth; }
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    background: rgba(0, 144, 190, 0.1);
+    border: 1px solid rgba(0, 144, 190, 0.3);
     border-radius: 100px;
     padding: 8px 20px;
     font-size: .75rem;
@@ -402,10 +403,10 @@ html { scroll-behavior: smooth; }
     border-radius: 28px;
     /* linha colorida como borda superior via padding + gradiente */
     padding: 3px;
-    background: linear-gradient(90deg, rgba(56,189,248,0.15), #0090be, #36c551, rgba(16,185,129,0.15));
+    background: linear-gradient(90deg, rgba(0,144,190,0.15), #0090be, #36c551, rgba(54,197,81,0.15));
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45),
-                0 0 40px rgba(56, 189, 248, 0.15),
-                0 0 80px rgba(16, 185, 129, 0.08);
+                0 0 40px rgba(0, 144, 190, 0.15),
+                0 0 80px rgba(54, 197, 81, 0.08);
   }
 
   #mod01 .video-wrap::before { display: none; }
@@ -425,7 +426,7 @@ html { scroll-behavior: smooth; }
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(135deg, rgba(56,189,248,0.06), transparent 50%, rgba(16,185,129,0.06));
+    background: linear-gradient(135deg, rgba(0,144,190,0.06), transparent 50%, rgba(54,197,81,0.06));
     pointer-events: none;
     z-index: 0;
   }
@@ -695,11 +696,11 @@ html { scroll-behavior: smooth; }
 
 
 #mod02 .bloco {background:#ffffff;padding:60px 24px;position:relative;overflow:hidden}
-#mod02 .bloco::before {content:'';position:absolute;top:-120px;left:-80px;width:420px;height:420px;background:radial-gradient(circle,rgba(56,189,248,0.08) 0%,transparent 70%);pointer-events:none;z-index:0}
-#mod02 .bloco::after {content:'';position:absolute;bottom:-100px;right:-60px;width:380px;height:380px;background:radial-gradient(circle,rgba(16,185,129,0.06) 0%,transparent 70%);pointer-events:none;z-index:0}
-#mod02 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(56,189,248,0.04) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
+#mod02 .bloco::before {content:'';position:absolute;top:-120px;left:-80px;width:420px;height:420px;background:radial-gradient(circle,rgba(0,144,190,0.08) 0%,transparent 70%);pointer-events:none;z-index:0}
+#mod02 .bloco::after {content:'';position:absolute;bottom:-100px;right:-60px;width:380px;height:380px;background:radial-gradient(circle,rgba(54,197,81,0.06) 0%,transparent 70%);pointer-events:none;z-index:0}
+#mod02 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(0,144,190,0.04) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
 #mod02 .c {max-width:960px;margin:0 auto;position:relative;z-index:1}
-#mod02 .sec-tag {display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:14px;background:rgba(56,189,248,0.1);color:#0090be;border:1px solid rgba(56,189,248,0.3)}
+#mod02 .sec-tag {display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:14px;background:rgba(0,144,190,0.1);color:#0090be;border:1px solid rgba(0,144,190,0.3)}
 #mod02 .sec-tag::before {content:'';width:8px;height:8px;border-radius:50%;background:#0090be;box-shadow:0 0 12px #0090be;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
 #mod02 .sec-h2 {font-size: clamp(1.4rem, 3.5vw, 2.2rem);font-weight:900;line-height:1.15;letter-spacing:-.03em;color:#001e38;margin-bottom:8px}
 #mod02 .sec-sub {color:#64748b;font-size:.9rem;line-height:1.6;max-width:540px;margin:8px auto 0}
@@ -730,9 +731,9 @@ html { scroll-behavior: smooth; }
 #mod03 .btn:hover {transform:translateY(-3px);box-shadow:0 14px 40px rgba(54,197,81,.5)}
 
 #mod03 .identificacao {background:linear-gradient(165deg, #001e38 0%, #0d3a5c 50%, #001e38 100%);padding:60px 24px;position:relative;overflow:hidden}
-#mod03 .identificacao::before {content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(56,189,248,0.10) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
-#mod03 .identificacao::after {content:'';position:absolute;bottom:-150px;left:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(16,185,129,0.08) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
-#mod03 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(96,165,250,0.06) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
+#mod03 .identificacao::before {content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(0,144,190,0.10) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+#mod03 .identificacao::after {content:'';position:absolute;bottom:-150px;left:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(54,197,81,0.08) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+#mod03 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(0,144,190,0.06) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
 #mod03 .sec-tag {display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:14px}
 #mod03 .sec-tag::before {content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:#0090be;box-shadow:0 0 12px #0090be;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
 #mod03 .tag-azul {background:rgba(0,144,190,0.1);color:#0090be;border:1px solid rgba(0,144,190,0.3)}
@@ -783,7 +784,7 @@ html { scroll-behavior: smooth; }
   position: absolute;
   top: -200px; right: -200px;
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(56,189,248,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,144,190,0.06) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
@@ -818,10 +819,10 @@ html { scroll-behavior: smooth; }
   text-transform: uppercase;
   padding: 8px 20px;
   border-radius: 100px;
-  border: 1px solid rgba(56,189,248,0.3);
+  border: 1px solid rgba(0,144,190,0.3);
   color: #0090be;
   margin-bottom: 20px;
-  background: rgba(56,189,248,0.1);
+  background: rgba(0,144,190,0.1);
 }
 #mod04 .sec-label::before {
   content: '';
@@ -986,7 +987,7 @@ html { scroll-behavior: smooth; }
 #mod04 .resp-box p strong {
   color: #001e38;
 }
-#mod04 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(56,189,248,0.04) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
+#mod04 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(0,144,190,0.04) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
 </style>
 
 <!-- Styles: mod05 -->
@@ -1010,7 +1011,7 @@ html { scroll-behavior: smooth; }
 #mod05 .comparativo::after {content:'';position:absolute;bottom:-150px;left:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(54,197,81,0.12) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none}
 #mod05 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(0,144,190,0.10) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
 #mod05 .sec-tag {display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:14px}
-#mod05 .tag-azul {border:1.5px solid rgba(56,189,248,0.3);color:#0090be;background:rgba(56,189,248,0.06)}
+#mod05 .tag-azul {border:1.5px solid rgba(0,144,190,0.3);color:#0090be;background:rgba(0,144,190,0.06)}
 #mod05 .tag-azul::before {content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:#0090be;margin-right:8px;vertical-align:middle;animation:pulse 2s ease-in-out infinite}
 #mod05 .comp-h2 {font-size: clamp(1.4rem, 3.5vw, 2.2rem);font-weight:900;line-height:1.15;letter-spacing:-.03em;text-align:center;margin-bottom:8px;color:#fff;position:relative;z-index:1}
 #mod05 .comp-sub {text-align:center;color:rgba(255,255,255,.45);font-size:.9rem;margin-bottom:40px;line-height:1.7;max-width:580px;margin-left:auto;margin-right:auto}
@@ -1278,7 +1279,7 @@ html { scroll-behavior: smooth; }
     right: -200px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 144, 190, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(80px);
   }
@@ -1290,7 +1291,7 @@ html { scroll-behavior: smooth; }
     left: -150px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(54, 197, 81, 0.08) 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(80px);
   }
@@ -1303,8 +1304,8 @@ html { scroll-behavior: smooth; }
   }
 
   #mod06b .pilar-1 .eyebrow {
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    background: rgba(0, 144, 190, 0.1);
+    border: 1px solid rgba(0, 144, 190, 0.3);
     color: #0090be;
   }
 
@@ -1428,16 +1429,16 @@ html { scroll-behavior: smooth; }
   #mod06b .tab[data-idx="4"] { --tab-color: #ffcb15; }
 
   #mod06b .tab[data-idx="0"].active {
-    border-color: rgba(96, 165, 250, 0.5);
-    background: linear-gradient(180deg, rgba(96, 165, 250, 0.12), rgba(96, 165, 250, 0.04));
+    border-color: rgba(0, 144, 190, 0.5);
+    background: linear-gradient(180deg, rgba(0, 144, 190, 0.12), rgba(0, 144, 190, 0.04));
   }
   #mod06b .tab[data-idx="1"].active {
-    border-color: rgba(56, 189, 248, 0.5);
-    background: linear-gradient(180deg, rgba(56, 189, 248, 0.12), rgba(56, 189, 248, 0.04));
+    border-color: rgba(0, 144, 190, 0.5);
+    background: linear-gradient(180deg, rgba(0, 144, 190, 0.12), rgba(0, 144, 190, 0.04));
   }
   #mod06b .tab[data-idx="2"].active {
-    border-color: rgba(16, 185, 129, 0.5);
-    background: linear-gradient(180deg, rgba(16, 185, 129, 0.12), rgba(16, 185, 129, 0.04));
+    border-color: rgba(54, 197, 81, 0.5);
+    background: linear-gradient(180deg, rgba(54, 197, 81, 0.12), rgba(54, 197, 81, 0.04));
   }
   #mod06b .tab[data-idx="3"].active {
     border-color: rgba(134, 239, 172, 0.5);
@@ -1845,8 +1846,8 @@ html { scroll-behavior: smooth; }
   }
 
   #mod06c .pilar-2 .eyebrow {
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    background: rgba(0, 144, 190, 0.1);
+    border: 1px solid rgba(0, 144, 190, 0.3);
     color: #0090be;
   }
 
@@ -2024,9 +2025,9 @@ html { scroll-behavior: smooth; }
 
   #mod06c .fc-3 {
     --feature-color: #36c551;
-    --feature-color-light: rgba(16, 185, 129, 0.08);
-    --feature-color-bg: rgba(16, 185, 129, 0.12);
-    --feature-color-chip: rgba(16, 185, 129, 0.12);
+    --feature-color-light: rgba(54, 197, 81, 0.08);
+    --feature-color-bg: rgba(54, 197, 81, 0.12);
+    --feature-color-chip: rgba(54, 197, 81, 0.12);
   }
 
   #mod06c .fc-4 {
@@ -2072,7 +2073,7 @@ html { scroll-behavior: smooth; }
     transform: translate(-50%, -50%);
     width: 450px;
     height: 450px;
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(16, 185, 129, 0.15) 50%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 144, 190, 0.25) 0%, rgba(54, 197, 81, 0.15) 50%, transparent 70%);
     filter: blur(60px);
     z-index: 0;
     animation: glow-pulse 4s ease-in-out infinite;
@@ -2142,7 +2143,7 @@ html { scroll-behavior: smooth; }
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), transparent 50%, rgba(16, 185, 129, 0.08));
+    background: linear-gradient(135deg, rgba(0, 144, 190, 0.08), transparent 50%, rgba(54, 197, 81, 0.08));
     pointer-events: none;
   }
 
@@ -2252,7 +2253,7 @@ html { scroll-behavior: smooth; }
 
   #mod06c .stat-1 {
     --stat-color: #0090be;
-    --stat-glow: rgba(56, 189, 248, 0.3);
+    --stat-glow: rgba(0, 144, 190, 0.3);
   }
 
   #mod06c .stat-2 {
@@ -2262,7 +2263,7 @@ html { scroll-behavior: smooth; }
 
   #mod06c .stat-3 {
     --stat-color: #36c551;
-    --stat-glow: rgba(16, 185, 129, 0.3);
+    --stat-glow: rgba(54, 197, 81, 0.3);
   }
 
 
@@ -2693,14 +2694,14 @@ html { scroll-behavior: smooth; }
 
   #mod06d .feature-2 {
     --feature-color: #0090be;
-    --feature-color-light: rgba(56, 189, 248, 0.15);
-    --feature-color-bg: rgba(56, 189, 248, 0.15);
+    --feature-color-light: rgba(0, 144, 190, 0.15);
+    --feature-color-bg: rgba(0, 144, 190, 0.15);
   }
 
   #mod06d .feature-3 {
     --feature-color: #36c551;
-    --feature-color-light: rgba(16, 185, 129, 0.15);
-    --feature-color-bg: rgba(16, 185, 129, 0.15);
+    --feature-color-light: rgba(54, 197, 81, 0.15);
+    --feature-color-bg: rgba(54, 197, 81, 0.15);
   }
 
   #mod06d .highlight-premium {
@@ -3084,7 +3085,7 @@ html { scroll-behavior: smooth; }
   margin-top: 20px;
 }
 #mod07 .carousel-btn {
-  width: 36px; height: 36px;
+  width: 44px; height: 44px;
   border-radius: 50%;
   border: 1px solid rgba(0,144,190,.3);
   background: #fff;
@@ -3121,9 +3122,9 @@ html { scroll-behavior: smooth; }
 <!-- Styles: mod08 -->
 <style>
 #mod08 .s {background:linear-gradient(165deg, #001e38 0%, #0d3a5c 50%, #001e38 100%);padding:60px 24px;position:relative;overflow:hidden}
-#mod08 .s::before {content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(56,189,248,0.10) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none}
-#mod08 .s::after {content:'';position:absolute;bottom:-150px;left:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(16,185,129,0.08) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none}
-#mod08 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(96,165,250,0.06) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
+#mod08 .s::before {content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(0,144,190,0.10) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none}
+#mod08 .s::after {content:'';position:absolute;bottom:-150px;left:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(54,197,81,0.08) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none}
+#mod08 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(0,144,190,0.06) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
 #mod08 .c {max-width:960px;margin:0 auto}
 #mod08 .ag {display:grid;grid-template-columns:360px 1fr;gap:64px;align-items:center}
 @media(max-width:760px){#mod08 .ag {grid-template-columns:1fr;gap:40px}}
@@ -3171,7 +3172,7 @@ html { scroll-behavior: smooth; }
   position: absolute;
   top: -200px; right: -200px;
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(56,189,248,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,144,190,0.06) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
@@ -3181,7 +3182,7 @@ html { scroll-behavior: smooth; }
   position: absolute;
   bottom: -200px; left: -150px;
   width: 650px; height: 650px;
-  background: radial-gradient(circle, rgba(16,185,129,0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(54,197,81,0.05) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
@@ -3191,7 +3192,7 @@ html { scroll-behavior: smooth; }
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   width: 600px; height: 300px;
-  background: radial-gradient(ellipse, rgba(56,189,248,0.04) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,144,190,0.04) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
 }
@@ -3219,9 +3220,9 @@ html { scroll-behavior: smooth; }
   text-transform: uppercase;
   padding: 8px 20px;
   border-radius: 100px;
-  border: 1px solid rgba(56,189,248,0.3);
+  border: 1px solid rgba(0,144,190,0.3);
   color: #0090be;
-  background: rgba(56,189,248,0.1);
+  background: rgba(0,144,190,0.1);
   margin-bottom: 20px;
 }
 #mod09 .section-tag::before {
@@ -3370,7 +3371,7 @@ html { scroll-behavior: smooth; }
   position: absolute;
   top: -200px; right: -200px;
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(56,189,248,0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,144,190,0.10) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
@@ -3380,7 +3381,7 @@ html { scroll-behavior: smooth; }
   position: absolute;
   bottom: -150px; left: -150px;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(54,197,81,0.08) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
@@ -3390,7 +3391,7 @@ html { scroll-behavior: smooth; }
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 800px; height: 400px;
-  background: radial-gradient(ellipse, rgba(96,165,250,0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,144,190,0.06) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
 }
@@ -3417,7 +3418,7 @@ html { scroll-behavior: smooth; }
   letter-spacing: .12em;
   text-transform: uppercase;
   margin-bottom: 24px;
-  background: rgba(56,189,248,0.10);
+  background: rgba(0,144,190,0.10);
   border: 1px solid rgba(99,102,241,0.4);
   color: var(--sky);
 }
@@ -3517,7 +3518,7 @@ html { scroll-behavior: smooth; }
   border-left: 3px solid var(--emerald);
 }
 #mod10 .bonus-card:nth-child(3)::before {
-  background: linear-gradient(135deg, rgba(16,185,129,0.08), transparent);
+  background: linear-gradient(135deg, rgba(54,197,81,0.08), transparent);
 }
 
 /* ── ÁREA DA IMAGEM ── */
@@ -3550,7 +3551,7 @@ html { scroll-behavior: smooth; }
   background: radial-gradient(circle, rgba(0,144,190,.18) 0%, transparent 70%);
 }
 #mod10 .bonus-card:nth-child(3) .bonus-img-area::before {
-  background: radial-gradient(circle, rgba(16,185,129,.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(54,197,81,.18) 0%, transparent 70%);
 }
 
 #mod10 .bonus-img-area img {
@@ -3584,8 +3585,8 @@ html { scroll-behavior: smooth; }
   color: #a78bfa;
 }
 #mod10 .bonus-card:nth-child(3) .bonus-badge {
-  background: rgba(16,185,129,.15);
-  border: 1px solid rgba(16,185,129,.35);
+  background: rgba(54,197,81,.15);
+  border: 1px solid rgba(54,197,81,.35);
   color: #36c551;
 }
 
@@ -3646,7 +3647,7 @@ html { scroll-behavior: smooth; }
 #mod10 .bonus-total-card .gc1 {
   position: absolute; top: -80px; left: -60px;
   width: 320px; height: 320px;
-  background: radial-gradient(circle, rgba(56,189,248,.10) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(0,144,190,.10) 0%, transparent 65%);
   filter: blur(50px); pointer-events: none;
 }
 /* blob dourado canto direito */
@@ -3692,7 +3693,7 @@ html { scroll-behavior: smooth; }
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(56,189,248,0.05) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(0,144,190,0.05) 0%, transparent 70%);
       border-radius: 50%;
       filter: blur(80px);
       pointer-events: none;
@@ -3718,7 +3719,7 @@ html { scroll-behavior: smooth; }
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: rgba(56,189,248,0.1);
+      background: rgba(0,144,190,0.1);
       color: #0090be;
       font-size: .75rem;
       font-weight: 700;
@@ -3727,7 +3728,7 @@ html { scroll-behavior: smooth; }
       padding: 8px 20px;
       border-radius: 100px;
       margin-bottom: 18px;
-      border: 1px solid rgba(56,189,248,0.3);
+      border: 1px solid rgba(0,144,190,0.3);
     }
     #mod11 .badge::before {
       content: '';
@@ -3900,16 +3901,16 @@ html { scroll-behavior: smooth; }
 #mod12 .gg {display:grid;grid-template-columns:220px 1fr;gap:60px;align-items:center}
 @media(max-width:680px){#mod12 .gg {grid-template-columns:1fr;text-align:center} #mod12 .selo-wrap {display:flex;justify-content:center}}
 
-#mod12 .selo-wrap img {width:200px;filter:drop-shadow(0 8px 24px rgba(16,185,129,.25))}
+#mod12 .selo-wrap img {width:200px;filter:drop-shadow(0 8px 24px rgba(54,197,81,.25))}
 
-#mod12 .gtag {display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;background:rgba(16,185,129,.15);color:#36c551;margin-bottom:16px;border:1px solid rgba(16,185,129,.3)}
+#mod12 .gtag {display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;background:rgba(54,197,81,.15);color:#36c551;margin-bottom:16px;border:1px solid rgba(54,197,81,.3)}
 #mod12 .gtag::before {content:'';display:inline-block;width:6px;height:6px;background:#36c551;border-radius:50%;margin-right:8px;vertical-align:middle;animation:pulse 2s ease-in-out infinite}
 #mod12 .gh {font-size:clamp(1.2rem, 2.5vw, 1.5rem);font-weight:900;color:#fff;letter-spacing:-.03em;line-height:1.15;margin-bottom:20px}
 #mod12 .gp {font-size: .9rem;line-height:1.8;color:rgba(255,255,255,.65);margin-bottom:12px}
 #mod12 .gp strong {color:#fff;font-weight:700}
 #mod12 .gdest {
-  background:rgba(16,185,129,.08);
-  border:1px solid rgba(16,185,129,.25);
+  background:rgba(54,197,81,.08);
+  border:1px solid rgba(54,197,81,.25);
   border-radius:14px;
   padding:18px 22px;
   margin:20px 0;
@@ -3956,7 +3957,7 @@ html { scroll-behavior: smooth; }
       position: absolute;
       top: -200px; right: -200px;
       width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(56,189,248,0.04) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(0,144,190,0.04) 0%, transparent 70%);
       border-radius: 50%;
       filter: blur(80px);
       pointer-events: none;
@@ -3967,7 +3968,7 @@ html { scroll-behavior: smooth; }
       position: absolute;
       bottom: -150px; left: -150px;
       width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(16,185,129,0.03) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(54,197,81,0.03) 0%, transparent 70%);
       border-radius: 50%;
       filter: blur(80px);
       pointer-events: none;
@@ -3987,8 +3988,8 @@ html { scroll-behavior: smooth; }
       align-items: center;
       gap: 10px;
       color: #0090be;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: rgba(0, 144, 190, 0.1);
+      border: 1px solid rgba(0, 144, 190, 0.3);
       font-size: .75rem;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -4158,7 +4159,7 @@ html { scroll-behavior: smooth; }
     }
 
     #mod13 .faq-btn:active { transform: translateY(0); }
-  #mod13 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(56,189,248,0.04) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
+  #mod13 .blob-center {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(0,144,190,0.04) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
 </style>
 </head>
 <body>
@@ -4236,19 +4237,19 @@ html { scroll-behavior: smooth; }
   </div>
   <div class="vg">
     <div class="vcard">
-      <div class="vwrap"><iframe loading="lazy" src="https://player.vimeo.com/video/1081145325?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
+      <div class="vwrap"><iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1081145325?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
       <div class="vcard-info"><span class="vcard-name">Laura Pivoto</span><span class="vcard-stars">★★★★★</span></div>
     </div>
     <div class="vcard">
-      <div class="vwrap"><iframe loading="lazy" src="https://player.vimeo.com/video/1001700889?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
+      <div class="vwrap"><iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1001700889?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
       <div class="vcard-info"><span class="vcard-name">Ilza Piai</span><span class="vcard-stars">★★★★★</span></div>
     </div>
     <div class="vcard">
-      <div class="vwrap"><iframe loading="lazy" src="https://player.vimeo.com/video/1100308166?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
+      <div class="vwrap"><iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1100308166?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
       <div class="vcard-info"><span class="vcard-name">Fernanda Rodrigues</span><span class="vcard-stars">★★★★★</span></div>
     </div>
     <div class="vcard">
-      <div class="vwrap"><iframe loading="lazy" src="https://player.vimeo.com/video/1001700746?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
+      <div class="vwrap"><iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1001700746?autoplay=0&controls=1&playsinline=1&showinfo=0&rel=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
       <div class="vcard-info"><span class="vcard-name">Allan Lucas</span><span class="vcard-stars">★★★★★</span></div>
     </div>
   </div>
@@ -4272,38 +4273,38 @@ html { scroll-behavior: smooth; }
   <div class="dores">
     <div class="dor"><div class="ic">😔</div><p>Você até entende o espanhol, mas na hora de falar <strong>sai aquele portunhol</strong> e dá vergonha</p></div>
     <div class="dor"><div class="ic">😵</div><p>Alguém fala com você, você entende tudo, mas <strong>na hora de responder, dá um branco</strong> e você congela</p></div>
-    <div class="dor"><div class="ic">🤝</div><p>Já gastou dinheiro em curso, app, aula particular e <strong>continua no mesmo nível</strong> , como se nada tivesse mudado</p></div>
+    <div class="dor"><div class="ic">🤝</div><p>Já gastou dinheiro em curso, app, aula particular e <strong>continua no mesmo nível</strong>, como se nada tivesse mudado</p></div>
     <div class="dor"><div class="ic">⏳</div><p>Sua rotina é corrida e você acha que <strong>precisa de horas por dia</strong> para aprender, então nem começa</p></div>
-    <div class="dor"><div class="ic">😔</div><p>Já pensou "talvez eu <strong>não tenha talento para idiomas</strong>" , e quase desistiu por causa disso</p></div>
+    <div class="dor"><div class="ic">😔</div><p>Já pensou "talvez eu <strong>não tenha talento para idiomas</strong>", e quase desistiu por causa disso</p></div>
     <div class="dor"><div class="ic">🎯</div><p>Precisa do espanhol para viajar, trabalhar ou morar fora, e <strong>não pode mais depender do Google Tradutor</strong></p></div>
   </div>
   <div class="obox">
     <h3>O problema não é você. É o método.</h3>
-    <p>Você trava porque aprendeu espanhol de um jeito que nunca foi feito para te fazer falar. Decorar regra, conjugar verbo no caderno, repetir frase que nenhum nativo usa, isso não funciona. Eu sei porque eu <em>sou</em> nativa e vejo esse erro todo dia. Existe um caminho diferente, baseado em como a gente realmente fala no espanhol real.<br><br>
+    <div style="font-size:.9rem;color:rgba(255,255,255,0.6);line-height:1.65">Você trava porque aprendeu espanhol de um jeito que nunca foi feito para te fazer falar. Decorar regra, conjugar verbo no caderno, repetir frase que nenhum nativo usa, isso não funciona. Eu sei porque eu <em>sou</em> nativa e vejo esse erro todo dia. Existe um caminho diferente, baseado em como a gente realmente fala no espanhol real.<br><br>
 <div style="display:flex;flex-direction:column;gap:16px;margin-top:8px">
   <div style="display:flex;align-items:flex-start;gap:12px;background:rgba(0,144,190,0.08);border:1px solid rgba(0,144,190,0.2);border-radius:12px;padding:14px 16px">
-    <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;background:#fff;border:3px solid #fff;box-shadow:0 0 0 2px #0090be;flex-shrink:0"><img src="assets/cassia-santos.png" style="width:100%;height:100%;object-fit:cover;display:block" alt="Cassia Santos"></div>
+    <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;background:#fff;border:3px solid #fff;box-shadow:0 0 0 2px #0090be;flex-shrink:0"><img loading="lazy" src="assets/cassia-santos.png" style="width:100%;height:100%;object-fit:cover;display:block" alt="Cassia Santos"></div>
     <div>
       <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
         <span style="color:#fff;font-weight:700;font-size:.8rem">Cassia Santos</span>
-        <img src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle" alt="Instagram">
+        <img loading="lazy" src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle" alt="Instagram">
         <span style="color:#0090be;font-size:.75rem">@cassia.seb</span>
       </div>
       <p style="color:#ffcb15;font-size:.8rem;font-style:italic;line-height:1.5;margin:0">“Fiz minha primeira viagem à Espanha e fiquei tão feliz por entender e falar com nativos.”</p>
     </div>
   </div>
   <div style="display:flex;align-items:flex-start;gap:12px;background:rgba(0,144,190,0.08);border:1px solid rgba(0,144,190,0.2);border-radius:12px;padding:14px 16px">
-    <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;background:#fff;border:3px solid #fff;box-shadow:0 0 0 2px #0090be;flex-shrink:0"><img src="assets/joao-santana.png" style="width:100%;height:100%;object-fit:cover;display:block" alt="João Santana"></div>
+    <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;background:#fff;border:3px solid #fff;box-shadow:0 0 0 2px #0090be;flex-shrink:0"><img loading="lazy" src="assets/joao-santana.png" style="width:100%;height:100%;object-fit:cover;display:block" alt="João Santana"></div>
     <div>
       <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
         <span style="color:#fff;font-weight:700;font-size:.8rem">João Santana</span>
-        <img src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle" alt="Instagram">
+        <img loading="lazy" src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle" alt="Instagram">
         <span style="color:#0090be;font-size:.75rem">@jota7.siete</span>
       </div>
       <p style="color:#ffcb15;font-size:.8rem;font-style:italic;line-height:1.5;margin:0">“Em seis meses já consegui respirar o espanhol com o método certo.”</p>
     </div>
   </div>
-</div></p>
+</div></div>
   </div>
   <div style="text-align:center">
     <a href="https://pay.hotmart.com/W10136664F?off=4pflcpst&checkoutMode=10&bid=1762018872179&offDiscount=DESC200" class="btn">QUERO MUDAR ISSO AGORA →</a>
@@ -4723,7 +4724,7 @@ html { scroll-behavior: smooth; }
 
       <!-- Celular no centro -->
       <div class="phone-showcase" style="display:flex;align-items:center;justify-content:center">
-        <img src="assets/mockup-celular.png" alt="App Imersão Nativa" style="max-width:100%;height:auto;filter:drop-shadow(0 16px 32px rgba(0,0,0,0.2))">
+        <img loading="lazy" src="assets/mockup-celular.png" alt="App Imersão Nativa" style="max-width:100%;height:auto;filter:drop-shadow(0 16px 32px rgba(0,0,0,0.2))">
       </div>
 
       <!-- Coluna direita: 3 cards -->
@@ -4786,7 +4787,7 @@ html { scroll-behavior: smooth; }
       <div class="image-col">
         <div class="image-glow"></div>
         <div class="image-wrapper">
-          <!-- IMPORTANTE: Coloque sua imagem da Alejandra aqui -->
+          
           <!-- <img loading="lazy" src="URL_IMAGEM_ALEJANDRA.png" alt="Alejandra - Professora Nativa" style="width:100%;height:auto;display:block;"> -->
           
           <img loading="lazy" src="assets/img/img-002.png" alt="Alejandra - Professora Nativa" style="width:100%;height:auto;display:block;border-radius:32px;">
@@ -4841,7 +4842,7 @@ html { scroll-behavior: smooth; }
       </div>
 
     </div>
-<div style="text-align:center;margin-top:24px"><span style="display:inline-block;background:rgba(16,185,129,0.12);color:#36c551;font-size:.75rem;font-weight:700;padding:6px 16px;border-radius:20px;border:1px solid rgba(16,185,129,0.3)">⚡ Tempo médio de resposta: menos de 2h no WhatsApp</span></div>
+<div style="text-align:center;margin-top:24px"><span style="display:inline-block;background:rgba(54,197,81,0.12);color:#36c551;font-size:.75rem;font-weight:700;padding:6px 16px;border-radius:20px;border:1px solid rgba(54,197,81,0.3)">⚡ Tempo médio de resposta: menos de 2h no WhatsApp</span></div>
 <div style="text-align:center;margin-top:32px">
   <a href="https://pay.hotmart.com/W10136664F?off=4pflcpst&checkoutMode=10&bid=1762018872179&offDiscount=DESC200" style="display:inline-block;background:#36c551;color:#ffffff;font-weight:800;font-size: 1rem;padding:17px 40px;border-radius:50px;text-decoration:none;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 8px 28px rgba(54,197,81,.35);transition:transform .2s,box-shadow .2s">QUERO APOIO TOTAL NA MINHA JORNADA →</a>
 </div>
@@ -4868,12 +4869,12 @@ html { scroll-behavior: smooth; }
         <span class="q-mark">"</span>
         <p>Trabalho há anos com desenvolvimento de aprendizagem em grandes organizações. Quando encontrei o Imersão Nativa, li tudo duas vezes antes de decidir. Mas em apenas <strong>2 semanas percebi algo muito distinto</strong> na minha forma de falar. Nas reuniões que antes trocavam para inglês quando eu participava, comecei a ser mais presente e natural.</p>
         <div class="author-row">
-          <div class="author-avatar"><img src="assets/img/img-003.jpg" alt="Wanderlei Rodrigues"></div>
+          <div class="author-avatar"><img loading="lazy" src="assets/img/img-003.jpg" alt="Wanderlei Rodrigues"></div>
           <div class="author-info">
             <div class="author-name">Wanderlei Rodrigues</div>
             <div class="author-role">42 anos · Especialista em aprendizagem corporativa</div>
             <a class="ig-link" href="https://instagram.com/rrwanderlei" target="_blank">
-              <img src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
+              <img loading="lazy" src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
               @rrwanderlei
             </a>
           </div>
@@ -4884,12 +4885,12 @@ html { scroll-behavior: smooth; }
         <span class="q-mark">"</span>
         <p>Aos <strong>75 anos, saí do Rio de Janeiro para morar na Espanha</strong> sabendo apenas "buenos días". Hoje me sinto segura para me comunicar e viver uma nova vida. A idade não foi impedimento, foi a prova de que enquanto estamos vivos, podemos aprender.</p>
         <div class="author-row">
-          <div class="author-avatar"><img src="assets/img/img-004.jpg" alt="Eliane Lobato"></div>
+          <div class="author-avatar"><img loading="lazy" src="assets/img/img-004.jpg" alt="Eliane Lobato"></div>
           <div class="author-info">
             <div class="author-name">Eliane Lobato</div>
             <div class="author-role">75 anos · Rio de Janeiro → Espanha</div>
             <a class="ig-link" href="https://instagram.com/elianelobato" target="_blank">
-              <img src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
+              <img loading="lazy" src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
               @elianelobato
             </a>
           </div>
@@ -4900,12 +4901,12 @@ html { scroll-behavior: smooth; }
         <span class="q-mark">"</span>
         <p>Meus avós vieram da Espanha, minha mãe é filha de espanhóis, e eu nunca aprendi o idioma. Até que decidi viajar para conhecer os lugares de onde minha família veio. Encontrei a professora Alejandra e foi exatamente o que precisava. <strong>O que mais me marcou foi a paixão dela por ensinar.</strong></p>
         <div class="author-row">
-          <div class="author-avatar"><img src="assets/img/img-005.jpg" alt="Luiz Façanha"></div>
+          <div class="author-avatar"><img loading="lazy" src="assets/img/img-005.jpg" alt="Luiz Façanha"></div>
           <div class="author-info">
             <div class="author-name">Luiz Façanha</div>
             <div class="author-role">45 anos · Servidor público, Brasil</div>
             <a class="ig-link" href="https://instagram.com/luizpintofacanha" target="_blank">
-              <img src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
+              <img loading="lazy" src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
               @luizpintofacanha
             </a>
           </div>
@@ -4916,12 +4917,12 @@ html { scroll-behavior: smooth; }
         <span class="q-mark">"</span>
         <p>Esta semana recebemos a visita de um professor do Chile. Fui jantar com ele e outros professores e <strong>passei a noite inteira praticando espanhol</strong>. No dia seguinte, durante a palestra, fiz perguntas e interagi em espanhol diante de todos os meus colegas. Foi uma conquista enorme.</p>
         <div class="author-row">
-          <div class="author-avatar"><img src="assets/img/img-006.jpg" alt="Fabricio Da Silva"></div>
+          <div class="author-avatar"><img loading="lazy" src="assets/img/img-006.jpg" alt="Fabricio Da Silva"></div>
           <div class="author-info">
             <div class="author-name">Fabricio Da Silva</div>
             <div class="author-role">Doutorando · Brasil</div>
             <a class="ig-link" href="https://instagram.com/fisicafabris" target="_blank">
-              <img src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
+              <img loading="lazy" src="assets/logo-insta.png" style="width:14px;height:14px;vertical-align:middle;margin-right:2px" alt="Instagram">
               @fisicafabris
             </a>
           </div>
@@ -4953,10 +4954,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Trabalho com projetos na LATAM e o curso tem me ajudado muito. Vale muito a pena e indico de olhos fechados!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/fernanda-oliveira.png" alt="Fernanda De Oliveira"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/fernanda-oliveira.png" alt="Fernanda De Oliveira"></div>
             <div>
               <div class="c-card-name">Fernanda De Oliveira</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@feoliveira.26</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@feoliveira.26</div>
             </div>
           </div>
         </div>
@@ -4964,10 +4965,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Estou indo morar no Chile. A Alejandra é extremamente atenciosa, incentiva, ajuda e acima de tudo, torce por você!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/diego-costa.png" alt="Diego Costa"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/diego-costa.png" alt="Diego Costa"></div>
             <div>
               <div class="c-card-name">Diego Costa</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@diegodygavira</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@diegodygavira</div>
             </div>
           </div>
         </div>
@@ -4975,10 +4976,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Em pouco tempo consegui destravar. Abriu portas para compreender uma cultura vibrante e cheia de vida."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/cybelle-reis.png" alt="Cybelle Leal Reis"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/cybelle-reis.png" alt="Cybelle Leal Reis"></div>
             <div>
               <div class="c-card-name">Cybelle Leal Reis</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@cybellelealreis</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@cybellelealreis</div>
             </div>
           </div>
         </div>
@@ -4986,10 +4987,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"A Alejandra é simplesmente sensacional! Sempre disponível e com uma didática impecável!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/fernanda-romero.png" alt="Fernanda Romero"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/fernanda-romero.png" alt="Fernanda Romero"></div>
             <div>
               <div class="c-card-name">Fernanda Romero</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@eufer.romero</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@eufer.romero</div>
             </div>
           </div>
         </div>
@@ -4999,10 +5000,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Metodologia simples de compreender sem deixar o rigor acadêmico. A professora Alejandra é muito acolhedora."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/ronaldo-sales.png" alt="Ronaldo Sales"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/ronaldo-sales.png" alt="Ronaldo Sales"></div>
             <div>
               <div class="c-card-name">Ronaldo Sales</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@ronaldoaraujopsi</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@ronaldoaraujopsi</div>
             </div>
           </div>
         </div>
@@ -5010,10 +5011,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Meu vocabulário evoluiu muito, o que em curso tradicional precisaria de bem mais tempo. O método é intuitivo e leve."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/monalisa-santos.png" alt="Monalisa dos Santos"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/monalisa-santos.png" alt="Monalisa dos Santos"></div>
             <div>
               <div class="c-card-name">Monalisa dos Santos</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@monalisa.santospereira</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@monalisa.santospereira</div>
             </div>
           </div>
         </div>
@@ -5021,10 +5022,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"O método da professora Alejandra nos faz aprender de uma forma descomplicada."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/rodrigo-berghahn.png" alt="Rodrigo Berghahn"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/rodrigo-berghahn.png" alt="Rodrigo Berghahn"></div>
             <div>
               <div class="c-card-name">Rodrigo Berghahn</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@rodrigoberghahn</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@rodrigoberghahn</div>
             </div>
           </div>
         </div>
@@ -5032,10 +5033,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Feito especialmente para brasileiros. A gramática é apresentada sem complicações. Estou sentindo progresso real."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/lund-castro.png" alt="Lund De Castro"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/lund-castro.png" alt="Lund De Castro"></div>
             <div>
               <div class="c-card-name">Lund De Castro</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@lundcals</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@lundcals</div>
             </div>
           </div>
         </div>
@@ -5045,10 +5046,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Único curso que consegui adaptar na minha rotina com alta qualidade. O valor é baixo para a entrega de alto nível."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/manuelle-faustino.png" alt="Manuelle Faustino"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/manuelle-faustino.png" alt="Manuelle Faustino"></div>
             <div>
               <div class="c-card-name">Manuelle Faustino</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@manuellefaustino_mf</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@manuellefaustino_mf</div>
             </div>
           </div>
         </div>
@@ -5056,10 +5057,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"O curso te estimula a praticar e associar à sua realidade pessoal. Ajuda a destravar e acreditar no seu potencial!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/gabriel-ramos.png" alt="Gabriel Ramos"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/gabriel-ramos.png" alt="Gabriel Ramos"></div>
             <div>
               <div class="c-card-name">Gabriel Ramos</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@G-RAMOSSIL</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@G-RAMOSSIL</div>
             </div>
           </div>
         </div>
@@ -5067,10 +5068,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"A metodologia é dinâmica. O esclarecimento das dúvidas via WhatsApp é excelente! Melhor escolha do ano."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/josie-santos.png" alt="Josie dos Santos"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/josie-santos.png" alt="Josie dos Santos"></div>
             <div>
               <div class="c-card-name">Josie dos Santos</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@josiesanli13</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@josiesanli13</div>
             </div>
           </div>
         </div>
@@ -5078,10 +5079,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Videoaulas curtas e práticas. Ela está sempre disponível no WhatsApp. Isso é um diferencial incrível!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/luciane-oliveira.png" alt="Luciane Oliveira"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/luciane-oliveira.png" alt="Luciane Oliveira"></div>
             <div>
               <div class="c-card-name">Luciane Oliveira</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@lucianediasdeoliveira</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@lucianediasdeoliveira</div>
             </div>
           </div>
         </div>
@@ -5091,10 +5092,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Você que quer sair do portunhol e se tornar bilíngue, eu te afirmo com toda certeza que vale a pena. EU TE AVISEI."</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/gabriel-erom.png" alt="Gabriel Erom"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/gabriel-erom.png" alt="Gabriel Erom"></div>
             <div>
               <div class="c-card-name">Gabriel Erom</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@gabriel.errm</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@gabriel.errm</div>
             </div>
           </div>
         </div>
@@ -5102,10 +5103,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Achei que fosse desistir, mas ela com sua segurança e preocupação me fez crer e continuar. Obrigada por não desistir de mim!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/gisele-garrido.png" alt="Gisele Garrido"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/gisele-garrido.png" alt="Gisele Garrido"></div>
             <div>
               <div class="c-card-name">Gisele Garrido</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@Gisa05</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@Gisa05</div>
             </div>
           </div>
         </div>
@@ -5113,10 +5114,10 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Eu não sabia que tinha essa habilidade para falar espanhol tão rápido. O curso é muito completo!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/larrissa-marucci.png" alt="Larrissa Marucci"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/larrissa-marucci.png" alt="Larrissa Marucci"></div>
             <div>
               <div class="c-card-name">Larrissa Marucci</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@larimarucci_</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@larimarucci_</div>
             </div>
           </div>
         </div>
@@ -5124,24 +5125,24 @@ html { scroll-behavior: smooth; }
           <div class="c-card-stars">★★★★★</div>
           <p class="c-card-text">"Eu consigo ver minha evolução. Recomendo a todos que realmente querem aprender espanhol e por um preço justo!"</p>
           <div class="c-card-author">
-            <div class="c-card-avatar"><img src="assets/depoimentos/jesus-henrique.png" alt="Jesús Henrique"></div>
+            <div class="c-card-avatar"><img loading="lazy" src="assets/depoimentos/jesus-henrique.png" alt="Jesús Henrique"></div>
             <div>
               <div class="c-card-name">Jesús Henrique</div>
-              <div class="c-card-ig"><img src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@jesus_henrique_1966</div>
+              <div class="c-card-ig"><img loading="lazy" src="assets/logo-insta.png" style="width:12px;height:12px;vertical-align:middle;margin-right:2px" alt="Instagram">@jesus_henrique_1966</div>
             </div>
           </div>
         </div>
       </div>
       </div>
       <div class="carousel-nav">
-        <button class="carousel-btn" onclick="moveCarousel(-1)">‹</button>
+        <button class="carousel-btn" onclick="moveCarousel(-1)" aria-label="Depoimento anterior">‹</button>
         <div class="carousel-dots">
           <div class="carousel-dot active" onclick="goToSlide(0)"></div>
           <div class="carousel-dot" onclick="goToSlide(1)"></div>
           <div class="carousel-dot" onclick="goToSlide(2)"></div>
           <div class="carousel-dot" onclick="goToSlide(3)"></div>
         </div>
-        <button class="carousel-btn" onclick="moveCarousel(1)">›</button>
+        <button class="carousel-btn" onclick="moveCarousel(1)" aria-label="Próximo depoimento">›</button>
       </div>
     </div>
 </div>
@@ -5209,7 +5210,7 @@ html { scroll-behavior: smooth; }
           <span class="vcard-stars">★★★★★</span>
         </div>
         <div class="vwrap">
-          <iframe loading="lazy" src="https://player.vimeo.com/video/1001700637?autoplay=0&controls=1&playsinline=1"
+          <iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1001700637?autoplay=0&controls=1&playsinline=1"
             allowfullscreen allow="autoplay; fullscreen"></iframe>
         </div>
       </div>
@@ -5221,7 +5222,7 @@ html { scroll-behavior: smooth; }
           <span class="vcard-stars">★★★★★</span>
         </div>
         <div class="vwrap">
-          <iframe loading="lazy" src="https://player.vimeo.com/video/1001700775?autoplay=0&controls=1&playsinline=1"
+          <iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1001700775?autoplay=0&controls=1&playsinline=1"
             allowfullscreen allow="autoplay; fullscreen"></iframe>
         </div>
       </div>
@@ -5233,7 +5234,7 @@ html { scroll-behavior: smooth; }
           <span class="vcard-stars">★★★★★</span>
         </div>
         <div class="vwrap">
-          <iframe loading="lazy" src="https://player.vimeo.com/video/1001700671?autoplay=0&controls=1&playsinline=1"
+          <iframe title="Depoimento em vídeo" loading="lazy" src="https://player.vimeo.com/video/1001700671?autoplay=0&controls=1&playsinline=1"
             allowfullscreen allow="autoplay; fullscreen"></iframe>
         </div>
       </div>
@@ -5288,7 +5289,7 @@ html { scroll-behavior: smooth; }
         </div>
         <div class="bonus-content">
           <div class="bonus-name">Ritmo Espanhol</div>
-          <p class="bonus-desc">Mergulhe no idioma pelas <strong>músicas mais conhecidas do mundo hispano</strong> , vocabulário e pronúncia de forma leve.</p>
+          <p class="bonus-desc">Mergulhe no idioma pelas <strong>músicas mais conhecidas do mundo hispano</strong>, vocabulário e pronúncia de forma leve.</p>
           <div class="bonus-price-wrap">
             <span class="bonus-price-old"><s>R$ 297</s></span>
             <span class="bonus-price-free">✦ Grátis</span>
@@ -5303,7 +5304,7 @@ html { scroll-behavior: smooth; }
         </div>
         <div class="bonus-content">
           <div class="bonus-name">Expressões Nativas</div>
-          <p class="bonus-desc">Gírias e expressões reais para soar <strong>natural em qualquer situação</strong> , não só em sala de aula.</p>
+          <p class="bonus-desc">Gírias e expressões reais para soar <strong>natural em qualquer situação</strong>, não só em sala de aula.</p>
           <div class="bonus-price-wrap">
             <span class="bonus-price-old"><s>R$ 297</s></span>
             <span class="bonus-price-free">✦ Grátis</span>
@@ -5426,7 +5427,7 @@ html { scroll-behavior: smooth; }
       <span class="gtag">O risco é todo meu</span>
       <h2 class="gh">Garantia Incondicional de 7 Dias</h2>
 
-      <p class="gp">Eu sei que você já investiu em coisas que prometeram muito e entregaram pouco. Por isso, <strong>o risco aqui é todo meu</strong> , e não seu.</p>
+      <p class="gp">Eu sei que você já investiu em coisas que prometeram muito e entregaram pouco. Por isso, <strong>o risco aqui é todo meu</strong>, e não seu.</p>
 
       <p class="gp">Você acessa <strong>tudo desde o primeiro momento</strong>: as aulas, os materiais, o app exclusivo. Testa o método no seu ritmo, por <strong>7 dias completos</strong>.</p>
 
@@ -5652,43 +5653,7 @@ html { scroll-behavior: smooth; }
     observer.observe(stat);
   });
 </script>
-<script>
-  function animateCounter(element) {
-    const target = parseInt(element.getAttribute('data-target'));
-    const suffix = element.getAttribute('data-suffix') || '';
-    const duration = 2000;
-    const increment = target / (duration / 16);
-    let current = 0;
 
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        element.textContent = target + suffix;
-        clearInterval(timer);
-      } else {
-        element.textContent = Math.floor(current) + suffix;
-      }
-    }, 16);
-  }
-
-  // Intersection Observer para iniciar animação quando visível
-  const observerOptions = {
-    threshold: 0.5
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && entry.target.textContent === '0') {
-        animateCounter(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  // Observar todos os números (stat-number apenas)
-  document.querySelectorAll('.stat-number').forEach(stat => {
-    observer.observe(stat);
-  });
-</script>
 <script>
 (function(){
   function animateCount(el){
