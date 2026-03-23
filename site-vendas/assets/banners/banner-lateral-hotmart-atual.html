@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Banner Lateral Hotmart - 300x920</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #999; display: flex; justify-content: center; padding: 20px; }
+
+.banner {
+  width: 350px;
+  height: 1100px;
+  background: linear-gradient(180deg, #001e38 0%, #0d3a5c 30%, #001e38 60%, #0d3a5c 80%, #001e38 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, rgba(0,144,190,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  bottom: 200px; left: -40px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(54,197,81,0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+/* Logo */
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+.logo-tag {
+  font-size: 0.45rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 50px;
+  padding: 3px 10px;
+  margin-bottom: 6px;
+}
+.logo-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.logo-name .i { color: #1e3a7a; }
+.logo-name .m { color: #1e5a9a; }
+.logo-name .e { color: #1a8a4a; }
+.logo-name .r { color: #2aaa3a; }
+.logo-name .s { color: #c8a820; }
+.logo-name .a { color: #d4952a; }
+.logo-name .o { color: #e06a18; }
+.logo-nativa {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
+}
+.logo-line {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #1e3a7a, #e06a18);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* Titulo */
+.title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.title span { color: #ffcb15; }
+
+/* Preco */
+.price-block {
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.old-price {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: line-through;
+  margin-bottom: 2px;
+}
+.new-price {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #36c551;
+  line-height: 1;
+}
+.new-price small { font-size: 0.85rem; font-weight: 700; }
+.installments {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 3px;
+}
+
+/* Items */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.75);
+}
+.check { color: #36c551; font-size: 0.75rem; flex-shrink: 0; }
+
+/* Garantia */
+.guarantee {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(54,197,81,0.1);
+  border: 1px solid rgba(54,197,81,0.25);
+  border-radius: 10px;
+  padding: 10px 12px;
+  width: 100%;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+.guarantee-icon { font-size: 1.2rem; flex-shrink: 0; }
+.guarantee-text {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.4;
+}
+.guarantee-text strong { color: #36c551; font-weight: 700; }
+
+/* Separador */
+.separator {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,144,190,0.3), transparent);
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Card depoimento */
+.depo-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,144,190,0.2);
+  border-radius: 10px;
+  padding: 14px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.depo-stars {
+  color: #ffcb15;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.depo-text {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.8);
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.depo-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 10px;
+}
+.depo-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #0090be;
+  flex-shrink: 0;
+  background: #fff;
+}
+.depo-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.depo-name {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+}
+.depo-handle {
+  font-size: 0.6rem;
+  color: #0090be;
+}
+
+/* Stars bottom */
+.bottom-stars {
+  color: #ffcb15;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 14px;
+  position: relative;
+  z-index: 1;
+}
+.bottom-stars-text {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 2px;
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <!-- Logo -->
+  <div class="logo-block">
+    <div class="logo-tag">Programa Exclusivo</div>
+    <div class="logo-name">
+      <span class="i">I</span><span class="m">M</span><span class="e">E</span><span class="r">R</span><span class="s">S</span><span class="a">Ã</span><span class="o">O</span>
+    </div>
+    <div class="logo-nativa">Nativa</div>
+    <div class="logo-line"></div>
+  </div>
+
+  <!-- Titulo -->
+  <div class="title">Você está a um passo de<br><span>destravar seu espanhol</span></div>
+
+  <!-- Preco -->
+  <div class="price-block">
+    <div class="old-price">De R$ 597</div>
+    <div class="new-price"><small>R$</small> 397</div>
+    <div class="installments">ou 12x de R$ 39,70</div>
+  </div>
+
+  <!-- Items -->
+  <div class="items">
+    <div class="item"><span class="check">✓</span> Treinamento completo Imersão Nativa®</div>
+    <div class="item"><span class="check">✓</span> Aulas curtas, práticas e 100% aplicáveis</div>
+    <div class="item"><span class="check">✓</span> Materiais bilíngues em PDF</div>
+    <div class="item"><span class="check">✓</span> Áudios nativos</div>
+    <div class="item"><span class="check">✓</span> Suporte individual e humanizado</div>
+    <div class="item"><span class="check">✓</span> Exercícios interativos com autocorreção</div>
+    <div class="item"><span class="check">✓</span> Acesso 100% online, disponível 24h</div>
+    <div class="item"><span class="check">✓</span> Acesso Vitalício ao Programa e atualizações futuras</div>
+    <div class="item" style="color:#ffcb15;font-weight:700"><span class="check">✓</span> 🎁 Bônus Exclusivos: Pronúncia dos Sonhos + Ritmo Espanhol + Expressões Nativas</div>
+  </div>
+
+  <!-- Garantia -->
+  <div class="guarantee">
+    <span class="guarantee-icon">🛡️</span>
+    <div class="guarantee-text">
+      <strong>Garantia incondicional de 7 dias.</strong><br>
+      Se não gostar, devolvo 100% do seu investimento.
+    </div>
+  </div>
+
+  <!-- Separador -->
+  <div class="separator"></div>
+
+  <!-- Depoimento Fernanda -->
+  <div class="depo-card" style="border-left:3px solid #0090be">
+    <div class="depo-stars">★★★★★</div>
+    <p class="depo-text">"Fui morar em Lima sem saber falar espanhol. Em três meses já podia falar o básico. Hoje falo espanhol, assisto séries sem legenda. Se eu consegui, você também pode."</p>
+    <div class="depo-author">
+      <div class="depo-avatar"><img src="fernanda-rodrigues.png" alt="Fernanda Rodrigues"></div>
+      <div>
+        <div class="depo-name">Fernanda Rodrigues</div>
+        <div class="depo-handle"><img src="../logo-insta.png" style="width:10px;height:10px;vertical-align:middle;margin-right:2px" alt="Instagram">@frodrigues2506</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Depoimento Eliane -->
+  <div class="depo-card" style="margin-top:10px;border-left:3px solid #36c551">
+    <div class="depo-stars">★★★★★</div>
+    <p class="depo-text">"Aos 75 anos, saí do Rio de Janeiro para morar na Espanha sabendo apenas "buenos días". Hoje me sinto segura para me comunicar e viver uma nova vida."</p>
+    <div class="depo-author">
+      <div class="depo-avatar"><img src="../../assets/img/img-004.jpg" alt="Eliane Lobato"></div>
+      <div>
+        <div class="depo-name">Eliane Lobato</div>
+        <div class="depo-handle"><img src="../logo-insta.png" style="width:10px;height:10px;vertical-align:middle;margin-right:2px" alt="Instagram">@eliane.lobato | 75 anos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stars -->
+  <div class="bottom-stars">
+    ★★★★★
+    <div class="bottom-stars-text">+5.000 alunos satisfeitos</div>
+  </div>
+</div>
+
+</body>
+</html>

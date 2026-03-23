@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Logo 300x300</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #999; display: flex; justify-content: center; padding: 20px; }
+
+.logo-box {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(165deg, #001e38 0%, #0d3a5c 40%, #001e38 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.logo-box::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, rgba(0,144,190,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+.logo-box::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; left: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(54,197,81,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.logo-tag {
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 50px;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+.logo-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 4px;
+  position: relative;
+  z-index: 1;
+}
+.logo-name .i { color: #1e3a7a; }
+.logo-name .m { color: #1e5a9a; }
+.logo-name .e { color: #1a8a4a; }
+.logo-name .r { color: #2aaa3a; }
+.logo-name .s { color: #c8a820; }
+.logo-name .a { color: #d4952a; }
+.logo-name .o { color: #e06a18; }
+.logo-nativa {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.45em;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.logo-line {
+  width: 45px;
+  height: 2px;
+  background: linear-gradient(90deg, #1e3a7a, #e06a18);
+  border-radius: 2px;
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="logo-box">
+  <div class="logo-tag">Programa Exclusivo</div>
+  <div class="logo-name">
+    <span class="i">I</span><span class="m">M</span><span class="e">E</span><span class="r">R</span><span class="s">S</span><span class="a">Ã</span><span class="o">O</span>
+  </div>
+  <div class="logo-nativa">Nativa</div>
+  <div class="logo-line"></div>
+</div>
+
+</body>
+</html>

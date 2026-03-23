@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Banner Superior Mobile - 480x120</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; }
+
+.banner {
+  width: 480px;
+  height: 120px;
+  background: linear-gradient(165deg, #001e38 0%, #0d3a5c 50%, #001e38 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(0,144,190,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+}
+.logo { height: 40px; position: relative; z-index: 1; }
+.content { position: relative; z-index: 1; text-align: center; }
+.title { font-size: 0.85rem; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 4px; }
+.title span { color: #ffcb15; }
+.badges { display: flex; gap: 8px; justify-content: center; position: relative; z-index: 1; }
+.badge { font-size: 0.6rem; color: rgba(255,255,255,0.6); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="banner">
+  <img src="../logo-programa-imersao-nativa.png" alt="Imersao Nativa" class="logo">
+  <div class="content">
+    <h2 class="title">Falta pouco para <span>destravar seu espanhol</span></h2>
+    <div class="badges">
+      <span class="badge">🔒 Seguro</span>
+      <span class="badge">⚡ Imediato</span>
+      <span class="badge">✅ 7 dias</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
